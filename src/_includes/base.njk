@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}{% if title %} · {% endif %}The Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | url }}">the archive</a>
+    <nav>
+      <a href="{{ '/poems/' | url }}">poems</a>
+      <a href="{{ '/lyrics/' | url }}">lyrics</a>
+      <a href="{{ '/stories/' | url }}">stories</a>
+      <a href="{{ '/boxes/' | url }}">boxes</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>a personal archive, not a product.</p>
+  </footer>
+</body>
+</html>

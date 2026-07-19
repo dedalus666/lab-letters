@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <p class="post-kind">{{ kind }}</p>
+  <h1>{{ title }}</h1>
+  <p class="post-date">{{ date | readableDate }}</p>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+</article>

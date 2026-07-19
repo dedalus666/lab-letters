@@ -1,0 +1,12 @@
+---
+title: Lyrics
+layout: base.njk
+---
+<ul class="entry-list">
+{% for item in collections.lyrics %}
+  <li>
+    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+    <span class="entry-date">{{ item.date | readableDate }}</span>
+  </li>
+{% endfor %}
+</ul>

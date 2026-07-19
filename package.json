@@ -1,0 +1,12 @@
+{
+  "name": "my-creative-archive",
+  "version": "1.0.0",
+  "description": "A personal archive for poems, lyrics, stories, and box art",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
