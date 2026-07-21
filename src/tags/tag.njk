@@ -1,11 +1,17 @@
 ---
-title: Home
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag | tagSlug }}/"
 layout: base.njk
+eleventyComputed:
+  title: "Tag: {{ tag }}"
 ---
-<p class="home-intro">Creative portal and archive. Art is a maze. Lose yourself.</p>
+<p class="home-intro">tagged &ldquo;{{ tag }}&rdquo;</p>
 
 <ul class="entry-list entry-list--home">
-{% for item in collections.everything %}
+{% for item in collections.everything | withTag(tag) %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
     <span class="entry-kind">{{ item.data.kind }}</span>

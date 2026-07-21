@@ -1,0 +1,15 @@
+---
+title: Tags
+layout: base.njk
+---
+<p class="home-intro">browse by theme, across every kind of entry.</p>
+
+{% if collections.tagList.length %}
+<ul class="tag-list">
+{% for tag in collections.tagList %}
+  <li><a href="{{ ('/tags/' + (tag | tagSlug) + '/') | url }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No tags yet — add one to a post's front matter and it'll show up here.</p>
+{% endif %}

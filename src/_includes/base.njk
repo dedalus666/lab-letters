@@ -3,19 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }}{% if title %} · {% endif %}The Archive</title>
+  <script>
+    // Runs before the stylesheet paints, so there's no flash of the wrong theme.
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <title>{{ title }}{% if title %} · {% endif %}Labyrinthine Letters</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ '/' | url }}">the archive</a>
+    <a class="site-title" href="{{ '/' | url }}">labyrinthine letters</a>
     <nav>
       <a href="{{ '/poems/' | url }}">poems</a>
       <a href="{{ '/lyrics/' | url }}">lyrics</a>
       <a href="{{ '/stories/' | url }}">stories</a>
       <a href="{{ '/boxes/' | url }}">boxes</a>
+      <a href="{{ '/tags/' | url }}">tags</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark theme">◐</button>
     </nav>
   </header>
 
@@ -26,5 +36,18 @@
   <footer class="site-footer">
     <p>a personal archive, not a product.</p>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('[data-theme-toggle]');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
