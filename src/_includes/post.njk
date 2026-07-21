@@ -8,4 +8,24 @@ layout: base.njk
   <div class="post-body">
     {{ content | safe }}
   </div>
+  <div class="post-footer">
+    <button class="share-button" type="button" data-copy-link>share</button>
+    <span class="share-feedback" data-copy-feedback aria-live="polite"></span>
+  </div>
 </article>
+
+<script>
+(function () {
+  var btn = document.currentScript.previousElementSibling.querySelector('[data-copy-link]');
+  var feedback = document.currentScript.previousElementSibling.querySelector('[data-copy-feedback]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      feedback.textContent = 'link copied';
+      setTimeout(function () { feedback.textContent = ''; }, 2000);
+    }).catch(function () {
+      feedback.textContent = 'copy failed — copy from address bar';
+    });
+  });
+})();
+</script>

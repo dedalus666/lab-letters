@@ -4,7 +4,7 @@ layout: base.njk
 ---
 <p class="home-intro">everything I make, in one place — poems, lyrics, stories, and box art.</p>
 
-<ul class="entry-list">
+<ul class="entry-list entry-list--home">
 {% for item in collections.everything %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
