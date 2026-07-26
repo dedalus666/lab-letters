@@ -1,12 +1,35 @@
 ---
-title: Stories
+title: Lore
 layout: base.njk
+pageKind: story
 ---
+<div class="section-header">
+  <h1>Lore</h1>
+  <p class="section-subtitle">stories</p>
+</div>
+
+<p class="home-intro">tales, true accounts, thoughts, and the occasional myth — dispatches from deep in the labyrinth.</p>
+
+{% set featured = collections.featured | featuredForKind(pageKind) %}
+{% if featured %}
+<article class="post featured-post">
+  <p class="post-kind">{{ featured.data.kind }} · featured</p>
+  <h1>{{ featured.data.title }}</h1>
+  <p class="post-date">{{ featured.date | readableDate }}</p>
+  <div class="post-body">
+    {{ featured.templateContent | safe }}
+  </div>
+  <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>
+</article>
+{% endif %}
+
 <ul class="entry-list">
 {% for item in collections.stories %}
+  {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
     <span class="entry-date">{{ item.date | readableDate }}</span>
   </li>
+  {% endif %}
 {% endfor %}
 </ul>

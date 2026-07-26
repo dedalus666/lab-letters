@@ -1,6 +1,17 @@
 ---
 layout: base.njk
 ---
+{% set sectionMap = {
+  "poem": { url: "/poems/", label: "Runes" },
+  "lyric": { url: "/lyrics/", label: "Invocations" },
+  "story": { url: "/stories/", label: "Lore" },
+  "box": { url: "/boxes/", label: "Boxes" }
+} %}
+{% set section = sectionMap[kind] %}
+{% if section %}
+<a class="breadcrumb" href="{{ section.url | url }}">&larr; back to {{ section.label }}</a>
+{% endif %}
+
 <article class="post">
   <p class="post-kind">{{ kind }}</p>
   <h1>{{ title }}</h1>
@@ -8,6 +19,14 @@ layout: base.njk
   <div class="post-body">
     {{ content | safe }}
   </div>
+  {% set extra = tags | extraTags %}
+  {% if extra.length %}
+  <ul class="tag-list post-tags">
+    {% for tag in extra %}
+      <li><a href="{{ ('/tags/' + (tag | tagSlug) + '/') | url }}">#{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
   <div class="post-footer">
     <button class="share-button" type="button" data-copy-link>share</button>
     <span class="share-feedback" data-copy-feedback aria-live="polite"></span>

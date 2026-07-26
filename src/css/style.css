@@ -105,6 +105,87 @@ a:hover { text-decoration: underline; }
   border-color: var(--accent);
 }
 
+.about-photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-header h1 {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 0;
+}
+
+.link-section {
+  margin-bottom: 2.5rem;
+}
+
+.link-section h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--rule);
+}
+
+.link-list li:last-child {
+  border-bottom: none;
+}
+
+.link-tagline {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  font-style: normal;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.search-input {
+  width: 100%;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.6rem 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
 main {
   max-width: 720px;
   margin: 0 auto;
@@ -153,6 +234,18 @@ main {
   text-align: right;
 }
 
+.breadcrumb {
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb:hover {
+  color: var(--accent);
+}
+
 .post-kind {
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
@@ -180,6 +273,10 @@ main {
 .lyric-block, .poem-block {
   white-space: pre-wrap;
   font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.post-tags {
+  margin: 2rem 0 0;
 }
 
 .post-footer {
@@ -222,4 +319,75 @@ main {
   color: var(--muted);
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
+}
+
+/* The homepage is wider than every other page, to make room for the sidebar */
+body.is-home .site-header,
+body.is-home main,
+body.is-home .site-footer {
+  max-width: 980px;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.home-sidebar {
+  border-left: 1px solid var(--rule);
+  padding-left: 2rem;
+}
+
+.sidebar-section {
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-section:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-section h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+/* Sidebar lists stack title-over-date instead of using the wide grid columns */
+.sidebar-section .entry-list li {
+  display: block;
+  padding: 0.6rem 0;
+}
+
+.sidebar-section .entry-list .entry-date,
+.sidebar-section .entry-list .entry-kind {
+  display: block;
+  text-align: left;
+  font-size: 0.7rem;
+  margin-top: 0.15rem;
+}
+
+.featured-post .read-more {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-sidebar {
+    border-left: none;
+    border-top: 1px solid var(--rule);
+    padding-left: 0;
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
 }

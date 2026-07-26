@@ -2,14 +2,95 @@
 title: Home
 layout: base.njk
 ---
-<p class="home-intro">Creative portal and archive. Art is a maze. Lose yourself.</p>
+<div class="home-layout">
+  <div class="home-main">
+    {% if collections.featured.length %}
+      {% set featured = collections.featured[0] %}
+      <article class="post featured-post">
+        <p class="post-kind">{{ featured.data.kind }} · featured</p>
+        <h1>{{ featured.data.title }}</h1>
+        <p class="post-date">{{ featured.date | readableDate }}</p>
+        <div class="post-body">
+          {{ featured.templateContent | safe }}
+        </div>
+        <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>
+      </article>
+    {% else %}
+      <p class="home-intro">Creative portal and archive. Art is a maze. Lose yourself.</p>
+      <p>No post is marked as featured yet — add <code>featured: true</code> to any entry's front matter and it'll show up here in full.</p>
+    {% endif %}
+  </div>
 
-<ul class="entry-list entry-list--home">
-{% for item in collections.everything %}
-  <li>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="entry-kind">{{ item.data.kind }}</span>
-    <span class="entry-date">{{ item.date | readableDate }}</span>
-  </li>
-{% endfor %}
-</ul>
+  <aside class="home-sidebar">
+    <div class="sidebar-section">
+      <input type="text" id="search-input" class="search-input" placeholder="search…" autocomplete="off">
+      <ul class="entry-list" id="search-results"></ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h2>Activity</h2>
+      <ul class="entry-list">
+      {% for entry in collections.activity %}
+        <li>
+          <a href="{{ entry.item.url | url }}">{{ entry.item.data.title }}</a>
+          <span class="entry-date">{{ entry.modified | readableDate }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h2>Everything</h2>
+      <ul class="entry-list">
+      {% for item in collections.everything %}
+        <li>
+          <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+          <span class="entry-date">{{ item.date | readableDate }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<script>
+(function () {
+  var indexUrl = "{{ '/search-index.json' | url }}";
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  var data = [];
+
+  fetch(indexUrl)
+    .then(function (r) { return r.json(); })
+    .then(function (json) { data = json; })
+    .catch(function () {});
+
+  input.addEventListener('input', function () {
+    var q = input.value.trim().toLowerCase();
+    results.innerHTML = '';
+    if (!q) return;
+
+    var matches = data.filter(function (item) {
+      return item.title.toLowerCase().indexOf(q) !== -1 ||
+             item.excerpt.toLowerCase().indexOf(q) !== -1 ||
+             (item.tags || '').toLowerCase().indexOf(q) !== -1;
+    });
+
+    if (matches.length === 0) {
+      var empty = document.createElement('li');
+      empty.textContent = 'No matches.';
+      results.appendChild(empty);
+      return;
+    }
+
+    matches.forEach(function (item) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = item.url;
+      a.textContent = item.title;
+      li.appendChild(a);
+      results.appendChild(li);
+    });
+  });
+})();
+</script>

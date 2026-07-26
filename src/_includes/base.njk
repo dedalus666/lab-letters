@@ -16,15 +16,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
-<body>
+<body class="{% if page.url == '/' %}is-home{% endif %}">
   <header class="site-header">
     <a class="site-title" href="{{ '/' | url }}">labyrinthine letters</a>
     <nav>
-      <a href="{{ '/poems/' | url }}">poems</a>
-      <a href="{{ '/lyrics/' | url }}">lyrics</a>
-      <a href="{{ '/stories/' | url }}">stories</a>
+      <a href="{{ '/poems/' | url }}">runes</a>
+      <a href="{{ '/lyrics/' | url }}">invocations</a>
+      <a href="{{ '/stories/' | url }}">lore</a>
       <a href="{{ '/boxes/' | url }}">boxes</a>
-      <a href="{{ '/tags/' | url }}">tags</a>
+      <a href="{{ '/magic/' | url }}">arcana</a>
+      <a href="{{ '/about/' | url }}">profile</a>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark theme">◐</button>
     </nav>
   </header>

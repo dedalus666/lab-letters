@@ -4,6 +4,7 @@ kind: box
 tags: boxes
 layout: post.njk
 date: 2026-06-04
+featured: true
 ---
 ![Green stained box with Hecate logo](/images/hecate-box-41.jpg)
 

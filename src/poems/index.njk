@@ -1,12 +1,35 @@
 ---
-title: Poems
+title: Runes
 layout: base.njk
+pageKind: poem
 ---
+<div class="section-header">
+  <h1>Runes</h1>
+  <p class="section-subtitle">poems</p>
+</div>
+
+<p class="home-intro">spells and symbols carved into words, divined from the heart.</p>
+
+{% set featured = collections.featured | featuredForKind(pageKind) %}
+{% if featured %}
+<article class="post featured-post">
+  <p class="post-kind">{{ featured.data.kind }} · featured</p>
+  <h1>{{ featured.data.title }}</h1>
+  <p class="post-date">{{ featured.date | readableDate }}</p>
+  <div class="post-body">
+    {{ featured.templateContent | safe }}
+  </div>
+  <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>
+</article>
+{% endif %}
+
 <ul class="entry-list">
 {% for item in collections.poems %}
+  {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
     <span class="entry-date">{{ item.date | readableDate }}</span>
   </li>
+  {% endif %}
 {% endfor %}
 </ul>

@@ -1,12 +1,34 @@
 ---
 title: Boxes
 layout: base.njk
+pageKind: box
 ---
+<div class="section-header">
+  <h1>Boxes</h1>
+</div>
+
+<p class="home-intro">hand-made wooden vessels, gifts crafted to hold mysteries and preserve the secrets placed within.</p>
+
+{% set featured = collections.featured | featuredForKind(pageKind) %}
+{% if featured %}
+<article class="post featured-post">
+  <p class="post-kind">{{ featured.data.kind }} · featured</p>
+  <h1>{{ featured.data.title }}</h1>
+  <p class="post-date">{{ featured.date | readableDate }}</p>
+  <div class="post-body">
+    {{ featured.templateContent | safe }}
+  </div>
+  <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>
+</article>
+{% endif %}
+
 <ul class="entry-list">
 {% for item in collections.boxes %}
+  {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
     <span class="entry-date">{{ item.date | readableDate }}</span>
   </li>
+  {% endif %}
 {% endfor %}
 </ul>

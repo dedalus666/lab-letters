@@ -1,0 +1,10 @@
+---
+permalink: /search-index.json
+eleventyExcludeFromCollections: true
+---
+[
+{%- for item in collections.everything -%}
+{%- if not loop.first -%},{%- endif -%}
+{"title": {{ item.data.title | dump | safe }}, "url": {{ (item.url | url) | dump | safe }}, "kind": {{ item.data.kind | dump | safe }}, "tags": {{ (item.data.tags | tagsSearchString) | dump | safe }}, "excerpt": {{ (item.templateContent | searchExcerpt) | dump | safe }}}
+{%- endfor -%}
+]
