@@ -56,6 +56,87 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
 }
 
+.site-search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1.25rem;
+  vertical-align: middle;
+}
+
+.site-search .search-icon {
+  position: absolute;
+  left: 0.5rem;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.site-search-input {
+  width: 110px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.35rem 0.5rem 0.35rem 1.7rem;
+  transition: width 0.15s ease, border-color 0.15s ease;
+}
+
+.site-search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  width: 160px;
+}
+
+.site-search-results {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  width: 240px;
+  max-height: 320px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+.site-search-results[hidden] {
+  display: none;
+}
+
+.site-search-results li {
+  padding: 0.4rem 0.3rem;
+  border-bottom: 1px dotted var(--rule);
+}
+
+.site-search-results li:last-child {
+  border-bottom: none;
+}
+
+.site-search-results li a {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.95rem;
+}
+
+.site-search-results li.no-results {
+  color: var(--muted);
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 800px) {
+  .site-search-input { width: 90px; }
+  .site-search-input:focus { width: 130px; }
+  .site-search-results { right: auto; left: 0; width: 200px; }
+}
+
 .theme-toggle {
   margin-left: 1.25rem;
   font-family: "Space Mono", monospace;
@@ -246,6 +327,117 @@ main {
   color: var(--accent);
 }
 
+.gallery {
+  margin-bottom: 1.5rem;
+}
+
+.gallery-hero {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.gallery-hero img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.gallery-thumb {
+  width: 84px;
+  height: 84px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-thumb:hover,
+.gallery-thumb.is-active {
+  border-color: var(--accent);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 8, 5, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-image {
+  max-width: 88vw;
+  max-height: 84vh;
+  border-radius: 2px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #f4ede0;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightbox-close {
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: var(--accent);
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
 .post-kind {
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
@@ -269,6 +461,7 @@ main {
 
 .post-body p { margin: 0 0 1.2rem; }
 .post-body img { max-width: 100%; border-radius: 2px; }
+.featured-gallery-image { margin-bottom: 1.2rem; }
 
 .lyric-block, .poem-block {
   white-space: pre-wrap;

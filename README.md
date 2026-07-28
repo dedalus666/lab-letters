@@ -39,10 +39,29 @@ Your poem, lyric, story, or box notes go here. Plain text or Markdown —
 **bold**, *italic*, and lists all work.
 ```
 
-For a box entry, add a photo to `src/images/` and reference it like:
+For a single photo, add it to `src/images/` and reference it like:
 
 ```
 ![description of the photo](/images/your-photo.jpg)
+```
+
+For a post with **multiple photos** (a gallery), add a `gallery` list to the
+front matter instead — first image becomes the large hero, the rest appear
+as clickable thumbnails below it, and visitors can click any of them to
+enlarge and cycle through the whole set:
+
+```
+---
+title: Your Title Here
+kind: story
+tags: stories
+layout: post.njk
+date: 2026-07-19
+gallery:
+  - photo-one.jpg
+  - photo-two.jpg
+  - photo-three.jpg
+---
 ```
 
 That's it — no admin panel, no database, no build step to think about beyond

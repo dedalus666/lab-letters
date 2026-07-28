@@ -84,6 +84,16 @@ module.exports = function (eleventyConfig) {
     return (items || []).find((item) => item.data.kind === kind) || null;
   });
 
+  // Picks which featured post shows on the homepage. Normally that's just
+  // the newest one (items[0], since the list is already date-sorted). But
+  // if any featured post is also marked `spotlight: true`, it wins instead
+  // — this lets an older post be pinned to the homepage without having to
+  // fake its date to make it look newer than everything else.
+  eleventyConfig.addFilter("homeSpotlight", (items) => {
+    if (!items || !items.length) return null;
+    return items.find((item) => item.data.spotlight) || items[0];
+  });
+
   // Nice readable date filter, e.g. "July 19, 2026"
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
@@ -103,7 +113,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // Whichever post(s) have `featured: true` in their front matter, newest
-  // (by its own date) first. The homepage shows collections.featured[0].
+  // (by its own date) first. The homepage shows whichever one wins via the
+  // homeSpotlight filter (newest, unless one is marked `spotlight: true`).
   eleventyConfig.addCollection("featured", (collectionApi) => {
     return collectionApi
       .getAll()

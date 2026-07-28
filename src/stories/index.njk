@@ -17,6 +17,9 @@ pageKind: story
   <h1>{{ featured.data.title }}</h1>
   <p class="post-date">{{ featured.date | readableDate }}</p>
   <div class="post-body">
+    {% if featured.data.gallery and featured.data.gallery.length %}
+    <img class="featured-gallery-image" src="/images/{{ featured.data.gallery[0] }}" alt="{{ featured.data.title }}">
+    {% endif %}
     {{ featured.templateContent | safe }}
   </div>
   <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>

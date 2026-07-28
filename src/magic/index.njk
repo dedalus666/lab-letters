@@ -20,6 +20,36 @@ layout: base.njk
 <div class="link-section">
   <h2>For Magicians</h2>
   <ul class="link-list">
-    <li><a href="{{ '/files/magicians-ledger.html' | url }}" download>Download the Magician's Ledger</a></li>
+    <li>
+      <a href="{{ '/files/magicians-ledger-starter.html' | url }}" download="magicians-ledger.html" data-download-ledger>Download the Magician's Ledger</a>
+      <span class="link-tagline">A blank ledger, ready for your own collection. On some phones this may open in your browser instead of saving — use your browser's Share/Save option to keep a copy.</span>
+    </li>
   </ul>
 </div>
+
+<script>
+(function () {
+  var link = document.querySelector('[data-download-ledger]');
+  if (!link) return;
+  link.addEventListener('click', function (e) {
+    var href = link.getAttribute('href');
+    if (!window.fetch || !window.Blob || !window.URL || !URL.createObjectURL) return; // let the default download attribute handle it
+    e.preventDefault();
+    fetch(href)
+      .then(function (r) { return r.blob(); })
+      .then(function (blob) {
+        var blobUrl = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = 'magicians-ledger.html';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(blobUrl);
+      })
+      .catch(function () {
+        window.location.href = href;
+      });
+  });
+})();
+</script>
