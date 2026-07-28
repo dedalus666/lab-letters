@@ -3,6 +3,7 @@ title: Boxes
 layout: base.njk
 pageKind: box
 ---
+{% import "gallery-macro.njk" as galleryMacro %}
 <div class="section-header">
   <h1>Boxes</h1>
 </div>
@@ -15,10 +16,8 @@ pageKind: box
   <p class="post-kind">{{ featured.data.kind }} · featured</p>
   <h1>{{ featured.data.title }}</h1>
   <p class="post-date">{{ featured.date | readableDate }}</p>
+  {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
   <div class="post-body">
-    {% if featured.data.gallery and featured.data.gallery.length %}
-    <img class="featured-gallery-image" src="/images/{{ featured.data.gallery[0] }}" alt="{{ featured.data.title }}">
-    {% endif %}
     {{ featured.templateContent | safe }}
   </div>
   <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>

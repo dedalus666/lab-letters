@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+{% import "gallery-macro.njk" as galleryMacro %}
 {% set sectionMap = {
   "poem": { url: "/poems/", label: "Runes" },
   "lyric": { url: "/lyrics/", label: "Invocations" },
@@ -17,100 +18,7 @@ layout: base.njk
   <h1>{{ title }}</h1>
   <p class="post-date">{{ date | readableDate }}</p>
 
-  {% if gallery and gallery.length %}
-  <div class="gallery-wrap" data-gallery>
-    <div class="gallery">
-      <button type="button" class="gallery-hero" data-gallery-open data-index="0">
-        <img src="/images/{{ gallery[0] }}" alt="{{ title }}">
-      </button>
-
-      {% if gallery.length > 1 %}
-      <div class="gallery-thumbs">
-        {% for img in gallery %}
-        <button type="button" class="gallery-thumb{% if loop.index0 == 0 %} is-active{% endif %}" data-gallery-open data-index="{{ loop.index0 }}">
-          <img src="/images/{{ img }}" alt="">
-        </button>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
-
-    <div class="lightbox" data-lightbox hidden>
-      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">&times;</button>
-      <button class="lightbox-prev" type="button" data-lightbox-prev aria-label="Previous photo">&lsaquo;</button>
-      <img class="lightbox-image" data-lightbox-image src="" alt="">
-      <button class="lightbox-next" type="button" data-lightbox-next aria-label="Next photo">&rsaquo;</button>
-    </div>
-  </div>
-
-  <script>
-  (function () {
-    var wrap = document.currentScript.previousElementSibling;
-    if (!wrap) return;
-
-    var thumbButtons = wrap.querySelectorAll('.gallery-thumb');
-    var images = [];
-    for (var i = 0; i < thumbButtons.length; i++) {
-      images.push(thumbButtons[i].querySelector('img').getAttribute('src'));
-    }
-    if (!images.length) {
-      var heroImg = wrap.querySelector('.gallery-hero img');
-      if (heroImg) images.push(heroImg.getAttribute('src'));
-    }
-
-    var lightbox = wrap.querySelector('[data-lightbox]');
-    var lightboxImage = wrap.querySelector('[data-lightbox-image]');
-    var openButtons = wrap.querySelectorAll('[data-gallery-open]');
-    var current = 0;
-
-    function setActiveThumb() {
-      for (var t = 0; t < thumbButtons.length; t++) {
-        thumbButtons[t].classList.toggle('is-active', t === current);
-      }
-    }
-
-    function openLightbox(index) {
-      current = index;
-      lightboxImage.setAttribute('src', images[current]);
-      lightbox.removeAttribute('hidden');
-      document.body.classList.add('lightbox-open');
-      setActiveThumb();
-    }
-
-    function closeLightbox() {
-      lightbox.setAttribute('hidden', '');
-      document.body.classList.remove('lightbox-open');
-    }
-
-    function step(delta) {
-      current = (current + delta + images.length) % images.length;
-      lightboxImage.setAttribute('src', images[current]);
-      setActiveThumb();
-    }
-
-    for (var j = 0; j < openButtons.length; j++) {
-      openButtons[j].addEventListener('click', function (e) {
-        openLightbox(parseInt(e.currentTarget.getAttribute('data-index'), 10));
-      });
-    }
-
-    wrap.querySelector('[data-lightbox-close]').addEventListener('click', closeLightbox);
-    wrap.querySelector('[data-lightbox-prev]').addEventListener('click', function () { step(-1); });
-    wrap.querySelector('[data-lightbox-next]').addEventListener('click', function () { step(1); });
-
-    lightbox.addEventListener('click', function (e) {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (lightbox.hasAttribute('hidden')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') step(-1);
-      if (e.key === 'ArrowRight') step(1);
-    });
-  })();
-  </script>
-  {% endif %}
+  {{ galleryMacro.renderGallery(gallery, title) }}
 
   <div class="post-body">
     {{ content | safe }}
