@@ -54,6 +54,27 @@ a:hover { text-decoration: underline; }
   font-family: "Space Mono", monospace;
   font-size: 0.85rem;
   color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nav-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.site-header nav a:hover .nav-icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px var(--accent));
 }
 
 .site-search {
