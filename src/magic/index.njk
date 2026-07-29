@@ -2,9 +2,13 @@
 title: Arcana
 layout: base.njk
 ---
+{% import "icons-macro.njk" as icons %}
 <div class="section-header">
-  <h1>Arcana</h1>
-  <p class="section-subtitle">magic</p>
+  <div class="section-header-text">
+    <h1>Arcana</h1>
+    <p class="section-subtitle">magic</p>
+  </div>
+  {{ icons.icon("arcana", "section-icon") }}
 </div>
 
 <p class="home-intro">illusions, tricks, sleight of hand and other explorations into the Dark Arts.</p>

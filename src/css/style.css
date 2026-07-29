@@ -218,6 +218,10 @@ a:hover { text-decoration: underline; }
 
 .section-header {
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .section-header h1 {
@@ -232,6 +236,21 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.1em;
   color: var(--muted);
   margin: 0;
+}
+
+.section-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--muted);
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .section-icon {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .link-section {

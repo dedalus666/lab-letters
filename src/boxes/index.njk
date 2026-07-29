@@ -4,8 +4,12 @@ layout: base.njk
 pageKind: box
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "icons-macro.njk" as icons %}
 <div class="section-header">
-  <h1>Boxes</h1>
+  <div class="section-header-text">
+    <h1>Boxes</h1>
+  </div>
+  {{ icons.icon("boxes", "section-icon") }}
 </div>
 
 <p class="home-intro">hand-made wooden vessels, gifts crafted to hold mysteries and preserve the secrets placed within.</p>

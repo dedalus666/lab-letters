@@ -4,9 +4,13 @@ layout: base.njk
 pageKind: poem
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "icons-macro.njk" as icons %}
 <div class="section-header">
-  <h1>Runes</h1>
-  <p class="section-subtitle">poems</p>
+  <div class="section-header-text">
+    <h1>Runes</h1>
+    <p class="section-subtitle">poems</p>
+  </div>
+  {{ icons.icon("runes", "section-icon") }}
 </div>
 
 <p class="home-intro">spells and symbols carved into words, divined from the heart.</p>

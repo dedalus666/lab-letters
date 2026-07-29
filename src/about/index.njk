@@ -2,11 +2,15 @@
 title: Profile
 layout: base.njk
 ---
+{% import "icons-macro.njk" as icons %}
 <img class="about-photo" src="/images/bosami-avatar.jpeg" alt="Dedalus portrait">
 
 <div class="section-header">
-  <h1>Profile</h1>
-  <p class="section-subtitle">about</p>
+  <div class="section-header-text">
+    <h1>Profile</h1>
+    <p class="section-subtitle">about</p>
+  </div>
+  {{ icons.icon("profile", "section-icon") }}
 </div>
 
 <p class="home-intro">Dedalus is the artistic persona of Joe Wilford — a storyteller, songwriter, musician, magician, and worker of wood.</p>

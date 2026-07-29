@@ -4,9 +4,13 @@ layout: base.njk
 pageKind: story
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "icons-macro.njk" as icons %}
 <div class="section-header">
-  <h1>Lore</h1>
-  <p class="section-subtitle">stories</p>
+  <div class="section-header-text">
+    <h1>Lore</h1>
+    <p class="section-subtitle">stories</p>
+  </div>
+  {{ icons.icon("lore", "section-icon") }}
 </div>
 
 <p class="home-intro">tales, true accounts, thoughts, and the occasional myth — dispatches from deep in the labyrinth.</p>

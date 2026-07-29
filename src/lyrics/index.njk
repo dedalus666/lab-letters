@@ -4,9 +4,13 @@ layout: base.njk
 pageKind: lyric
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "icons-macro.njk" as icons %}
 <div class="section-header">
-  <h1>Invocations</h1>
-  <p class="section-subtitle">lyrics</p>
+  <div class="section-header-text">
+    <h1>Invocations</h1>
+    <p class="section-subtitle">lyrics</p>
+  </div>
+  {{ icons.icon("invocations", "section-icon") }}
 </div>
 
 <p class="home-intro">a songwriter's archive, summoned into this portal.</p>
