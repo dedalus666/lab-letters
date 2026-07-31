@@ -67,6 +67,41 @@ gallery:
 That's it — no admin panel, no database, no build step to think about beyond
 saving the file.
 
+## Featuring a post
+
+Add `featured: true` to a post's front matter to have it spotlighted (with
+its full gallery, if it has one) instead of just listed as a plain link:
+
+```
+---
+title: Your Title Here
+kind: story
+tags: stories
+layout: post.njk
+date: 2026-07-19
+featured: true
+---
+```
+
+- On that entry's own section page (Runes/poems, Invocations/lyrics,
+  Lore/stories, Boxes), the **newest** featured post in that section is the
+  one that gets spotlighted. To feature an older favorite instead, just
+  bump its `date` forward.
+- On the **homepage**, the newest featured post across *all* sections is
+  spotlighted the same way — by default.
+
+If you want the homepage to spotlight a specific post without changing its
+real date, add `spotlight: true` alongside `featured: true`:
+
+```
+featured: true
+spotlight: true
+```
+
+That post will take over the homepage spotlight regardless of date. If more
+than one post has `spotlight: true`, the most recently dated one wins — so
+in practice, keep it to one at a time.
+
 ## Running it locally
 
 You'll need [Node.js](https://nodejs.org) installed once. Then, from this folder:
