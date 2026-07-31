@@ -3,12 +3,13 @@ title: Home
 layout: base.njk
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "icons-macro.njk" as icons %}
 <div class="home-layout">
   <div class="home-main">
     {% if collections.featured.length %}
       {% set featured = collections.featured | homeSpotlight %}
       <article class="post featured-post">
-        <p class="post-kind">{{ featured.data.kind }} · featured</p>
+        <p class="post-kind">{{ icons.icon("spotlight", "spotlight-icon") }}{{ featured.data.kind }} · featured</p>
         <h1>{{ featured.data.title }}</h1>
         <p class="post-date">{{ featured.date | readableDate }}</p>
         {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
@@ -25,7 +26,7 @@ layout: base.njk
 
   <aside class="home-sidebar">
     <div class="sidebar-section">
-      <h2>Activity</h2>
+      <h2>{{ icons.icon("activity", "section-h2-icon") }}Activity</h2>
       <ul class="entry-list">
       {% for entry in collections.activity %}
         <li>
@@ -37,7 +38,7 @@ layout: base.njk
     </div>
 
     <div class="sidebar-section">
-      <h2>Everything</h2>
+      <h2>{{ icons.icon("everything", "section-h2-icon") }}Everything</h2>
       <ul class="entry-list">
       {% for item in collections.everything %}
         <li>

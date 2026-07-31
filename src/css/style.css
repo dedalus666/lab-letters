@@ -7,11 +7,11 @@
 }
 
 [data-theme="dark"] {
-  --ink: #ece4d3;
-  --paper: #1c1712;
+  --ink: #f1e8d4;
+  --paper: #120f0c;
   --accent: #e08a5c;
-  --muted: #a89a82;
-  --rule: #3a3226;
+  --muted: #9c9180;
+  --rule: #332a1d;
 }
 
 * { box-sizing: border-box; }
@@ -226,7 +226,24 @@ a:hover { text-decoration: underline; }
 
 .section-header h1 {
   margin: 0 0 0.25rem;
-  font-weight: 600;
+  font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+[data-theme="dark"] .section-header h1 {
+  position: relative;
+  padding-bottom: 0.85rem;
+}
+
+[data-theme="dark"] .section-header h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 1px;
+  background: var(--accent);
 }
 
 .section-subtitle {
@@ -264,6 +281,15 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.08em;
   color: var(--accent);
   margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-h2-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .link-list {
@@ -279,6 +305,29 @@ a:hover { text-decoration: underline; }
 
 .link-list li:last-child {
   border-bottom: none;
+}
+
+.link-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.link-icon:hover {
+  color: var(--accent);
+}
+
+.link-icon-svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.link-icon:hover .link-icon-svg {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 4px var(--accent));
 }
 
 .link-tagline {
@@ -485,11 +534,23 @@ body.lightbox-open {
   letter-spacing: 0.1em;
   color: var(--accent);
   margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.spotlight-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .post h1 {
   margin: 0 0 0.25rem;
-  font-weight: 600;
+  font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1.2;
 }
 
 .post-date {
@@ -551,6 +612,43 @@ body.lightbox-open {
   color: var(--muted);
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-mark-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.footer-mark {
+  width: 34px;
+  height: auto;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.footer-sigils {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer-sigil {
+  width: 13px;
+  height: 13px;
+  color: var(--muted);
+}
+
+[data-theme="dark"] .footer-mark {
+  filter: invert(1);
 }
 
 /* The homepage is wider than every other page, to make room for the sidebar */
@@ -587,6 +685,14 @@ body.is-home .site-footer {
   letter-spacing: 0.08em;
   color: var(--accent);
   margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.sidebar-section h2 .section-h2-icon {
+  width: 14px;
+  height: 14px;
 }
 
 /* Sidebar lists stack title-over-date instead of using the wide grid columns */

@@ -18,7 +18,7 @@ pageKind: poem
 {% set featured = collections.featured | featuredForKind(pageKind) %}
 {% if featured %}
 <article class="post featured-post">
-  <p class="post-kind">{{ featured.data.kind }} · featured</p>
+  <p class="post-kind">{{ icons.icon("spotlight", "spotlight-icon") }}{{ featured.data.kind }} · featured</p>
   <h1>{{ featured.data.title }}</h1>
   <p class="post-date">{{ featured.date | readableDate }}</p>
   {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}

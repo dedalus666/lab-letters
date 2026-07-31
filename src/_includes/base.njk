@@ -14,8 +14,9 @@
   <title>{{ title }}{% if title %} · {% endif %}Labyrinthine Letters</title>
   {% import "icons-macro.njk" as icons %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | url }}">
 </head>
 <body class="{% if page.url == '/' %}is-home{% endif %}">
   <header class="site-header">
@@ -62,6 +63,15 @@
   </main>
 
   <footer class="site-footer">
+    <div class="footer-mark-group">
+      <img class="footer-mark" src="{{ '/images/dedalus-mark.png' | url }}" alt="" aria-hidden="true">
+      <span class="footer-sigils">
+        {{ icons.icon("runes", "footer-sigil") }}
+        {{ icons.icon("invocations", "footer-sigil") }}
+        {{ icons.icon("arcana", "footer-sigil") }}
+        {{ icons.icon("lore", "footer-sigil") }}
+      </span>
+    </div>
     <p>Art is a maze. Lose yourself.</p>
   </footer>
 
