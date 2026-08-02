@@ -5,7 +5,6 @@ tags: stories, Gramps, Teamsters,
 layout: post.njk
 date: 2026-07-24
 featured: true
-spotlight: true
 gallery:
   - HJW-buttons.jpeg
   - HJW-Hoffa-CID1.jpeg

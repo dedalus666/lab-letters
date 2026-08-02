@@ -29,10 +29,12 @@ layout: base.njk
       <h2>{{ icons.icon("activity", "section-h2-icon") }}Activity</h2>
       <ul class="entry-list">
       {% for entry in collections.activity %}
+        {% if not featured or entry.item.url != featured.url %}
         <li>
           <a href="{{ entry.item.url | url }}">{{ entry.item.data.title }}</a>
           <span class="entry-date">{{ entry.modified | readableDate }}</span>
         </li>
+        {% endif %}
       {% endfor %}
       </ul>
     </div>
@@ -41,10 +43,12 @@ layout: base.njk
       <h2>{{ icons.icon("everything", "section-h2-icon") }}Everything</h2>
       <ul class="entry-list">
       {% for item in collections.everything %}
+        {% if not featured or item.url != featured.url %}
         <li>
           <a href="{{ item.url | url }}">{{ item.data.title }}</a>
           <span class="entry-date">{{ item.date | readableDate }}</span>
         </li>
+        {% endif %}
       {% endfor %}
       </ul>
     </div>
