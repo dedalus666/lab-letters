@@ -26,10 +26,57 @@ layout: base.njk
   <ul class="link-list">
     <li>
       <a href="{{ '/files/magicians-ledger-starter.html' | url }}" download="magicians-ledger.html" data-download-ledger>Download the Magician's Ledger</a>
-      <span class="link-tagline">A blank ledger, ready for your own collection. On some phones this may open in your browser instead of saving — use your browser's Share/Save option to keep a copy.</span>
+      <span class="link-tagline">A blank ledger, ready for your own collection. Best used on a desktop or laptop — mobile browsers may not save it properly.</span>
     </li>
   </ul>
+
+  <div class="ledger-preview-wrap" data-ledger-preview>
+    <button type="button" class="ledger-preview-thumb" data-ledger-open aria-label="Enlarge preview of the Magician's Ledger">
+      <img src="{{ '/images/ledger-preview.svg' | url }}" alt="Preview of the Magician's Ledger app, showing sample effects in a table view">
+    </button>
+    <div class="lightbox" data-ledger-lightbox hidden>
+      <button class="lightbox-close" type="button" data-ledger-close aria-label="Close">&times;</button>
+      <img class="lightbox-image" src="{{ '/images/ledger-preview.svg' | url }}" alt="Preview of the Magician's Ledger app, showing sample effects in a table view">
+    </div>
+  </div>
+
+  <ul class="ledger-features">
+    <li>Track every effect you own — creator, type, difficulty, cost, current worth, and where it lives.</li>
+    <li>Mark pieces performance-ready, needing practice, or tucked away in the bottom drawer.</li>
+    <li>Star favorites, filter by status or tag, and switch between card and table views.</li>
+    <li>Export your collection to JSON or CSV, or import an existing file, any time.</li>
+    <li>Runs entirely in your browser — nothing is uploaded, nothing leaves your device.</li>
+  </ul>
 </div>
+
+<script>
+(function () {
+  var wrap = document.querySelector('[data-ledger-preview]');
+  if (!wrap) return;
+  var openBtn = wrap.querySelector('[data-ledger-open]');
+  var lightbox = wrap.querySelector('[data-ledger-lightbox]');
+  var closeBtn = wrap.querySelector('[data-ledger-close]');
+
+  function open() {
+    lightbox.removeAttribute('hidden');
+    document.body.classList.add('lightbox-open');
+  }
+  function close() {
+    lightbox.setAttribute('hidden', '');
+    document.body.classList.remove('lightbox-open');
+  }
+
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (lightbox.hasAttribute('hidden')) return;
+    if (e.key === 'Escape') close();
+  });
+})();
+</script>
 
 <script>
 (function () {
