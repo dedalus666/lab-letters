@@ -4,9 +4,11 @@
   "description": "A personal archive for poems, lyrics, stories, and box art",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "resize-photos": "node scripts/resize-photos.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sharp": "^0.35.3"
   }
 }
