@@ -71,17 +71,29 @@ async function run() {
 
   let totalBefore = 0;
   let totalAfter = 0;
+  const failures = [];
 
   for (const file of files) {
-    const { before, after } = await processFile(file);
-    totalBefore += before;
-    totalAfter += after;
+    try {
+      const { before, after } = await processFile(file);
+      totalBefore += before;
+      totalAfter += after;
+    } catch (err) {
+      console.error(`${file.padEnd(28)} FAILED — ${err.code || err.message}`);
+      failures.push(file);
+    }
   }
 
   const pct = totalBefore ? 100 * (1 - totalAfter / totalBefore) : 0;
   console.log(
     `\nTOTAL: ${(totalBefore / 1024).toFixed(0)}KB -> ${(totalAfter / 1024).toFixed(0)}KB (${pct.toFixed(0)}% smaller)`
   );
+
+  if (failures.length) {
+    console.log(`\n${failures.length} file(s) skipped due to errors — nothing else was affected:`);
+    failures.forEach((f) => console.log(`  - ${f}`));
+    process.exitCode = 1;
+  }
 }
 
 run().catch((err) => {
