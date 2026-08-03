@@ -468,6 +468,45 @@ main {
   border-color: var(--accent);
 }
 
+.ledger-preview-wrap {
+  margin: 1.25rem 0 1rem;
+}
+
+.ledger-preview-thumb {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  background: none;
+  cursor: zoom-in;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ledger-preview-thumb:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.ledger-preview-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ledger-features {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.ledger-features li {
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
