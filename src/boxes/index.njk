@@ -29,7 +29,7 @@ pageKind: box
 {% endif %}
 
 <ul class="entry-list">
-{% for item in collections.boxes %}
+{% for item in collections.boxes | reverse %}
   {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>

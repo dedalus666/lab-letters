@@ -30,7 +30,7 @@ pageKind: lyric
 {% endif %}
 
 <ul class="entry-list">
-{% for item in collections.lyrics %}
+{% for item in collections.lyrics | reverse %}
   {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
