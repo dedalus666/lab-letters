@@ -1,7 +1,7 @@
 ---
 title: Duane - Laramie Project
 kind: story
-tags: stories
+tags: stories, review
 layout: post.njk
 date: 2026-06-06
 ---
