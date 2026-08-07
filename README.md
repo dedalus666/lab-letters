@@ -67,6 +67,28 @@ gallery:
 That's it — no admin panel, no database, no build step to think about beyond
 saving the file.
 
+## Sizing photos before adding them
+
+Camera and phone photos are usually much bigger than a website needs — both
+in dimensions and file size. Before adding new photos to `src/images/`, run:
+
+```
+npm run resize-photos
+```
+
+This caps every photo in `src/images/` at 1800px on its longest side and
+re-compresses it to a web-friendly quality, usually shrinking files by
+70-80% with no visible difference. Photos that are already small enough are
+left alone, so it's safe to run any time — even on a folder you've already
+processed.
+
+To process photos sitting somewhere else first (before copying them into
+`src/images/`), point it at that folder instead:
+
+```
+npm run resize-photos -- path/to/folder
+```
+
 ## Featuring a post
 
 Add `featured: true` to a post's front matter to have it spotlighted (with
