@@ -1,0 +1,19 @@
+{# Embeds a YouTube video, responsive to any container width. Accepts
+   whatever URL got copied from YouTube (a youtu.be share link, a full
+   youtube.com/watch link, or a bare video ID) — the youtubeId filter
+   sorts out which shape it is. Used both on a post's own page and in
+   "featured" excerpts, same as the photo gallery. #}
+{% macro renderVideo(youtube, title) %}
+{% if youtube %}
+<div class="video-embed">
+  <iframe
+    src="https://www.youtube.com/embed/{{ youtube | youtubeId }}"
+    title="{{ title }}"
+    loading="lazy"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+{% endif %}
+{% endmacro %}

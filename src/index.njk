@@ -3,6 +3,7 @@ title: Home
 layout: base.njk
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "video-macro.njk" as videoMacro %}
 {% import "icons-macro.njk" as icons %}
 <div class="home-layout">
   <div class="home-main">
@@ -13,6 +14,7 @@ layout: base.njk
         <h1>{{ featured.data.title }}</h1>
         <p class="post-date">{{ featured.date | readableDate }}</p>
         {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
+        {{ videoMacro.renderVideo(featured.data.youtube, featured.data.title) }}
         <div class="post-body">
           {{ featured.templateContent | safe }}
         </div>

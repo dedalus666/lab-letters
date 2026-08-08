@@ -2,6 +2,7 @@
 layout: base.njk
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
+{% import "video-macro.njk" as videoMacro %}
 {% set sectionMap = {
   "poem": { url: "/poems/", label: "Runes" },
   "lyric": { url: "/lyrics/", label: "Invocations" },
@@ -19,6 +20,7 @@ layout: base.njk
   <p class="post-date">{{ date | readableDate }}</p>
 
   {{ galleryMacro.renderGallery(gallery, title) }}
+  {{ videoMacro.renderVideo(youtube, title) }}
 
   <div class="post-body">
     {{ content | safe }}

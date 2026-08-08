@@ -35,6 +35,24 @@ function getLastCommitDate(inputPath) {
   }
 }
 
+// Pulls the video ID out of any common YouTube URL shape (youtu.be share
+// links, full youtube.com/watch links, already-an-embed links, or a bare
+// ID), so front matter can just hold whatever URL got copied from YouTube.
+function youtubeId(url) {
+  if (!url) return null;
+  const patterns = [
+    /youtu\.be\/([^?&/]+)/,
+    /youtube\.com\/watch\?(?:.*&)?v=([^?&]+)/,
+    /youtube\.com\/embed\/([^?&/]+)/,
+    /youtube\.com\/shorts\/([^?&/]+)/,
+  ];
+  for (const pattern of patterns) {
+    const match = String(url).match(pattern);
+    if (match) return match[1];
+  }
+  return String(url).trim(); // assume it's already a bare video ID
+}
+
 // Plain-text version of a post's full rendered content, used for the search
 // index. No meaningful truncation — search needs to match words anywhere in
 // a post, not just its opening lines.
@@ -58,6 +76,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("tagSlug", slugifyTag);
   eleventyConfig.addFilter("searchExcerpt", searchExcerpt);
+  eleventyConfig.addFilter("youtubeId", youtubeId);
 
   // Filters a list of entries down to only those carrying a given tag
   eleventyConfig.addFilter("withTag", (items, tag) => {

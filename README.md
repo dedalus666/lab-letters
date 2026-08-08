@@ -64,6 +64,22 @@ gallery:
 ---
 ```
 
+To embed a **YouTube video**, add a `youtube` field with whatever URL you
+copied from YouTube (a `youtu.be` share link, a full `youtube.com/watch`
+link, or just the video ID all work) — it'll appear above the post body,
+sized to fit the page automatically:
+
+```
+---
+title: Your Title Here
+kind: story
+tags: stories
+layout: post.njk
+date: 2026-07-19
+youtube: https://youtu.be/your-video-id
+---
+```
+
 That's it — no admin panel, no database, no build step to think about beyond
 saving the file.
 
