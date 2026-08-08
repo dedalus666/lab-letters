@@ -2,12 +2,18 @@
    whatever URL got copied from YouTube (a youtu.be share link, a full
    youtube.com/watch link, or a bare video ID) — the youtubeId filter
    sorts out which shape it is. Used both on a post's own page and in
-   "featured" excerpts, same as the photo gallery. #}
+   "featured" excerpts, same as the photo gallery.
+
+   Any link elsewhere on the page that points at this same video (e.g. a
+   setlist with `[4:45](https://youtu.be/ID?t=285s)`-style timestamps)
+   automatically seeks + plays the embed already on the page instead of
+   opening YouTube in a new tab — no special syntax needed, it just
+   matches on the video ID already in the link's href. #}
 {% macro renderVideo(youtube, title) %}
 {% if youtube %}
-<div class="video-embed">
+<div class="video-embed" data-video-id="{{ youtube | youtubeId }}">
   <iframe
-    src="https://www.youtube.com/embed/{{ youtube | youtubeId }}"
+    src="https://www.youtube.com/embed/{{ youtube | youtubeId }}?enablejsapi=1"
     title="{{ title }}"
     loading="lazy"
     frameborder="0"
@@ -15,5 +21,41 @@
     allowfullscreen>
   </iframe>
 </div>
+<script>
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap) return;
+  var iframe = wrap.querySelector('iframe');
+  var videoId = wrap.getAttribute('data-video-id');
+  if (!iframe || !videoId) return;
+
+  function postCommand(func, args) {
+    if (!iframe.contentWindow) return;
+    iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', func: func, args: args || [] }), '*');
+  }
+
+  function wireTimestampLinks() {
+    document.querySelectorAll('a[href*="' + videoId + '"]').forEach(function (link) {
+      if (link.closest('.video-embed')) return; // don't touch the embed's own UI
+      link.addEventListener('click', function (e) {
+        var seconds = 0;
+        try {
+          seconds = parseInt(new URL(link.href).searchParams.get('t'), 10) || 0;
+        } catch (err) {}
+        e.preventDefault();
+        postCommand('seekTo', [seconds, true]);
+        postCommand('playVideo');
+        wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wireTimestampLinks);
+  } else {
+    wireTimestampLinks();
+  }
+})();
+</script>
 {% endif %}
 {% endmacro %}
