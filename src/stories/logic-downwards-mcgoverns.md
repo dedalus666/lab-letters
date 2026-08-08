@@ -16,23 +16,23 @@ One of our nights at McGovern's on the Lower East Side, late 80s. Five of us cra
 
 Set I
 
-- [0:00](https://youtu.be/g0cl__p-LFY?t=0) — Who's this Other?
-- [4:45](https://youtu.be/g0cl__p-LFY?t=285) — Life / Death
-- [8:58](https://youtu.be/g0cl__p-LFY?t=538) — Shadow Man
-- [13:41](https://youtu.be/g0cl__p-LFY?t=821) — Death Race
-- [19:20](https://youtu.be/g0cl__p-LFY?t=1160) — Day of the Lords
-- [23:30](https://youtu.be/g0cl__p-LFY?t=1410) — Nacht und Nebel
-- [27:00](https://youtu.be/g0cl__p-LFY?t=1620) — Confusion
-- [32:40](https://youtu.be/g0cl__p-LFY?t=1960) — Anger Sex
+- [0:00](https://youtu.be/g0cl__p-LFY?t=0s) — Who's this Other?
+- [4:45](https://youtu.be/g0cl__p-LFY?t=285s) — Life / Death
+- [8:58](https://youtu.be/g0cl__p-LFY?t=538s) — Shadow Man
+- [13:41](https://youtu.be/g0cl__p-LFY?t=821s) — Death Race
+- [19:20](https://youtu.be/g0cl__p-LFY?t=1160s) — Day of the Lords
+- [23:30](https://youtu.be/g0cl__p-LFY?t=1410s) — Nacht und Nebel
+- [27:00](https://youtu.be/g0cl__p-LFY?t=1620s) — Confusion
+- [32:40](https://youtu.be/g0cl__p-LFY?t=1960s) — Anger Sex
 
 Set II
 
-- [38:30](https://youtu.be/g0cl__p-LFY?t=2310) — Shiver Shiver
-- [42:40](https://youtu.be/g0cl__p-LFY?t=2560) — Dead Air
-- [45:07](https://youtu.be/g0cl__p-LFY?t=2707) — Looking for Danger
-- [51:50](https://youtu.be/g0cl__p-LFY?t=3110) — Neutralizing Johnny's Pain
-- [55:30](https://youtu.be/g0cl__p-LFY?t=3330) — Angel Babe
-- [1:03:29](https://youtu.be/g0cl__p-LFY?t=3809) — Waiting
-- [1:08:08](https://youtu.be/g0cl__p-LFY?t=4088) — Trust
-- [1:13:13](https://youtu.be/g0cl__p-LFY?t=4393) — Stained Blood Money
-- [1:19:29](https://youtu.be/g0cl__p-LFY?t=4769) — Death Rap
+- [38:30](https://youtu.be/g0cl__p-LFY?t=2310s) — Shiver Shiver
+- [42:40](https://youtu.be/g0cl__p-LFY?t=2560s) — Dead Air
+- [45:07](https://youtu.be/g0cl__p-LFY?t=2707s) — Looking for Danger
+- [51:50](https://youtu.be/g0cl__p-LFY?t=3110s) — Neutralizing Johnny's Pain
+- [55:30](https://youtu.be/g0cl__p-LFY?t=3330s) — Angel Babe
+- [1:03:29](https://youtu.be/g0cl__p-LFY?t=3809s) — Waiting
+- [1:08:08](https://youtu.be/g0cl__p-LFY?t=4088s) — Trust
+- [1:13:13](https://youtu.be/g0cl__p-LFY?t=4393s) — Stained Blood Money
+- [1:19:29](https://youtu.be/g0cl__p-LFY?t=4769s) — Death Rap
