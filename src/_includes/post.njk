@@ -3,6 +3,7 @@ layout: base.njk
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
 {% import "video-macro.njk" as videoMacro %}
+{% import "icons-macro.njk" as icons %}
 {% set sectionMap = {
   "poem": { url: "/poems/", label: "Runes" },
   "lyric": { url: "/lyrics/", label: "Invocations" },
@@ -10,6 +11,7 @@ layout: base.njk
   "box": { url: "/boxes/", label: "Boxes" }
 } %}
 {% set section = sectionMap[kind] %}
+{% set extra = tags | extraTags %}
 {% if section %}
 <a class="breadcrumb" href="{{ section.url | url }}">&larr; back to {{ section.label }}</a>
 {% endif %}
@@ -19,13 +21,36 @@ layout: base.njk
   <h1>{{ title }}</h1>
   <p class="post-date">{{ date | readableDate }}</p>
 
+  <div class="reader-toolbar" data-reader-toolbar>
+    <button type="button" class="reader-tool" data-toggle-info aria-expanded="false">
+      {{ icons.icon("info", "reader-tool-icon") }}<span>info</span>
+    </button>
+    <button type="button" class="reader-tool" data-scroll-top>
+      {{ icons.icon("arrow-up", "reader-tool-icon") }}<span>top</span>
+    </button>
+    <button type="button" class="reader-tool" data-scroll-bottom>
+      {{ icons.icon("arrow-down", "reader-tool-icon") }}<span>bottom</span>
+    </button>
+    <a class="reader-tool" href="{{ (page.url + 'story.pdf') | url }}" download>
+      {{ icons.icon("file", "reader-tool-icon") }}<span>pdf</span>
+    </a>
+    <a class="reader-tool" href="{{ (page.url + 'story.epub') | url }}" download>
+      {{ icons.icon("file", "reader-tool-icon") }}<span>epub</span>
+    </a>
+  </div>
+  <div class="reader-info-panel" data-info-panel hidden>
+    <p><strong>{{ title }}</strong></p>
+    <p>{{ kind }} &middot; {{ date | readableDate }}</p>
+    {% if extra.length %}<p>{{ extra | join(", ") }}</p>{% endif %}
+    <p data-word-count></p>
+  </div>
+
   {{ galleryMacro.renderGallery(gallery, title) }}
   {{ videoMacro.renderVideo(youtube, title) }}
 
   <div class="post-body">
     {{ content | safe }}
   </div>
-  {% set extra = tags | extraTags %}
   {% if extra.length %}
   <ul class="tag-list post-tags">
     {% for tag in extra %}
@@ -41,16 +66,56 @@ layout: base.njk
 
 <script>
 (function () {
-  var btn = document.currentScript.previousElementSibling.querySelector('[data-copy-link]');
-  var feedback = document.currentScript.previousElementSibling.querySelector('[data-copy-feedback]');
-  if (!btn) return;
-  btn.addEventListener('click', function () {
-    navigator.clipboard.writeText(window.location.href).then(function () {
-      feedback.textContent = 'link copied';
-      setTimeout(function () { feedback.textContent = ''; }, 2000);
-    }).catch(function () {
-      feedback.textContent = 'copy failed — copy from address bar';
+  var article = document.currentScript.previousElementSibling;
+  if (!article) return;
+
+  var btn = article.querySelector('[data-copy-link]');
+  var feedback = article.querySelector('[data-copy-feedback]');
+  if (btn) {
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        feedback.textContent = 'link copied';
+        setTimeout(function () { feedback.textContent = ''; }, 2000);
+      }).catch(function () {
+        feedback.textContent = 'copy failed — copy from address bar';
+      });
     });
-  });
+  }
+
+  var infoToggle = article.querySelector('[data-toggle-info]');
+  var infoPanel = article.querySelector('[data-info-panel]');
+  if (infoToggle && infoPanel) {
+    infoToggle.addEventListener('click', function () {
+      var isHidden = infoPanel.hasAttribute('hidden');
+      if (isHidden) {
+        infoPanel.removeAttribute('hidden');
+      } else {
+        infoPanel.setAttribute('hidden', '');
+      }
+      infoToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    });
+  }
+
+  var topBtn = article.querySelector('[data-scroll-top]');
+  if (topBtn) {
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  var bottomBtn = article.querySelector('[data-scroll-bottom]');
+  if (bottomBtn) {
+    bottomBtn.addEventListener('click', function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+  }
+
+  var wordCountEl = article.querySelector('[data-word-count]');
+  var body = article.querySelector('.post-body');
+  if (wordCountEl && body) {
+    var words = body.textContent.trim().split(/\s+/).filter(Boolean).length;
+    var minutes = Math.max(1, Math.round(words / 200));
+    wordCountEl.textContent = words + ' words · ~' + minutes + ' min read';
+  }
 })();
 </script>

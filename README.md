@@ -83,6 +83,22 @@ youtube: https://youtu.be/your-video-id
 That's it — no admin panel, no database, no build step to think about beyond
 saving the file.
 
+## Reading tools on every post
+
+Every poem, lyric, story, and box automatically gets a small toolbar above
+its text — nothing to add to the front matter, it's just always there:
+
+- **Info** — toggles a panel showing the title, kind, date, tags, and an
+  estimated word count / reading time.
+- **Top** / **Bottom** — jump straight to the start or end of the piece.
+- **PDF** / **EPUB** — downloadable versions of the piece, generated
+  automatically at build time from the same Markdown text (photos and
+  galleries aren't included — these are for reading the words).
+
+The PDF/EPUB generation happens as the very last step of every build, so it
+works the same locally (`npm start` / `npm run build`) and when GitHub
+Actions builds the site for you.
+
 ## Sizing photos before adding them
 
 Camera and phone photos are usually much bigger than a website needs — both

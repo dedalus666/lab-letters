@@ -615,7 +615,66 @@ body.lightbox-open {
   font-family: "Space Mono", monospace;
   font-size: 0.8rem;
   color: var(--muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.reader-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.reader-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.reader-tool:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.reader-tool-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.reader-info-panel {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.reader-info-panel p {
+  margin: 0 0 0.4rem;
+}
+
+.reader-info-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.reader-info-panel[hidden] {
+  display: none;
 }
 
 .post-body p { margin: 0 0 1.2rem; }

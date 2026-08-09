@@ -202,6 +202,16 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // After every build, generate a downloadable PDF and EPUB for every
+  // poem, lyric, story, and box, sitting right next to that post's own
+  // page in _site (e.g. /stories/meeting-bowie/story.pdf). Nothing to
+  // remember when adding a new post — this just runs every time.
+  eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    const generateReaderFiles = require("./scripts/generate-reader-files.js");
+    const count = await generateReaderFiles(dir.output);
+    console.log(`[reader-files] generated PDF + EPUB for ${count} posts`);
+  });
+
   return {
     dir: {
       input: "src",
