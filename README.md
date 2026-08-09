@@ -92,8 +92,9 @@ its text — nothing to add to the front matter, it's just always there:
   estimated word count / reading time.
 - **Top** / **Bottom** — jump straight to the start or end of the piece.
 - **PDF** / **EPUB** — downloadable versions of the piece, generated
-  automatically at build time from the same Markdown text (photos and
-  galleries aren't included — these are for reading the words).
+  automatically at build time from the same Markdown. The EPUB includes
+  the post's photos (gallery and any inline images), embedded right in
+  the file for offline reading. The PDF stays text-only.
 
 The PDF/EPUB generation happens as the very last step of every build, so it
 works the same locally (`npm start` / `npm run build`) and when GitHub

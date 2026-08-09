@@ -9,12 +9,19 @@
 
 const fs = require("fs");
 const path = require("path");
+const { pathToFileURL } = require("url");
 const matter = require("gray-matter");
 const MarkdownIt = require("markdown-it");
 const PDFDocument = require("pdfkit");
 const genEpub = require("epub-gen-memory").default;
 
 const md = new MarkdownIt({ html: false, breaks: false });
+// markdown-it blocks file:// links/images by default as an untrusted-input
+// safeguard. We generate this content ourselves from our own local photos,
+// so it's safe to allow here — without this, embedded images silently
+// fail to render at all (the markdown is left as literal text instead).
+md.validateLink = () => true;
+const IMAGES_DIR = path.resolve("src/images");
 
 const SECTIONS = [
   { dir: "src/poems", url: "/poems/" },
@@ -32,13 +39,33 @@ function readableDate(dateValue) {
   });
 }
 
-// Strips image markdown and simplifies links down to their visible text —
-// PDF/EPUB downloads are about the words, not the site's photos.
-function toReadableMarkdown(content) {
+// Turns a plain filename ("hecate1.jpeg") or a site-relative path
+// ("/images/hecate1.jpeg") into a file:// URL pointing straight at the
+// source image on disk, so epub-gen-memory can embed it without needing
+// network access or the site to be built/deployed anywhere first.
+function imageFileUrl(filenameOrPath) {
+  const filename = filenameOrPath.replace(/^\/images\//, "");
+  return pathToFileURL(path.join(IMAGES_DIR, filename)).href;
+}
+
+// Strips image markdown and simplifies links down to their visible text.
+// Used for the PDF, which stays text-only — laying out photos well on a
+// generated PDF page is a fair bit more work than an EPUB, which is just
+// a package of HTML.
+function toPlainMarkdown(content) {
   return content
     .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .trim();
+}
+
+// Rewrites any inline `/images/...` references in the post's own Markdown
+// body to file:// URLs, so a single-photo post's `![caption](/images/x.jpg)`
+// embeds correctly in the EPUB.
+function embedInlineImages(content) {
+  return content.replace(/(!\[[^\]]*\]\()\/images\/([^)]+)(\))/g, (match, open, filename, close) => {
+    return open + imageFileUrl(filename) + close;
+  });
 }
 
 async function generatePdf(outputPath, { title, kind, date }, plainMarkdown) {
@@ -72,19 +99,27 @@ async function generatePdf(outputPath, { title, kind, date }, plainMarkdown) {
   });
 }
 
-async function generateEpub(outputPath, { title, kind, date }, plainMarkdown) {
-  const bodyHtml = md.render(plainMarkdown);
+async function generateEpub(outputPath, { title, kind, date, gallery }, content) {
+  const galleryHtml =
+    gallery && gallery.length
+      ? gallery.map((filename) => `<img src="${imageFileUrl(filename)}" alt="" />`).join("\n") + "\n"
+      : "";
+  const bodyHtml = md.render(embedInlineImages(content));
+
   const buffer = await genEpub(
     {
       title,
       author: "Dedalus",
       description: [kind, readableDate(date)].filter(Boolean).join(" · "),
       tocTitle: "Contents",
+      // Missing/unreachable images shouldn't ever fail the whole build —
+      // better to ship the EPUB without one photo than not ship it at all.
+      ignoreFailedDownloads: true,
     },
     [
       {
         title,
-        content: bodyHtml,
+        content: galleryHtml + bodyHtml,
       },
     ]
   );
@@ -109,10 +144,8 @@ module.exports = async function generateReaderFiles(outputDir) {
       const pageDir = path.join(outputDir, section.url, slug);
       if (!fs.existsSync(pageDir)) continue; // page wasn't built (e.g. draft), skip
 
-      const plainMarkdown = toReadableMarkdown(content);
-
-      await generatePdf(path.join(pageDir, "story.pdf"), data, plainMarkdown);
-      await generateEpub(path.join(pageDir, "story.epub"), data, plainMarkdown);
+      await generatePdf(path.join(pageDir, "story.pdf"), data, toPlainMarkdown(content));
+      await generateEpub(path.join(pageDir, "story.epub"), data, content);
       count += 1;
     }
   }
