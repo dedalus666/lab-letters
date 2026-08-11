@@ -1,0 +1,85 @@
+{# The Info / Top / Bottom / PDF / EPUB toolbar shown above a post's text.
+   Used both on a post's own page and in "featured" excerpts (homepage and
+   section pages), same as the photo gallery and video embed, so a
+   spotlighted post reads the same wherever it's shown. `url` is the
+   post's own permalink (page.url on its own page, or featured.url in an
+   excerpt) — story.pdf/story.epub always sit right alongside it. #}
+{% import "icons-macro.njk" as icons %}
+{% macro renderToolbar(title, kind, date, tags, url) %}
+{% set extra = tags | extraTags %}
+<div class="reader-toolbar" data-reader-toolbar>
+  <button type="button" class="reader-tool" data-toggle-info aria-expanded="false">
+    {{ icons.icon("info", "reader-tool-icon") }}<span>info</span>
+  </button>
+  <button type="button" class="reader-tool" data-scroll-top>
+    {{ icons.icon("arrow-up", "reader-tool-icon") }}<span>top</span>
+  </button>
+  <button type="button" class="reader-tool" data-scroll-bottom>
+    {{ icons.icon("arrow-down", "reader-tool-icon") }}<span>bottom</span>
+  </button>
+  <a class="reader-tool" href="{{ (url + 'story.pdf') | url }}" download>
+    {{ icons.icon("file", "reader-tool-icon") }}<span>pdf</span>
+  </a>
+  <a class="reader-tool" href="{{ (url + 'story.epub') | url }}" download>
+    {{ icons.icon("file", "reader-tool-icon") }}<span>epub</span>
+  </a>
+</div>
+<div class="reader-info-panel" data-info-panel hidden>
+  <p><strong>{{ title }}</strong></p>
+  <p>{{ kind }} &middot; {{ date | readableDate }}</p>
+  {% if extra.length %}<p>{{ extra | join(", ") }}</p>{% endif %}
+  <p data-word-count></p>
+</div>
+<script>
+(function () {
+  var infoPanel = document.currentScript.previousElementSibling;
+  var toolbar = infoPanel ? infoPanel.previousElementSibling : null;
+  if (!toolbar || !infoPanel) return;
+  var article = toolbar.closest('article');
+
+  var infoToggle = toolbar.querySelector('[data-toggle-info]');
+  if (infoToggle) {
+    infoToggle.addEventListener('click', function () {
+      var isHidden = infoPanel.hasAttribute('hidden');
+      if (isHidden) {
+        infoPanel.removeAttribute('hidden');
+      } else {
+        infoPanel.setAttribute('hidden', '');
+      }
+      infoToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    });
+  }
+
+  var topBtn = toolbar.querySelector('[data-scroll-top]');
+  if (topBtn) {
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  var bottomBtn = toolbar.querySelector('[data-scroll-bottom]');
+  if (bottomBtn) {
+    bottomBtn.addEventListener('click', function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+  }
+
+  function fillWordCount() {
+    var wordCountEl = infoPanel.querySelector('[data-word-count]');
+    var body = article ? article.querySelector('.post-body') : null;
+    if (!wordCountEl || !body) return;
+    var words = body.textContent.trim().split(/\s+/).filter(Boolean).length;
+    var minutes = Math.max(1, Math.round(words / 200));
+    wordCountEl.textContent = words + ' words · ~' + minutes + ' min read';
+  }
+
+  // .post-body hasn't been parsed yet at this point in the page (it comes
+  // later in the HTML), so wait for the full DOM before reading it.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fillWordCount);
+  } else {
+    fillWordCount();
+  }
+})();
+</script>
+{% endmacro %}
