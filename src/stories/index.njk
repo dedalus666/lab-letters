@@ -5,6 +5,7 @@ pageKind: story
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
 {% import "video-macro.njk" as videoMacro %}
+{% import "reader-toolbar-macro.njk" as toolbarMacro %}
 {% import "icons-macro.njk" as icons %}
 <div class="section-header">
   <div class="section-header-text">
@@ -24,6 +25,7 @@ pageKind: story
   <p class="post-date">{{ featured.date | readableDate }}</p>
   {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
   {{ videoMacro.renderVideo(featured.data.youtube, featured.data.title) }}
+  {{ toolbarMacro.renderToolbar(featured.data.title, featured.data.kind, featured.date, featured.data.tags, featured.url) }}
   <div class="post-body">
     {{ featured.templateContent | safe }}
   </div>
