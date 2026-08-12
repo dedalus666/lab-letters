@@ -623,6 +623,11 @@ body.lightbox-open {
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-bottom: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background: var(--paper);
+  padding: 0.6rem 0;
 }
 
 .reader-tool {
