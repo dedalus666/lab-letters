@@ -37,7 +37,7 @@
 <div class="reader-toc-panel" data-toc-panel hidden></div>
 <div class="reader-info-panel" data-info-panel hidden>
   <p><strong>{{ title }}</strong></p>
-  <p>{{ kind }} &middot; {{ date | readableDate }}</p>
+  <p>{{ kind | kindLabel }} &middot; {{ date | readableDate }}</p>
   {% if note %}<p>{{ note }}</p>{% endif %}
   {% if extra.length %}<p>{{ extra | join(", ") }}</p>{% endif %}
   <p data-word-count></p>

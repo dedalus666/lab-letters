@@ -17,7 +17,7 @@ layout: base.njk
 {% endif %}
 
 <article class="post">
-  <p class="post-kind">{{ kind }}</p>
+  <p class="post-kind">{{ kind | kindLabel }}</p>
   <h1>{{ title }}</h1>
   <p class="post-date">{{ date | readableDate }}</p>
 

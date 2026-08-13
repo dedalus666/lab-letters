@@ -11,7 +11,7 @@ layout: base.njk
     {% if collections.featured.length %}
       {% set featured = collections.featured | homeSpotlight %}
       <article class="post featured-post">
-        <p class="post-kind">{{ icons.icon("spotlight", "spotlight-icon") }}{{ featured.data.kind }} · featured</p>
+        <p class="post-kind">{{ icons.icon("spotlight", "spotlight-icon") }}{{ featured.data.kind | kindLabel }} · featured</p>
         <h1>{{ featured.data.title }}</h1>
         <p class="post-date">{{ featured.date | readableDate }}</p>
         {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}

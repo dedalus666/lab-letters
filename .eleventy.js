@@ -84,6 +84,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("searchExcerpt", searchExcerpt);
   eleventyConfig.addFilter("youtubeId", youtubeId);
 
+  // Displays a post's kind as a label. Every kind but "lyric" reads fine
+  // singular (poem, story, box — each names the one post in front of you),
+  // but "lyric" reads oddly next to a single song and should say "lyrics"
+  // instead. Front matter itself stays singular (kind: lyric) since that's
+  // what section lookups, collections, and tag logic key off of.
+  eleventyConfig.addFilter("kindLabel", (kind) => (kind === "lyric" ? "lyrics" : kind));
+
   // Filters a list of entries down to only those carrying a given tag
   eleventyConfig.addFilter("withTag", (items, tag) => {
     return (items || []).filter((item) => normalizeTags(item.data.tags).includes(tag));

@@ -14,7 +14,7 @@ eleventyComputed:
 {% for item in collections.everything | withTag(tag) %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="entry-kind">{{ item.data.kind }}</span>
+    <span class="entry-kind">{{ item.data.kind | kindLabel }}</span>
     <span class="entry-date">{{ item.date | readableDate }}</span>
   </li>
 {% endfor %}
