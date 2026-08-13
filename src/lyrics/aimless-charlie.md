@@ -12,12 +12,10 @@ It feels so good to be here, in the streets I'm here to sing
 I started out this journey
 With a friend of mine who said "Let's go out for a drive"
 He was running from his troubles
-I felt great just to be alive
-
+I felt great just to be alive<br>
 So we drove on till the sunrise
 Two-hundred miles outside of Santa Fe we stopped
-To gaze upon the mesas and climb up on the rocks
-
+To gaze upon the mesas and climb up on the rocks<br>
 This has always been my dream
 Aimless - travel so serene
 Sun burns out the darkest fears
@@ -27,8 +25,7 @@ But I'll be gone before daylight
 I have blossomed from a seed
 And now into the wind I'm freed
 Drawn into the moonlit sky
-Born to live and never die
-
+Born to live and never die<br>
 Left my friend in New Orleans
 The car broke down and I just couldn't stay around
 So I found myself a highway and a trucker northward bound

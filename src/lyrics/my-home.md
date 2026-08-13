@@ -10,13 +10,11 @@ note: The unfinished song excerpted in the Trailside Rangers tour diary — atte
 Well I feel just like a stranger in this town
 You don't know me but I've always been around
 I been sittin' on this park bench nearly every day
-People walk by but they have nothing to say
-
+People walk by but they have nothing to say<br>
 Well if you'll notice I'm out here sunshine or rain
 In my face you'll see the loneliness and pain
 I've got no one else to talk to, so I talk to myself
-But this pride-filled lonely old man won't ask your help
-
+But this pride-filled lonely old man won't ask your help<br>
 I need to find a place to rest
 Maybe a big old house with a fireplace so warm
 It's wishful thinking I confess

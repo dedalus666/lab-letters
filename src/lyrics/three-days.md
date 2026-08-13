@@ -14,8 +14,7 @@ Of Jesus Christ from the dead
 She said, "Go away, you don't understand me
 You don't know what I'm about"
 There's something missing in her life
-I hope she figures it out…
-
+I hope she figures it out…<br>
 Born on a Sunday in April
 It didn't mean much, I guess
 Some kids are showered with love and affection
@@ -23,8 +22,7 @@ Some kids aren't quite so blessed
 Nobody knew much about him
 But we could still not believe
 The day he laid down by the tailpipe of his Ford and
-Breathed a sigh of relief…
-
+Breathed a sigh of relief…<br>
 Dilsey's sweaty palm gripped the cross around her neck
 The tears streamed down her face
 She had just come from the Church of Redemption

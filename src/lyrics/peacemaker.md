@@ -10,18 +10,15 @@ note: Title track of the Trailside Rangers' first CD, which their early manager 
 There was a man that i once knew
 His face was dark and his eyes were blue
 He spoke with a voice i could barely understand
-He said, "Son i want you to take this from my hand"
-
+He said, "Son i want you to take this from my hand"<br>
 Inside his hand was a gun called a Peacemaker
 He looked kind of strange but i felt sure
 It was a gift from this man that filled me with such pride
-I was the only man who had seen it and survived
-
+I was the only man who had seen it and survived<br>
 "Now i can show you a thing or two
 But there's one thing you must promise to do
 And that's never use it unless you have no choice"
-As he said the words there was anger in his voice
-
+As he said the words there was anger in his voice<br>
 Now i don't want you to do
 The things that I've done
 But you can learn from the
@@ -32,18 +29,15 @@ You're going to make some mistakes
 And you'll have to pay
 Keep your sights upon the sun and
 You'll be known as the one
-Who rose above the rest
-
+Who rose above the rest<br>
 Well he showed me how to use it alright
 I shot up everything in sight
 Now i can shoot the petals off a daisy in the wind
-He said, "Son looks like you found yourself a friend"
-
+He said, "Son looks like you found yourself a friend"<br>
 Now it's been twelve long years since that summer day
 And a lot of trouble has come my way
 But i never felt the need to use my friend
-I would swear by my promise to the end
-
+I would swear by my promise to the end<br>
 Inside a bar near the spring hill mining town
 Was a wild-eyed man with a killer's frown
 Who held his colt .45 right up to my head

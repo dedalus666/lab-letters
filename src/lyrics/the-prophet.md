@@ -11,33 +11,27 @@ date: 1995-03-01
 Sage was a man I'll always remember
 He lived out in the woods somewhere
 I used to fish the Steep Rock river
-And I would often see him there
-
+And I would often see him there<br>
 He was a man of peace and wisdom
 Although his outlook was rather grim
 He said he'd seen all the works of this world
-And life was a striving after wind
-
+And life was a striving after wind<br>
 Just look around-what do you see here?
 The sun brings forth abundant light
 And then just strips it all away
-The more you learn the more your grief is
-
+The more you learn the more your grief is<br>
 Stare into the deepest well
 The answer's never going to sound
 And all the happiness you've found
-Will not join you in the grave
-
+Will not join you in the grave<br>
 And though he held these strong positions
 He was far from an embittered soul
 He often talked of his great adventures
-Though these were all so trivial
-
+Though these were all so trivial<br>
 He taught me to rejoice the morning
 Savor the smell of the springtime wind
 Embrace the day as a celebration
-For it's all vanity in the end
-
+For it's all vanity in the end<br>
 Well I don't know-if I believed him
 Surely he was quite sincere in the convictions that he held
 But when he died-I still remember

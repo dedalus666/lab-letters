@@ -18,16 +18,14 @@ gallery:
 To seek the sacred river Alph
 To walk the caves of ice
 To break my fast on honeydew
-And drink the milk of paradise
-
+And drink the milk of paradise<br>
 I had heard the whispered tales of immortality
 The deepest mystery
 From an ancient book I took a clue
 I scaled the frozen mountain tops of eastern lands unknown
 Time and man alone
 Searching for the lost Xanadu
-Xanadu
-
+Xanadu<br>
 To stand within the Pleasure Dome
 Decreed by Kublai Khan
 To taste anew the fruits of life
@@ -35,8 +33,7 @@ The last immortal man
 To find the sacred river Alph
 To walk the caves of ice
 For I will dine on honeydew
-And drink the milk of paradise
-
+And drink the milk of paradise<br>
 A thousand years have come and gone
 But time has passed me by
 Stars stopped in the sky
@@ -44,8 +41,7 @@ Frozen in an everlasting view
 Waiting for the world to end, weary of the night
 Praying for the light
 Prison of the lost, Xanadu
-Xanadu
-
+Xanadu<br>
 Held within the Pleasure Dome
 Decreed by Kubla Khan
 To taste my bitter triumph

@@ -11,8 +11,7 @@ Verse 1
 I built a room with no way out
 just to see what silence sounds like
 found a door where the ceiling should be
-climbed through it looking for me
-
+climbed through it looking for me<br>
 Chorus
 Piranesi, Piranesi
 draw me a stair that goes somewhere
