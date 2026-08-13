@@ -11,6 +11,13 @@ function normalizeTags(tagsData) {
     .filter(Boolean);
 }
 
+// Maps a post's `kind` to the tag name that just restates its own section
+// (e.g. a box post tagged "boxes") — that tag is redundant wherever the
+// post already shows its section via breadcrumb/nav, but the same word
+// used on a post of a DIFFERENT kind (like "lyrics" on a box post) is a
+// real, meaningful cross-cutting tag and should be treated normally.
+const SECTION_TAG_BY_KIND = { poem: "poems", lyric: "lyrics", story: "stories", box: "boxes" };
+
 // Turns a tag like "deep thoughts" into a URL-safe "deep-thoughts"
 function slugifyTag(tag) {
   return String(tag)
@@ -89,8 +96,7 @@ module.exports = function (eleventyConfig) {
   // or story post is a real, meaningful topical tag (the post happens to
   // contain song lyrics) and should still show up as a chip.
   eleventyConfig.addFilter("extraTags", (tagsData, kind) => {
-    const sectionTagByKind = { poem: "poems", lyric: "lyrics", story: "stories", box: "boxes" };
-    const ownSectionTag = sectionTagByKind[kind];
+    const ownSectionTag = SECTION_TAG_BY_KIND[kind];
     return normalizeTags(tagsData).filter((t) => t !== ownSectionTag);
   });
 
@@ -156,16 +162,17 @@ module.exports = function (eleventyConfig) {
     return withDates.slice(0, 10);
   });
 
-  // Every distinct topic tag used across all entries, excluding the four
-  // built-in kind categories (poems/lyrics/stories/boxes) since those
-  // already have their own nav links and section pages.
+  // Every distinct topic tag used across all entries, excluding each
+  // post's own redundant section tag (a box post tagged "boxes") — but a
+  // section word used as a real cross-cutting tag on a DIFFERENT kind of
+  // post (like "lyrics" on a box post) still gets its own /tags/ page.
   eleventyConfig.addCollection("tagList", (collectionApi) => {
-    const kindNames = ["poems", "lyrics", "stories", "boxes"];
     const tagSet = new Set();
     collectionApi.getAll().forEach((item) => {
       if (!item.data.kind) return;
+      const ownSectionTag = SECTION_TAG_BY_KIND[item.data.kind];
       normalizeTags(item.data.tags).forEach((tag) => {
-        if (!kindNames.includes(tag)) tagSet.add(tag);
+        if (tag !== ownSectionTag) tagSet.add(tag);
       });
     });
     return [...tagSet].sort((a, b) => a.localeCompare(b));
