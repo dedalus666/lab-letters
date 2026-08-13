@@ -25,7 +25,7 @@ pageKind: story
   <p class="post-date">{{ featured.date | readableDate }}</p>
   {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
   {{ videoMacro.renderVideo(featured.data.youtube, featured.data.title) }}
-  {{ toolbarMacro.renderToolbar(featured.data.title, featured.data.kind, featured.date, featured.data.tags, featured.url) }}
+  {{ toolbarMacro.renderToolbar(featured.data.title, featured.data.kind, featured.date, featured.data.tags, featured.url, featured.data.note) }}
   <div class="post-body">
     {{ featured.templateContent | safe }}
   </div>

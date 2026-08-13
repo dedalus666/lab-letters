@@ -5,7 +5,7 @@
    post's own permalink (page.url on its own page, or featured.url in an
    excerpt) — story.pdf/story.epub always sit right alongside it. #}
 {% import "icons-macro.njk" as icons %}
-{% macro renderToolbar(title, kind, date, tags, url) %}
+{% macro renderToolbar(title, kind, date, tags, url, note) %}
 {% set extra = tags | extraTags(kind) %}
 <div class="reader-toolbar-wrap" data-reader-toolbar-wrap>
 <div class="reader-toolbar" data-reader-toolbar>
@@ -28,6 +28,7 @@
 <div class="reader-info-panel" data-info-panel hidden>
   <p><strong>{{ title }}</strong></p>
   <p>{{ kind }} &middot; {{ date | readableDate }}</p>
+  {% if note %}<p>{{ note }}</p>{% endif %}
   {% if extra.length %}<p>{{ extra | join(", ") }}</p>{% endif %}
   <p data-word-count></p>
 </div>

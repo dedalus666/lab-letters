@@ -21,7 +21,7 @@ layout: base.njk
   <h1>{{ title }}</h1>
   <p class="post-date">{{ date | readableDate }}</p>
 
-  {{ toolbarMacro.renderToolbar(title, kind, date, tags, page.url) }}
+  {{ toolbarMacro.renderToolbar(title, kind, date, tags, page.url, note) }}
 
   {{ galleryMacro.renderGallery(gallery, title) }}
   {{ videoMacro.renderVideo(youtube, title) }}
