@@ -61,14 +61,13 @@ function youtubeId(url) {
 }
 
 // Plain-text version of a post's full rendered content, used for the search
-// index. No meaningful truncation — search needs to match words anywhere in
-// a post, not just its opening lines.
+// index. No truncation — search needs to match words anywhere in a post,
+// not just its opening lines, no matter how long the post is.
 function searchExcerpt(content) {
-  const text = String(content || "")
+  return String(content || "")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-  return text.length > 20000 ? text.slice(0, 20000) : text;
 }
 
 module.exports = function (eleventyConfig) {

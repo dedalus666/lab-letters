@@ -4,7 +4,7 @@ kind: story
 tags: Trailside Rangers, tour diary, music, memoir
 layout: post.njk
 date: 2001-02-18
-note: The full tour diary of the Trailside Rangers' 2001 East Coast run — the shows, the breakdowns, and the band's last stand.
+note: The full tour diary of the Trailside Rangers' 2001 East Coast run — the shows, the breakdowns, and the band's last stand. An 'entertainment.'  Unofficial, mostly fictional, retrospective falsifications, albeit lucid observations by joe Wilford. 
 gallery:
 - trailside-rangers-cover.png
 ---
