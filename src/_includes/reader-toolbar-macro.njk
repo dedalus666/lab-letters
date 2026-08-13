@@ -7,6 +7,7 @@
 {% import "icons-macro.njk" as icons %}
 {% macro renderToolbar(title, kind, date, tags, url) %}
 {% set extra = tags | extraTags %}
+<div class="reader-toolbar-wrap" data-reader-toolbar-wrap>
 <div class="reader-toolbar" data-reader-toolbar>
   <button type="button" class="reader-tool" data-toggle-info aria-expanded="false">
     {{ icons.icon("info", "reader-tool-icon") }}<span>info</span>
@@ -82,4 +83,5 @@
   }
 })();
 </script>
+</div>
 {% endmacro %}

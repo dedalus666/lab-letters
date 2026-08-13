@@ -618,16 +618,19 @@ body.lightbox-open {
   margin-bottom: 1.25rem;
 }
 
-.reader-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-bottom: 0.75rem;
+.reader-toolbar-wrap {
   position: sticky;
   top: 0;
   z-index: 15;
   background: var(--paper);
   padding: 0.6rem 0;
+}
+
+.reader-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
 .reader-tool {
