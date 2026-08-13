@@ -8,9 +8,11 @@ note: The full tour diary of the Trailside Rangers' 2001 East Coast run — the 
 gallery:
 - trailside-rangers-cover.png
 ---
-**Prologue**
+### Prologue
 
-**11/19/99** — *The date on which our diary begins and the tone is set for what the reader can expect to be enlightened about.*
+### 11/19/99
+
+*The date on which our diary begins and the tone is set for what the reader can expect to be enlightened about.*
 
 Midnight. I'm sitting in the Iowa City bus depot. Next to me is a scruffy old man munching on a bag of Cheetos. His boots are caked with mud. He is wearing one of those old goosedown jackets and it has a big rip in the arm. I wonder if he is just waiting for the bus or just in here to stay warm. He doesn't look like the serial killer type. You might think Iowa doesn't have serial killers. You're wrong. You might think Iowa doesn't have homeless people. You're wrong. You might think that people from Iowa are all nice. You're wrong. You probably don't believe Iowa has a very strong music scene. You're right. That's why I'm on my way to New York to hook up with my band-mates Rowan, Jason and our new bass player J.T.
 
@@ -32,7 +34,7 @@ I expect this will be difficult, but a hell of a lot of fun.
 
 Here comes my bus.
 
-**On the road with A Promise and A Prayer — The Trailside Rangers TOUR 2001**
+### On the road with A Promise and A Prayer — The Trailside Rangers TOUR 2001
 
 - Friday 01/05 New Brunswick NJ
 - Saturday 01/06 Trenton NJ
@@ -80,7 +82,9 @@ Here comes my bus.
 - Saturday 02/17 New Brunswick NJ
 - Sunday 02/18 New York NY
 
-**11/22/00 11:30pm** — *A few uncritical observations set to prose which will hopefully further intrigue the reader as to the nature of the upcoming entries.*
+### 11/22/00 11:30pm
+
+*A few uncritical observations set to prose which will hopefully further intrigue the reader as to the nature of the upcoming entries.*
 
 Arrived in New York yesterday. It was a long uninspiring bus ride. The landscape was muddy brown and gray, empty fields and silo's all across the Midwest, turning to mountain forests in Pennsylvania. I hope we're not going to play any clubs in Pennsylvania. Cops are all over the place and they look like Tom Berenger in *Platoon*. For this reason I'm imagining Pennsylvania is a lot like Vietnam.
 
@@ -92,7 +96,9 @@ When he got off in Cleveland I was relieved. A homie sat next to me after that, 
 
 I'm crashing at my friend Scott's house now. I'm getting together with Rowan tomorrow for Thanksgiving.
 
-**11/24/00 12:45am** — *On the subject of animal torture, or eating meat, whichever the reader prefers.*
+### 11/24/00 12:45am
+
+*On the subject of animal torture, or eating meat, whichever the reader prefers.*
 
 Rowan's family had there usual Thanksgiving dinner, complete with all the amenities. I ate with a vengeance. Food on the road is certainly not going to be like this.
 
@@ -102,7 +108,9 @@ During breaks and rewinds, Rich — who is a vegetarian — discussed with us th
 
 I admire Rich.
 
-**11/27/00** — *Various clever notations and comparisons made regarding band members Bishop and Graveside.*
+### 11/27/00
+
+*Various clever notations and comparisons made regarding band members Bishop and Graveside.*
 
 Rowan and I discussed the rehearsal schedule. It is rigorous. We have rented out a room at Ultra Sound for the whole month of December. Jeff gave us a good deal since we've rehearsed there for so many years, so we can pretty much go in anytime between 10am to 12am.
 
@@ -110,9 +118,11 @@ Rowan will not be going on tour, he will be running the Jericho Hill records lab
 
 I once said in a college radio interview at Rutger's University that Rowan is to the Trailside Rangers what Johnny Marr is to the Smiths. I don't think anyone really 'got' that comment. I guess you have to like the Smiths for one thing and everyone in the studio must not have. If you do like the Smiths, you can see that the comment is quite a compliment. Those bozos whose radio program it was didn't have clue about much more than beer anyway. Not that beer is a bad thing, but they cut off 'Red Willow' in the quiet part because they thought the song was over. That's inexcusable whether you drink Guinness or not.
 
-**11/28/00** — *Which notably outlines the cast and characters of this epic diary.*
+### 11/28/00
 
-**The Play Begins**
+*Which notably outlines the cast and characters of this epic diary.*
+
+### The Play Begins
 
 Title: Trailside Rangers tour of 2001 — on the road with a Promise and a Prayer
 
@@ -127,7 +137,9 @@ Cast of Characters:
 
 *Joe is a selfish, narrow-minded, strong-willed SOB who seems to always get his way. On top of that, he is just a so-so guitar player and lyricist. He's always messing up solos and overusing the word "Hell" in his songs. He writes of love, loss and hope over and over and over again. Reads a novel, writes a song. He's so egotistical that he demands that I write more about him so that his paragraph is longer than everyone else's. Other than all that, he's a brilliant musician. Influences: Neil Young, Husker Du, Dylan, Springsteen, The Replacements, The Clash, The False Prophets and Kiss. —John Graveside*
 
-**12/01/00** — *Regarding the difficulties faced when brushing off the dust after a long absence from playing.*
+### 12/01/00
+
+*Regarding the difficulties faced when brushing off the dust after a long absence from playing.*
 
 First day of rehearsal was a disaster. Everyone was late which was no surprise. But our new bass player JT did not show up until 4 hours later than the rest of us. By then, we were all quite pissed-off and bored at having nothing to do but diddle around, each of us trying to play louder than the other. Drummers always seem to have a knack for pounding on the toms just as your kneeling down beside them tuning your guitar.
 
@@ -135,13 +147,17 @@ We cursed out JT, called him an amateur, told him this was the opportunity of a 
 
 This is usually the way that first rehearsals go after a long absence. It's as though each member of the band is shouting out "Listen to me! Listen to me!" No one was listening or trying to listen to anybody but themselves. Bands suck when they do that. We were no different. We really sucked. But it needed to happen. If we did it just right, (which means horribly) we will each realize how bad we sounded and how un-fun and un-productive the rehearsal was. Then we will move on. Sometimes it takes many rehearsals to conquer this demon. I don't think it will take us that long. That's how bad it was.
 
-**12/02/00** — *Concerning the inter-band politics of trash-talking and it's relation to food.*
+### 12/02/00
+
+*Concerning the inter-band politics of trash-talking and it's relation to food.*
 
 I was wrong. We were still bad today. Although we made some strides in the first few hours, as the night went on the demons returned, with a vengeance. It's too early to tell, but it seems that the crack in the armor is JT. He is a great bass player, but he's still playing for a different band, even though he is in the same room with us. As Rowan would say: "He doesn't have the vision yet." We sent him out for sandwiches again and discussed this behind his back. If you are in a band and get sent for sandwiches or step out to use the bathroom, you can be sure your band-mates are plotting your demise. Or at least trash talking about you.
 
-**12/03/00** — *Which touches briefly on one of the most important and key elements that will ever be discussed in the scope of this document.*
+### 12/03/00
 
-**The Vision:**
+*Which touches briefly on one of the most important and key elements that will ever be discussed in the scope of this document.*
+
+### The Vision:
 
 Rowan has always had a vision of what the Trailside Rangers should be. I don't know the details of it, I don't even think it is something tangible. But we all must have it or the music suffers. I will ask Rowan to write me down his version of the 'vision'.
 
@@ -149,103 +165,149 @@ To me, it is the glue that fills the voids and cracks of our musical differences
 
 As of right now, the vision is blurry. The long hiatus has dulled our senses, but the deli sandwiches are still good.
 
-**12/08/00** — *A brief summary concerning the process of molding a song.*
+### 12/08/00
+
+*A brief summary concerning the process of molding a song.*
 
 Worked on new material for a change of pace. It didn't go too badly but the functionality of the band is not what it used to be. I remember walking into rehearsal at one time, playing a new song for the guys and then being able to hammer through 3 or 4 takes of it before taking a break. Just that fast. Everyone usually adds their own creative spin on the song and then molds it to the whole. From there it's just a matter of working out the small (but important) details and that just comes with time. In most cases it was Rowan giving Jason suggestions on where to use double-time, or use the ride more, etc. Today we just sort of sludged through it, as though the new song was like knee-deep mud sucking our shoes off at each step.
 
-**12/11/00** — *A short comment on JT about which the reader may or may not be interested in.*
+### 12/11/00
+
+*A short comment on JT about which the reader may or may not be interested in.*
 
 I have to give JT credit. He is the new guy in the band and therefore gets the most shit. He is the gopher, the doper, the heel. But so far he has adjusted well. (He is only 20 after all.) I noticed he's not screwing up our deli orders as much anymore.
 
-**12/12/00** — *Regarding the initiation of JT to the band.*
+### 12/12/00
+
+*Regarding the initiation of JT to the band.*
 
 JT yelled his first obscenity at the 'Pizza Guy' on the corner. He has been christened. I think it was something like: "Your pizza sucks! I hear you cut the ears off homeless people in place of pepperoni."
 
 It was a little brutal but effective.
 
-**12/13/00** — *Concerning the relationship of sports to the success of a band, which will serve as an example to the reader as to the innate cleverness of this diary's author.*
+### 12/13/00
+
+*Concerning the relationship of sports to the success of a band, which will serve as an example to the reader as to the innate cleverness of this diary's author.*
 
 I cannot express how important having a healthy relationship with your band-mates is to the material you produce as a whole. I have decided that this is the reason for our lack of sharpness and cohesiveness. It is not that we are technically out of practice. Most of these songs are like a bicycle, just get on and pedal your ass off, soon you'll be flying down the road. But a band takes a 'team effort' as much as I hate to use that cliché`. The analogy, however is apropos: It's all about execution, taking the shot or passing off, and mostly it's about knowing where each of your teammates are on the floor without having to look. We aren't there yet, but the time we have spent together has allowed us to build back those relationships that have been neglected. We have made more progress eating sandwiches from the deli than by plowing through the set lists. It's the sitting down and talking, it's the laughing and joking and making fun of each other that seals the cracks of time and enables each of us to focus on the 'vision.'
 
-**12/15/00** — *Which denotes the improvement of band member relations.*
+### 12/15/00
+
+*Which denotes the improvement of band member relations.*
 
 We all decided it was time to take a break for a few days. Two weeks straight of 4-6 hour rehearsals daily have taken their toll. None of us has any doubt that though we are not nearly ready for this tour, things will fall into place as long as we don't panic. We are, after all, supposed to be having fun. It was a good time to break since we were all getting on so well. When we come back to rehearse again on Wednesday things should start to click.
 
-**12/20/00** — *Concerning a few simple observations that occurred on this day, that are summed up almost in as many words as this introduction to the entry.*
+### 12/20/00
+
+*Concerning a few simple observations that occurred on this day, that are summed up almost in as many words as this introduction to the entry.*
 
 Things went better today. I broke a string, John had a hangover, JT wasn't stoned, Jason was in a bad mood and *it didn't matter.* We still played better than we have been.
 
-**12/21/00** — *Regarding some obligatory band silliness that was present due to the festive holiday spirit of the band members.*
+### 12/21/00
+
+*Regarding some obligatory band silliness that was present due to the festive holiday spirit of the band members.*
 
 Spent a majority of the rehearsal playing with Jeff's train set and reading the numerous X-mas cards he gets from other struggling bands like ours. We even helped him decorate a little Charlie Brown like Christmas tree. Flirted with the idea of doing that Heat/Snow miser song from "Year Without a Santa Clause" but then other song suggestions popped up until we were each arguing the case for 6 different ones. Democracy in a band is not always the most productive way of making decisions, as I'm sure you will see in this diary.
 
 We decided a snowball fight would settle this matter. Then there was the problem of the snow: There was none. I said that we wouldn't have that problem had we decided to rehearse in Iowa. I hear it's something like 5 below zero there now with the wind chill at 43 below. Who says global warming is a bad thing? We decided to leave early and verbally assault the pizza guy.
 
-**12/22/00** — *In which adjectives and analogies are piled so high the reader may become airsick.*
+### 12/22/00
+
+*In which adjectives and analogies are piled so high the reader may become airsick.*
 
 We are starting to sound like a band again. My fingers have stopped hurting, my voice has stopped breaking. The solos are soaring within the songs like a raven through a canyon. John G. is picking up the harmonies like a choirboy. His guitar playing is precise, excising riffs like scars into the music. JT is settling into a deep, growling, belly of the beast groove. Jason is methodically rhythmic, mixing his chaotic spontaneity with rock solid disposition. We are still scouring away the rust, but the oilcan is at hand and the tin man band dubbed the Trailside Rangers is beginning to come to life once again. The Yellow Brick Road awaits…
 
-**12/29/00** — *Regarding the final rehearsal and some high-brow commentary on the approach the band will take upon execution of the tour.*
+### 12/29/00
+
+*Regarding the final rehearsal and some high-brow commentary on the approach the band will take upon execution of the tour.*
 
 The last rehearsal. I swear that some of the best performances thus far in the existence of the Trailside Rangers have been right inside this very room. It's a shame but I believe it to be true. We only have each other to play for and there are no distractions in the foam-padded interior, consequently 'The Vision' remains intact. We will endeavor to achieve this pinnacle on the stages of the clubs on this tour. We shall not let the dim lighting, the smoke, the uneven and unstable stages, (probably held up by milk crates) distract us. We will try not to let the crowd influence us, either by their enthusiasm or apathy. We will not let the shabby dives and pits they call clubs bring us down to their dank, greasy, beer-stench level. Neither will the booking agents of these places, try as they might, succeed in suffocating our will, though they will certainly rip us off at every opportunity, make us wait and wait and wait, order us around as though they were doing us a favor by letting us play in their dumpy joint, and further vex us in any way they can so that we do not feel as though we have any talent to play anywhere else but on the rotted-out platform they call a stage. First stop: New Brunswick, New Jersey.
 
-**1/4/01** — *Which amply describes the unsightly vehicle being relied upon for transportation during the length of the tour.*
+### 1/4/01
+
+*Which amply describes the unsightly vehicle being relied upon for transportation during the length of the tour.*
 
 We have rented a boxy, old orange van from rent-a-wreck, a place that really lives up to it's name. We'll be fortunate to make it across state lines in this heap. It's an Econoline, but I'm certain it won't get more than 8 miles to the gallon. The tires are bald and blue smoke billows out of the tailpipe like a smokestack. The seats are ripped and the foam in them is crumbling like feta-cheese. The brakes are bad and the engine has a bad knock. It squeaks and rattles, pings and chugs and otherwise sounds like a sewing machine in a laundry-mat dryer. Beyond that it smells like a combination of rust and mold with a bit of BO thrown in for good measure. In short, it shows all the signs of being a well-seasoned miniature tour bus and we love it. It fits all the gear and all of us, 2 sit comfortably in the front and the unlucky other 2 get to make their seats the amps and gig bags. We will split the driving duties but I suspect John or I will be driving most of the time. Jason doesn't have a license and JT makes everybody nervous behind the wheel. Rowan has happily made all the motel arrangements and has provided us with maps of the best routes. He also has packed everything accordingly as if he expects any of us to remember what order all the gear goes into the van. Everyone is giddy and gleeful, excited about hitting the road and the possibilities.
 
-**1/5/01** — *The first of two summaries concerning the nature of booking agents which will be touched on in greater detail later on in our epic adventure.*
+### 1/5/01
+
+*The first of two summaries concerning the nature of booking agents which will be touched on in greater detail later on in our epic adventure.*
 
 New Brunswick is a college town with lots of cool little bars and an active music scene. We ate at a pizza place (there's no place in the world that has pizza as good as NJ) after unloading all the gear. We have played at this place before so we're familiar with the routine. Load all your shit into a corner and wait until the band playing before you gets off the stage. Load in time is usually around 7 or 8 and the first band doesn't usually start until 9:30. "Nocturnal Emissions" is the first band, followed by us and then some washed out hippie from a 70's band that you wish you never heard of in the first place. Which brings to mind my first bone of contention when gigging. The guys booking these places put very little effort into lining up bands of the same genre and or caliber. We could be playing with a country band one night and a punk band the next followed by a metalhead group, and so on. The booking agents who do try to match up the talent are doing everyone a favor because everyone wins; the club, the people who paid 10 bucks to get in, and the bands themselves. Imagine going to see your favorite local rock band and being forced to endure 45 minutes of industrial noise by "Johnny Buzzsaw and the Flint-rock Sparks". Then after seeing the band you came to see another version of the above takes the stage prompting you to get the hell out while you still have eardrums. While in contrast, if bands of similar music styles are on the same bill, you might hang around and have another Guinness. Due to the immense number of bands and varieties of music I understand that this is not possible all the time. I only ask that booking agents try to do this, so people don't pay a 10-dollar cover to see 45 minutes of some band they like and 90 minutes of a band they hate. I'm sure this is a topic I will touch on more later, because it's bound to be an issue throughout the tour.
 
-**1/6/01 2:45am** — *Reflections on the first performance of the tour of which our reader is most certainly curious about.*
+### 1/6/01 2:45am
+
+*Reflections on the first performance of the tour of which our reader is most certainly curious about.*
 
 I'm writing this on a 3-legged table in the room of some roach infested motel on Route 1 and 9. I'm sharing the place with John and he is watching some bad movie, I think "Children Shouldn't Play with Dead things." He digs that kinda stuff. The first gig went well I guess. I think we were a little over-anxious and came out all siren's on and bursting at the seams with chaotic energy. This happens from time to time particularly when we are well rehearsed and haven't played in front of a crowd in a while. It was a great crowd that turned out, a lot of friends of ours in this area seeing us off. Sometimes you can feed off the energy of the crowd but in this case we didn't need any more energy, we could have played to the bar maid a cocktail waitress and the local drunk and still rocked the house. We have rehearsed a month inside a 20 x 20 gray foam padded room with no audience but ourselves — it felt great to break out and rock for some people, however the adrenaline rush overcame us. Jason played too fast as he is wont to do when excited and the rest of us fell in as though it was all okay. Because of this the mistakes started to multiply in size from slight to glaring. I don't think anyone minded though, it has been a long time since the Rangers rocked.
 
 We opened with *Buffalo Hurricane*, which went over really well, even though John didn't shut off his distortion pedal while picking some minor ninths. Rowan has told him again and again, "If you play minor ninths without turning off the distortion no one will hear them." Despite the fact no one heard them the song was about our strongest of the night. I think we should've paced ourselves a bit though. By the time we got to the set closer, *Flamingo Johnny* we sounded like a different band. Good, but different and the Vision was blurred. It was uncharacteristically sloppy. *Celebration* as an encore always works well no matter how we are playing and this case was no different. Even the most haphazard version of Celebration seems to work. We needed this show in a bad way, so as to help fine tune us for the road ahead, where the crowds, bars and pizza joints will be unknown to us.
 
-**1/6/01 2:00pm** — *Which briefly describes a memory that took place at an earlier time in the authors life.*
+### 1/6/01 2:00pm
+
+*Which briefly describes a memory that took place at an earlier time in the authors life.*
 
 Just down the Turnpike a bit is our next stop, Trenton. It is another old haunt of ours while still a fledgling band, although the clubs we frequented were ones where we were in the audience not on the stage. I remember seeing Billy Bragg here years ago with Michelle Shocked. There were young punks running amok in the crowd wearing t-shirts with swastika's on them. It was a little scary. The bathroom tile had holes the size of jackboots. That was in the late 80's. I can only wonder what it must look like today.
 
-**1/7/01 3:00am** — *Concerning the band's rivalry and disappointment with another band of the same ilk.*
+### 1/7/01 3:00am
+
+*Concerning the band's rivalry and disappointment with another band of the same ilk.*
 
 I'm happy with tonight's show. We were solid, throughout. I think we have burned off all the nervous energy that has been building up. The dive we played has hardly changed. The holes in the bathroom tile and in the walls are the size of people's heads now. The line up of bands was decent. The crowd was civil and not at all violent as is normal for this place. "Honky Tonk Nightmare" opened up, then "Sidesaddle" (an all girl band) followed by us and then our old friends the "Barnburners." They had broken up and formed another band after a disagreement with Bob Stormcrow their lead guitarist. But after doing their own things for a while they came back to what was real. Bands are like old girlfriends in a lot of ways. You're in love, out of love, out of town, but you miss the sex, then you miss the company and soon you're back in the sack. It was like that with the Barnburners. I was sad when they broke up. They are just too damn good to break up. Although they didn't thank us on their last CD, (we always mentioned them on ours) which pissed us off, they still are the best band to play on the same bill as us. They usually are the only band that can keep up with us, in fact they occasionally blew us off the stage in the past. Tonight we smoked their barrel. Ed said he thought they would be joining us later in the tour for a few dates. I know he wants to even the score.
 
-**1/8/01 12:30am** — *Regarding the difficulty of maintaining one's individuality amongst those of a less refined persuasion without getting beaten up.*
+### 1/8/01 12:30am
+
+*Regarding the difficulty of maintaining one's individuality amongst those of a less refined persuasion without getting beaten up.*
 
 Where the hell is Delaware? I haven't seen a real house since I've been here. Only trailer courts and shit. This bar we played in wasn't too bad but the clientele left a little to be desired. I thought they might start hurling beer bottles at John. Not because they thought we sounded bad, I think it was just that John has this look about him. He's too gothic to be hanging around these parts. They left him alone, but probably only because they thought he would work some voodoo on them. One thing about John, he is a lot like Rowan in that nothing fazes him. In fact he plays better just when you think he might buckle. I admire that.
 
 Jason is settling down into a nice groove with JT. All of us are really in tune with each other as far as playing together. I can't think of one song in the set that went poorly. The locals seemed to come around when we played "Heaven Tonight" but then frowned on "Promise and Prayer" during the loud, balls out chorus. Can't please everybody, but I swear a couple of those rednecks feet were still tapping even as they talked us down.
 
-**Thursday 01/11/01, Springfield MA** — *Concerning the modest sleeping arrangements when on tour without a pot to piss in.*
+### Thursday 01/11/01, Springfield MA
+
+*Concerning the modest sleeping arrangements when on tour without a pot to piss in.*
 
 Staying at Rowan's humble pad for this stop on the tour. Our motel dates will be limited from here on out, as our budget does not constitute privacy of any kind. We will sleep on floors, couches, in vehicles, pretty much wherever or whoever is available. There are kind folks on the road who don't mind letting a few clumsy, poor musicians grab a few hours of shut-eye as long as we promise not to steal anything. When there are no kind folks or no floors or couches to sleep on, the van will have to do. This is but one sacrifice on the long list, but it is a big one. You don't miss your own bed…until about the 3rd day of hoping the floor you're going to be sleeping on has carpeting.
 
-**Saturday 01/13/01, Syracuse NY** — *Which ponders a major difficulty known to most original bands.*
+### Saturday 01/13/01, Syracuse NY
+
+*Which ponders a major difficulty known to most original bands.*
 
 Rowan has no hometown influence. The shows in Massachusetts were great shows, but it seems everyone was in a bar down the street where a local band was playing "classic rock" covers. We took a break and heard "Take it Easy" wafting down the alley. We knew right then no one else was coming out on a school-night to check out great new music. Hang on to that old crap for all it's worth. Bastards. Maybe it's not just that Rowan has no influence. We all spend so much time trying to make it in this business that our social life suffers. Our friends are few.
 
-**01/18/01, day off** — *Which relates an astute reflection made during arguably one of the best rock and roll movies ever made about life on the road.*
+### 01/18/01, day off
+
+*Which relates an astute reflection made during arguably one of the best rock and roll movies ever made about life on the road.*
 
 Now I know what Robbie Robertson means when he says in *The Last Waltz*, "It's a goddamned impossible way of life." We have played in a different city every night for 8 straight days. It feels like 6 months. The wear and tear is showing. We argue, we fight, we don't talk much except to bitch. Mcgillicuddy is annoying, Graveside won't shut up with his analysis of everything, JT rambles like a dead-head on brown acid and I begin to wonder where the fame and glory are for a band that is busting their asses like ours is. I would settle for just the glory but there is none of that either. Tomorrow is a 'big' show in Chicago. We took the day today to check out downtown Chicago's local music scene. Not surprisingly, it sucks.
 
-**01/19/01** — *Concerning a turning point in the road during our journey on the road having to do with bass players.*
+### 01/19/01
+
+*Concerning a turning point in the road during our journey on the road having to do with bass players.*
 
 This show was a relief. It reminded us that there are some folks who do "get" our music. It was an enthusiastic and appreciative crowd. Even though most were there to see the band after us, they did seem to enjoy the Trailside Rangers. The only downside was the ever-increasing hostility between Jason and JT. They are not grooving like they should, each is trying to musically control/influence the other. I'm rather concerned about JT's abuse of chemicals. He simply cannot drink without getting absolutely fall-down, pass-out drunk. While he is not yet endangering our performances, I feel it's just a matter of time. Quite frankly we are just damn tired of having to carry his drunk ass out to the van every night. If it was possible to leave him, we would. Then of course we'd be without a bass player though. Although our old friend Duane did take the 5-hour drive from Iowa City just to check us out tonight here in Chicago. Hmm. He plays bass. It was good to see him and he did seem a little jealous that it was not him up there playing bass. Jason loves Duane, but then again, Jason knows he can control Duane.
 
-**01/20/01** — *A terse diatribe on the low likability factor of some cities on the tour.*
+### 01/20/01
+
+*A terse diatribe on the low likability factor of some cities on the tour.*
 
 It's little shit-ass towns like this (Muncie, Indiana) that make me wonder if it's really worth it to do all this touring. America is beautiful, but it does have its share of pockmarks and this town is one of them. Right up there with Elizabeth, New Jersey. No, Elizabeth is like a raised, infected boil. Anyway this leg of the tour we could've skipped.
 
-**01/21/01** — *Regarding facts that become evident after a short time on the road when trying to ascend the slippery temple of fame and fortune. These and other reflections the author has dutifully noted for the reader.*
+### 01/21/01
+
+*Regarding facts that become evident after a short time on the road when trying to ascend the slippery temple of fame and fortune. These and other reflections the author has dutifully noted for the reader.*
 
 Some points to remember if you ever go on tour: 1) The food is bad. Always. There's only so much McDonalds and BK that a person can take before they begin craving anything home-cooked. 2) There is no one to express your thoughts/feelings to. Your band-mates are in the same predicament, they don't want to hear it. Everyone else is a stranger. 3) There is virtually no time for anything but traveling, loading and unloading, playing and leaving. If you want to take a walk; forget it. If you want to be alone; just try. It's exhausting in that you put forth so much effort just to be able to play for an hour or so, when you finally get to that point, yeah, it's good but there's no time to reflect on the beauty of that moment. I thought keeping a diary would be helpful. But re-reading it, the shows all seem to melt together, memories intermingle with others and events become inaccurate, distorted. I realize now, that this diary may fail to do what I had intended it to do. Or maybe the picture it paints will be not what I intended, but simply to be looked upon for what it is.
 
-**01/23/01** — *In which the stage is set (so to speak) for a great adventure to occur after which the direction of the band and this narrative will noticeably change.*
+### 01/23/01
+
+*In which the stage is set (so to speak) for a great adventure to occur after which the direction of the band and this narrative will noticeably change.*
 
 Green Bay and Minneapolis were terrific shows in that we played with a passion that seems to exist for us (at this point) only on stage. The crowds were both appreciative and receptive. This little hub of the Midwest has the distinct charm of musical open-mindedness amongst it's inhabitants. Even JT's drunkenness was not a problem in this case. Maybe the fans were reminded of their hometown favs the *Replacements*. Whatever the case it has become clear to Jason, Graveside and myself that JT needs a *replacement*. We are not concerned about JT's abilities as a musician, we are concerned he will simply go too far at some point and we will lose not only him but the rest of the tour dates because of his chemical abuse. Contrary to popular opinion, some people don't perform better under the influence. He is no Jimi Hendrix. I have made the call to Duane and offered him the gig. We bought JT a bus ticket and plan on making the break tonight. Duane will meet us in Madison. I am extremely worried about how JT will take this news. Despite what we know has to be done, this will not be easy. He is our friend and deserves to be treated with respect and consideration even in light of his irresponsibility. I know of some bands that have been in situations like this and have simply pulled the rug out from under a member. But that's typically behavior exemplified by the very corporate record company bigwigs we deplore. I will not play hatchet man. However, I can't see JT taking this very well at all.
 
-**01/25/01** — *Regarding a series of bizarre events strung together which may in fact be regarded in this history as apocryphal or at the very least most certainly exaggerated for the benefit of the reader.*
+### 01/25/01
+
+*Regarding a series of bizarre events strung together which may in fact be regarded in this history as apocryphal or at the very least most certainly exaggerated for the benefit of the reader.*
 
 Chaos and rock 'n roll are as good together as Jack and Coke. In the span of 2 days we have been on a carnival ride that has no equal in it's nauseating ability to make us cringe and grab our guts screaming for it to end but knowing deep inside we didn't really want it to. If we could, we'd get back in line and do it all over again.
 
@@ -265,7 +327,9 @@ The band that everyone was there to see found themselves in the uncompromising p
 
 That night, we parked the van in under an overpass on the interstate. For the first time on the whole tour we actually found solace in each other's company. We talked most of the night, finally giving in to the sleep of the dead.
 
-**The day after that** — *In which a break in the narrative history takes place for quite some time due to events which will shortly be revealed whereby at long last the tour diary is reprinted and recounted in it's full glory; unabridged and unapologetic in it's acerbic albeit entertaining nature notwithstanding the wordy and inflated entry summaries.*
+### The day after that
+
+*In which a break in the narrative history takes place for quite some time due to events which will shortly be revealed whereby at long last the tour diary is reprinted and recounted in it's full glory; unabridged and unapologetic in it's acerbic albeit entertaining nature notwithstanding the wordy and inflated entry summaries.*
 
 *Editor's note: It is at this point that the tour diary entries abruptly stopped coming in to Rowan back at the home office of Jericho Hill Records, who had been publishing them online. It was not immediately known why but later determined that it was due to the loss of Joe's laptop computer — which was apparently stolen. The lack of band funds did not allow for a replacement to be purchased. Subsequently, Joe had to resort to writing out the entries by hand in a notebook. When the tour completed, the task to decipher the handwriting and transfer it to soft copy for web-publication was cumbersome at best — and it was something that Joe, exhausted from months of life on the road, (poor baby) did not wish to immediately undertake. Thus, the tour diary entries were canned — it was assumed they would never make it online.*
 
@@ -285,7 +349,9 @@ The truths are as evident as the sober reality is staggering. But be that as it 
 
 And so without further ado, dear reader, (if indeed you are still or ever were out there) I return you to the tour diary. A journal that provided the nails which enabled the members of the Trailside Rangers to put the vision, the dream and the band to rest, though its spirit lives on. The fact that you are reading this is proof of that. Regards.
 
-**Wednesday 01/31/01, day off** — *In which explanations and observations are offered concerning past and future tour diary entries; along with terse notes on a few tour dates and other astute observations which can most certainly not be left out of this history.*
+### Wednesday 01/31/01, day off
+
+*In which explanations and observations are offered concerning past and future tour diary entries; along with terse notes on a few tour dates and other astute observations which can most certainly not be left out of this history.*
 
 I sit in a quaint coffee shop somewhere between Huntsville and Birmingham, Alabama. The high has worn off and reality sets in as we begin the last leg of the tour with Duane as replacement for the deranged JT. It is a double-edged sword having Duane back. It's like missing your ex-girlfriend with a passion until you get back together with her and realize you again have to deal with all the things about her that you weren't so crazy about in the first place. *(Editor's note: The author must like this analogy — careful readers will note that he already used it once prior to this.)* I love Duane — but he is a pop-culture junkie — and so he's constantly feeding us a mass media stream of information that none of us ask for. Graveside is no help as he jumps in from time to time with his own comments and recollections. Often he challenges Duane on the accuracy of his facts, which then spirals off the conversation into a super debate of nerds who have catalogued a lifetime of pointless and trivial information that they feel they must share with the world. Jason and I can't get a word in edge-wise or for that matter hear ourselves think. It's maddening.
 
@@ -302,11 +368,15 @@ Entries to the journal have been on hold until today as I have resorted to writi
 
 *Editor's note: I know I said I wouldn't be back so soon, but I thought it pertinent to note that the above paragraph was re-typed and re-edited even in translation several times.*
 
-**Thursday 02/01, Birmingham AL** — *Which covers what will soon be read.*
+### Thursday 02/01, Birmingham AL
+
+*Which covers what will soon be read.*
 
 The club we played at was dubbed: Slammers. Not a bad place. I'm not sure that is a reference to the moshers that may or may not frequent there (sadly, nobody moshed during our set) or the shot / mixed drink. I seem to recall downing several 'Alabama Slammers' on a cruise ship once. It's consumption involves slamming the shot glass down — either before or after drinking it — I must have been either too drunk or unimpressed enough to remember. The combination of *Three Days*, *Opaque*, *Flamingo Johnny* and *Celebration* at each set's end continues to provide our best moments. Having Duane back has really stepped up the stage presence of the band. He is at his enthusiastic best in the limelight — bouncing to and fro chaotically like a jackhammer unleashed. It's catching to say the least. It makes us all giddy in the moment and drives us to shake it like we wants to break it. I'm silly now, just recalling it. Here's to Duane!
 
-**Friday 02/02, Tallahassee FL** — *In which various band names are documented and jests are made regarding the most favorable 5th member of the band.*
+### Friday 02/02, Tallahassee FL
+
+*In which various band names are documented and jests are made regarding the most favorable 5th member of the band.*
 
 As we're loading into Shenanigans Irish Pub on our Florida stopover a couple of curmudgeons at the bar point out my T-shirt and holler "Buckwheat!" (Pronouncing it 'Buwheet'). Obviously it was in reference to the character from 'Little Rascals.' I don't know if it was an intentional attempt to be funny, a racial slur or outright dumb-assery but Jimi Hendrix should not be mistaken for anybody. He be one of a kind. I do get the occasional "Ohhh Carlos Santana!" response sometimes when people see my JH tattoo, but real fans of Santana would realize he doesn't play his guitar left-handed.
 
@@ -337,7 +407,9 @@ We laughed our asses off at the list — especially *Damned Bishop*, since it's 
 - Rippin' Dude
 - The Blast Part is Rippin, Dude
 
-**Saturday 02/03, Savannah GA / Sunday 02/04, Augusta GA / Monday 02/05, day off / Tuesday 02/06, Atlanta GA** — *Concerning the ill-conceived and distasteful process by which bands are booked, in great detail as promised by the author of this history in an earlier entry.*
+### Saturday 02/03, Savannah GA / Sunday 02/04, Augusta GA / Monday 02/05, day off / Tuesday 02/06, Atlanta GA
+
+*Concerning the ill-conceived and distasteful process by which bands are booked, in great detail as promised by the author of this history in an earlier entry.*
 
 How can we tour through Georgia without a gig in Athens, home to a bristling and vibrant original live music scene? Who booked this tour anyway? (Please refer to the Tallahassee, Florida entry above for the answer.)
 
@@ -357,25 +429,35 @@ A triple win for you is developing a positive relationship with a good Mr. Booki
 
 So no matter what side of the fence you fall on, a Mr. Bookie or the nominated book-er of your band, it's safe to say that both sides are yellow, never green. In summary: Love, respect, honor and praise whomever is booking your band. Listen attentively and patiently to their gripes, frustrations and endless bitch sessions. It's a thankless, tedious job that consumes hours that could otherwise be spent writing new songs or practicing. If you're lucky enough to have someone outside of the band booking your shows — treat them as an honorary member. They deserve it. It takes a special dedication to fulfill that role and just as important as say, a band *manager*. (And *that*, my dear readers, is a topic I'll save for a future entry. It's a long and painfully disappointing subject that we Trailside Rangers are all too familiar with.)
 
-**Wednesday 02/07, Nashville TN** — *A dialogue of recollections both past and present.*
+### Wednesday 02/07, Nashville TN
+
+*A dialogue of recollections both past and present.*
 
 Let it be said — Nashville is our kind of town. That being said — we were happy to get back on the road. It's a bit like really sweet frosting — a little bit is enough, too much might make you sick. The history here runs deep and one does not easily walk the streets without being intimidated by the knowledge of the great musicians that walked there before you. It's a songwriter's paradise — in that there is a lot of bottom and top of the liners. Not much in the middle. It's scary in a way, because you don't know for sure where you stand — everyone plays their cards so close that you're never sure if you've impressed them or made them more comfortable because they realize they're better than you. It's as though if they acknowledge you're good then they've just taken themselves down a peg. That's the kind of strange tension prevalent in the clubs and bars here. It's really everywhere to a certain degree, but here it's thick. We did our thing as always — being respectful of the bands we played with, timely on and off the stage and rocking genuine. But who knows if we made any real impression? That's the conundrum this band has always faced. There are sometimes moments (many of them when things are going well) when we look across the stage, through the lights at each other during a song and know that we're all thinking — "Damn this is a good set." When you're on, you're on, and it should be evident to everyone within earshot and beyond. But I don't know that we've been consistently recognized at those shows. Feedback is always helpful to a band — good or bad. Let them know if you were moved…or not. Perhaps we just expect too much from an audience.
 
 We've played *Casy* flawlessly time and time again at shows. In our opinion it is a solid mid-set staple — heavy, raw and forged with fury. We can really showcase our dynamics as a band during the song. But all too often — after we've completed the song in a violent reprise of roaring guitars, thunderclap drums and deep black bass beats — it's as though the audience is startled by the sudden silence and realize (about 15 seconds too late) the song has ended. By the time they start applauding, we're already well on our way to starting the next one — though a little dazed at wondering what the onlookers thought of *Casy*. Were they paralyzed with awe? Were they lulled into thinking it was a false ending? (Admittedly we've been guilty of that at times). Or did they just flat out find it boring? I don't think we'll ever know.
 
-**Thursday 02/08, Knoxville TN** — *A short paragraph which the reader will soon be enlightened about.*
+### Thursday 02/08, Knoxville TN
+
+*A short paragraph which the reader will soon be enlightened about.*
 
 The gig went okay, not as good as last night. We are very tired and it's showing. The cycle of the road is spinning us into the spokes of the wheels. Alternately, we're bored and deliriously exhausted from driving, playing, eating, waiting around and otherwise killing time to get through to the next show. Having read the tour schedules of *real* bands (those ones that make a living at it) I feel as though we're whiners. I recall the tour schedule of Iron Maiden in the CD liner of one of their live discs — I think they were on the road two straight years with nary a day off. Egads! And here WE are complaining. Boo hoo on us.
 
-**Friday 02/09, Greensboro NC** — *An even shorter paragraph on the subject of nutrition.*
+### Friday 02/09, Greensboro NC
+
+*An even shorter paragraph on the subject of nutrition.*
 
 After the sub-par showing here — we need real food. Though our budget is slim we stumble into an all-night diner reminiscent of *Joe Juniors* in NYC. We order pancakes, ham and eggs and bacon, toast, jelly, cream cheese, bagels — the works. Even chocolate cake — before the meal please…(oops sorry, wrong band!) Ahhh. Nourishment. We must focus. The coffee is here. Must drink more black coffee. Yes — black as midnight on a moonless summer eve, as that guy *Cooper* used to say. Damned good. Damned hot too.
 
-**Saturday 02/10, Fayetteville NC — 10:30 am** — *Documentation of something wonderful in the way of diners, silverware and the faithful drummer of the band.*
+### Saturday 02/10, Fayetteville NC — 10:30 am
+
+*Documentation of something wonderful in the way of diners, silverware and the faithful drummer of the band.*
 
 I'm writing this down as a side note to myself. At some point in the near future I must record our brilliant drummer Jason playing silverware at the dinner table. Prior to and throughout the tour, I have watched him use various objects; plates, glasses, cups, salt and peppershakers, ketchup bottles, napkin dispensers, menu holders, and the table itself (anything in sight is fair game) as percussive instruments. They are riddled, tapped, dinged, ticked, poked, knocked, slammed and doinked by whatever flatware is set before him. It is almost as much of a riot as it is incredible hearing the cohesiveness of it all. Jason has a talent for being able to lift one's spirits just by virtue of listening to him play. (This counts for real drums too.) He inspires delight and laughter with his circus-like kaleidoscope of sounds. Give the guy a woodblock and a cowbell and let the magic begin. You will find yourself uncontrollably smiling and shaking your head. I swear his combination of wacky beats and unique sounds strung together just so trips the joy-switch of the brain. In diners all over Manhattan (and now the USA) he has treated us over and over again to displays of his ingrained expertise for eliciting sounds and rhythms out of ordinary objects. There is something really amazing about how much he knows about what kind of sound he'll get out of not just striking an object, but striking it in just the right place. He'll tell you a ketchup bottle has a number of sweet spots, depending on how much sauce is left and whether the cap is on tight or not. On this tour alone, we have been witnesses to diner displays of genius that could have been filmed and shown as a clinic on creative percussion at drum conventions around the world. Jason's playing truly personifies his character — one of a kind, solid, full of heart, alive, happy and shining in the light of the world. That's our McGillicuddy.
 
-**Saturday 02/10, Fayetteville NC** — *An essay on how not to suck, in which many entertaining anecdotes and opinions are conveyed to the reader in a most amusing fashion.*
+### Saturday 02/10, Fayetteville NC
+
+*An essay on how not to suck, in which many entertaining anecdotes and opinions are conveyed to the reader in a most amusing fashion.*
 
 It doesn't get any weirder than this — okay maybe on the Lower East Side but we're in the South for gadsakes. Tonight the band that opened for us called themselves *The Unholy Hamster Factor*. Creative name — check. Ominous looking homeless guy for a lead singer, dressed in tatters and rags, missing a few teeth, w/ optional scruffy beard and wandering eye — check. Sullen looking band members wearing mascara and playing out of tune — check. Vocalist who doesn't really sing just kinda yells an odd string of obscenities which he tries to pass for being poetic — check. *Theatre of the Absurd* would have been a better name for them now that I think of it.
 
@@ -403,7 +485,9 @@ Remember the music!
 
 And with these words, I step off my soapbox for the day.
 
-**Sunday 02/11, day off** — *In which observations are shared with the reader regarding idiosyncratic band related tendencies and prototypes that were analyzed throughout the tour and documented here.*
+### Sunday 02/11, day off
+
+*In which observations are shared with the reader regarding idiosyncratic band related tendencies and prototypes that were analyzed throughout the tour and documented here.*
 
 Bands come in all flavors. Over the years in my experience being a member of and observing various bands (especially on this tour — in which we have nothing better to do but examine, critique and criticize ourselves and everybody else) I have come to some general conclusions about some typical band member prototypes. I believe *every band* has one or more of the following character personas or a mix of them. Having identified these, I made it a point to rank them as well.
 
@@ -538,7 +622,7 @@ These personas can very easily mutate into and out of others listed here, which 
 - Mercenitter (Mercenary + Designated Hitter) — 2.5
 - Mercenary — 1.6
 
-**Disclaimer and a short summary.**
+### Disclaimer and a short summary.
 
 **The Ego Factor**: Is not a show on Fox. It is no small matter that egos play a huge role in a band's inter-relationship with one another. The fact is that most people involved in bands have pretty sizable egos to begin with — where they fall in relation to their band-mates is anybody's guess. However mighty they may be and difficult to deal with they do not factor in this categorization because egos do not discriminate when it comes to these rock n roll personas.
 
@@ -556,7 +640,9 @@ I was pretty surprised at how accurate the scoring worked out when I finished th
 
 Most of you (especially my band-mates) will realize that as Composer I ranked myself highest. Well, deal with it! Keep in mind — *I created the ranking system*. If you don't like it, create your own. After all, I have ranked accordingly in only three specific categories — all three of which are up to individual speculation and debate. One could add or delete and rank accordingly in different categories and by virtue of their own opinions come out with completely different results.
 
-**Monday 02/12, Charlestown WV** — *Outlining an argument that nearly broke up the band prematurely and indeed may have altered the course of the band's history and thus this history.*
+### Monday 02/12, Charlestown WV
+
+*Outlining an argument that nearly broke up the band prematurely and indeed may have altered the course of the band's history and thus this history.*
 
 This tour is killing Graveside. He's starting to smell like a corpse.
 
@@ -580,7 +666,9 @@ Realistically, none of this would have been such a big deal in the long run had 
 
 Alas, I have closed the chapter on this grievance of mine. (Though I'd still like to pull Rowan's goatee a few times for his stubbornness.)
 
-**Tuesday 02/13, Norfolk VA** — *Concerning a theory regarding the unmentioned internal hierarchy of the band along with some other grave revelations.*
+### Tuesday 02/13, Norfolk VA
+
+*Concerning a theory regarding the unmentioned internal hierarchy of the band along with some other grave revelations.*
 
 File this under 'Taking me down a peg.'
 
@@ -594,7 +682,9 @@ We'll go home. Back to our jobs. Back to Sunday dinners with the folks. Back to 
 
 It's just the course a band like ours follows. Like the course a river takes before it's eventually swallowed up by the sea. And when we finally reach our own beloved beds for a change, we'll lie down with the corpse of a drowned dream.
 
-**Wednesday 02/14, Richmond VA** — *Which outlines the author's thoughts on the intricacies of songwriting and a poem thrown in to boot.*
+### Wednesday 02/14, Richmond VA
+
+*Which outlines the author's thoughts on the intricacies of songwriting and a poem thrown in to boot.*
 
 *A critic is not capable of distinguishing between a safe move that is executed, and an interesting mistake. An interesting mistake is by far the more valuable.* —Paul Simon
 
@@ -669,7 +759,9 @@ In summary — there is a theory among writers that the first step in learning t
 
 Such is the process of songwriting / composing as I see it. (As if you had asked.)
 
-**Thursday 02/15, Washington DC** — *Concerning the literal breakdown of the van and a literary breakdown of band rivalries.*
+### Thursday 02/15, Washington DC
+
+*Concerning the literal breakdown of the van and a literary breakdown of band rivalries.*
 
 DC is a great town with arguably one of the most vibrant and active local music scenes in the country. We're happy to be a part of it on the tour. F Seattle. DC rocks.
 
@@ -695,7 +787,9 @@ I remember a gig at CBGB's one spring in the early nineties, which found us on t
 
 We excitedly hit the stage hoping to impress those that remained in the packed house. The only problem was, when we hit the stage, the house wasn't packed anymore. In fact — it had cleared out as though someone had shouted "Fire!" Such is the fate of sharing a bill with a band with that much of a buzz surrounding them. We played a very uninspired set to an audience consisting of the bartender and a few of the wait staff wiping down tables of spilled beer. I thought — "Aha. This is why they call it the cleanup slot."
 
-**Friday 02/16, Philadephia PA** — *Which outlines that ever-sensitive subject of band managers; confound them all to the devil anyway. Or not.*
+### Friday 02/16, Philadephia PA
+
+*Which outlines that ever-sensitive subject of band managers; confound them all to the devil anyway. Or not.*
 
 As we draw ever closer to the inevitable end of this tour I have begun to notice a few things. Jason often speaks in a voice that sounds as though he's talking backwards. Duane's hair is turning gray. The corpse-paint is wearing off of Graveside's face. I'm drinking way too much tap beer and hard liquor.
 
@@ -725,9 +819,11 @@ These bullet-points are the short list and nothing to take casually. They are ju
 
 I know I can speak for the whole band when I say — hats off to you Brian — you done good by us.
 
-**Saturday 02/17, New Brunswick NJ — 8:00 PM** — *Which outlines a list of items great and small along with some dark and triumphant revelations seen through the eyes of the author.*
+### Saturday 02/17, New Brunswick NJ — 8:00 PM
 
-**The things they carried:**
+*Which outlines a list of items great and small along with some dark and triumphant revelations seen through the eyes of the author.*
+
+### The things they carried:
 
 *(Not to be confused with Tim O'Brien's great Vietnam war novel, which is substantially more relevant.)*
 
@@ -841,7 +937,7 @@ This is one club. All clubs. Over the past two months of this tour we have lived
 
 The Barnburners are almost giddy. They live for this. But they have not been through what we have just endured. Perhaps they will play on-throughout the years or maybe they too will break up. Maybe even bitter separation as is the case with many bands. I am thankful that is not the case with us. What band prevails tonight when we hit the stage doesn't ultimately matter as much as how much we'll be missed when we're gone. Or whether we'll be missed at all. To disappear quietly. Another place. Another time. A distant memory good or bad distinguished by virtue of one's association with the music of that period. Will we be a part of someone's hazy recollection? I can't answer that. Time will tell.
 
-**2:30 AM**
+### 2:30 AM
 
 The Barnburners succumbed as though they were a lifeboat sucked down in the whirlpool of their sinking mother ship. They vanished almost soundlessly from the scope of the horizon, overwhelmed by the magnitude and violent destruction of what preceded them to dark depths. We played with an unusual angst tonight that would not be denied. It was as if our veins were opened — blood flowed and the walls were red with the dying splatter of our sonic fury. It is nearly over. It is the end of the ending.
 
@@ -867,7 +963,9 @@ Everything has poured out. The missed opportunities, chances. Ill luck, bad fort
 
 The burning candle is now a pool. It runs over and drips down like hot tears falling. A quiet gray thread of silky smoke rises in surrender as the hot wax cools and solidifies once again into a new form.
 
-**Sunday 02/18, New York NY** — *Whereupon the tour, the band and this diary come to an end.*
+### Sunday 02/18, New York NY
+
+*Whereupon the tour, the band and this diary come to an end.*
 
 The grand finale has arrived. *The Trailside Rangers: On the Road with a Promise and a Prayer* tour ends after this evening. And the band that *is* the Trailside Rangers will become the band that *was*. It has been a tour that has been victorious, glorious, painful, harrowing, hopeless and hopeful all at once and never together. We have gained tremendously from this experience and despite the fact that this signifies the end of us as a band — hopefully the legacy of our songs and passion of our performances will remain. I am proud of what we've accomplished. With or without the tour, we did the best we could. We gave what we had to give. Sure — we could have, should have done more. Tried harder. We should have worn down the fucking grindstone itself no matter what it took to do so. But it is not so easy and it was not to be. This band has made its mark — even if it's just a smudge.
 
@@ -897,11 +995,11 @@ The new and the old. A symbolic passageway awaits. The doorway beckons; its rust
 
 …and never die.
 
-**The End.**
+### The End.
 
-**Prologue**
+### Prologue
 
-**I will miss:**
+### I will miss:
 
 - Seeing Duane's hair-fro sway through the bass beats of each song — lit up in stage lights.
 - McGillicuddy's ability to make me laugh with nothing more than a wood block or a rim-shot.

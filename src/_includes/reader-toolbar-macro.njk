@@ -1,14 +1,23 @@
-{# The Info / Top / Bottom / PDF / EPUB toolbar shown above a post's text.
-   Used both on a post's own page and in "featured" excerpts (homepage and
-   section pages), same as the photo gallery and video embed, so a
-   spotlighted post reads the same wherever it's shown. `url` is the
+{# The Contents / Info / Top / Bottom / PDF / EPUB toolbar shown above a
+   post's text. Used both on a post's own page and in "featured" excerpts
+   (homepage and section pages), same as the photo gallery and video embed,
+   so a spotlighted post reads the same wherever it's shown. `url` is the
    post's own permalink (page.url on its own page, or featured.url in an
-   excerpt) — story.pdf/story.epub always sit right alongside it. #}
+   excerpt) — story.pdf/story.epub always sit right alongside it.
+
+   The "contents" button only appears when a post's body has 3 or more
+   h2/h3 headings (found at runtime by the script below) — most posts are
+   short enough not to need one, but any post that DOES use headings for
+   its sections (like a long diary broken into dated entries) gets a
+   jump-to-section list for free, with no extra front matter required. #}
 {% import "icons-macro.njk" as icons %}
 {% macro renderToolbar(title, kind, date, tags, url, note) %}
 {% set extra = tags | extraTags(kind) %}
 <div class="reader-toolbar-wrap" data-reader-toolbar-wrap>
 <div class="reader-toolbar" data-reader-toolbar>
+  <button type="button" class="reader-tool" data-toggle-toc aria-expanded="false" hidden>
+    {{ icons.icon("list", "reader-tool-icon") }}<span>contents</span>
+  </button>
   <button type="button" class="reader-tool" data-toggle-info aria-expanded="false">
     {{ icons.icon("info", "reader-tool-icon") }}<span>info</span>
   </button>
@@ -25,6 +34,7 @@
     {{ icons.icon("file", "reader-tool-icon") }}<span>epub</span>
   </a>
 </div>
+<div class="reader-toc-panel" data-toc-panel hidden></div>
 <div class="reader-info-panel" data-info-panel hidden>
   <p><strong>{{ title }}</strong></p>
   <p>{{ kind }} &middot; {{ date | readableDate }}</p>
@@ -35,20 +45,39 @@
 <script>
 (function () {
   var infoPanel = document.currentScript.previousElementSibling;
-  var toolbar = infoPanel ? infoPanel.previousElementSibling : null;
-  if (!toolbar || !infoPanel) return;
+  var tocPanel = infoPanel ? infoPanel.previousElementSibling : null;
+  var toolbar = tocPanel ? tocPanel.previousElementSibling : null;
+  if (!toolbar || !tocPanel || !infoPanel) return;
   var article = toolbar.closest('article');
 
+  var tocToggle = toolbar.querySelector('[data-toggle-toc]');
   var infoToggle = toolbar.querySelector('[data-toggle-info]');
+
+  function closePanel(panel, toggle) {
+    panel.setAttribute('hidden', '');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function togglePanel(panel, toggle, otherPanel, otherToggle) {
+    var isHidden = panel.hasAttribute('hidden');
+    closePanel(otherPanel, otherToggle);
+    if (isHidden) {
+      panel.removeAttribute('hidden');
+    } else {
+      panel.setAttribute('hidden', '');
+    }
+    toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+  }
+
   if (infoToggle) {
     infoToggle.addEventListener('click', function () {
-      var isHidden = infoPanel.hasAttribute('hidden');
-      if (isHidden) {
-        infoPanel.removeAttribute('hidden');
-      } else {
-        infoPanel.setAttribute('hidden', '');
-      }
-      infoToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+      togglePanel(infoPanel, infoToggle, tocPanel, tocToggle);
+    });
+  }
+
+  if (tocToggle) {
+    tocToggle.addEventListener('click', function () {
+      togglePanel(tocPanel, tocToggle, infoPanel, infoToggle);
     });
   }
 
@@ -66,6 +95,51 @@
     });
   }
 
+  function slugify(text) {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'section';
+  }
+
+  function buildToc() {
+    var body = article ? article.querySelector('.post-body') : null;
+    if (!body || !tocToggle) return;
+    var headings = body.querySelectorAll('h2, h3');
+    if (headings.length < 3) return;
+
+    var usedIds = {};
+    var list = document.createElement('ul');
+    headings.forEach(function (h) {
+      var text = h.textContent.trim();
+      if (!text) return;
+      var id = h.id || slugify(text);
+      var n = 2;
+      while (usedIds[id]) { id = slugify(text) + '-' + n; n++; }
+      usedIds[id] = true;
+      h.id = id;
+
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = text;
+      if (h.tagName === 'H3') { a.style.paddingLeft = '1rem'; }
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    tocPanel.appendChild(list);
+    tocToggle.hidden = false;
+  }
+
+  tocPanel.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var target = document.getElementById(link.getAttribute('href').slice(1));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (history.pushState) history.pushState(null, '', link.getAttribute('href'));
+    }
+    closePanel(tocPanel, tocToggle);
+  });
+
   function fillWordCount() {
     var wordCountEl = infoPanel.querySelector('[data-word-count]');
     var body = article ? article.querySelector('.post-body') : null;
@@ -78,9 +152,13 @@
   // .post-body hasn't been parsed yet at this point in the page (it comes
   // later in the HTML), so wait for the full DOM before reading it.
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fillWordCount);
+    document.addEventListener('DOMContentLoaded', function () {
+      fillWordCount();
+      buildToc();
+    });
   } else {
     fillWordCount();
+    buildToc();
   }
 })();
 </script>

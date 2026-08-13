@@ -656,6 +656,10 @@ body.lightbox-open {
   border-color: var(--accent);
 }
 
+.reader-tool[hidden] {
+  display: none;
+}
+
 .reader-tool-icon {
   width: 13px;
   height: 13px;
@@ -685,8 +689,68 @@ body.lightbox-open {
   display: none;
 }
 
+.reader-toc-panel {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.5rem 1.1rem;
+  margin-bottom: 1.5rem;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.reader-toc-panel[hidden] {
+  display: none;
+}
+
+.reader-toc-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reader-toc-panel li {
+  border-bottom: 1px dotted var(--rule);
+}
+
+.reader-toc-panel li:last-child {
+  border-bottom: none;
+}
+
+.reader-toc-panel a {
+  display: block;
+  padding: 0.5rem 0;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.reader-toc-panel a:hover {
+  color: var(--accent);
+}
+
 .post-body p { margin: 0 0 1.2rem; }
 .post-body img { max-width: 100%; border-radius: 2px; }
+
+.post-body h2,
+.post-body h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 2.4rem 0 0.6rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.post-body h2 { font-size: 0.85rem; }
+.post-body h3 { font-size: 0.78rem; }
+
+.post-body h2:first-child,
+.post-body h3:first-child {
+  margin-top: 0;
+}
 
 .lyric-block, .poem-block {
   white-space: pre-wrap;
