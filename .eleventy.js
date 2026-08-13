@@ -83,12 +83,15 @@ module.exports = function (eleventyConfig) {
     return (items || []).filter((item) => normalizeTags(item.data.tags).includes(tag));
   });
 
-  // A post's tags, minus the four built-in kind names — these are the
-  // "extra" descriptive tags (like New York, Zabar's) shown as chips at
-  // the bottom of each post.
-  eleventyConfig.addFilter("extraTags", (tagsData) => {
-    const kindNames = ["poems", "lyrics", "stories", "boxes"];
-    return normalizeTags(tagsData).filter((t) => !kindNames.includes(t));
+  // A post's tags, minus the one tag that just restates its own section
+  // (e.g. a box post tagged "boxes") — that's shown via the breadcrumb
+  // already, so it'd be redundant as a chip. A tag like "lyrics" on a box
+  // or story post is a real, meaningful topical tag (the post happens to
+  // contain song lyrics) and should still show up as a chip.
+  eleventyConfig.addFilter("extraTags", (tagsData, kind) => {
+    const sectionTagByKind = { poem: "poems", lyric: "lyrics", story: "stories", box: "boxes" };
+    const ownSectionTag = sectionTagByKind[kind];
+    return normalizeTags(tagsData).filter((t) => t !== ownSectionTag);
   });
 
   // All of a post's tags (including kind), space-joined, so the search

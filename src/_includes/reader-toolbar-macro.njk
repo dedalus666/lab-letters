@@ -6,7 +6,7 @@
    excerpt) — story.pdf/story.epub always sit right alongside it. #}
 {% import "icons-macro.njk" as icons %}
 {% macro renderToolbar(title, kind, date, tags, url) %}
-{% set extra = tags | extraTags %}
+{% set extra = tags | extraTags(kind) %}
 <div class="reader-toolbar-wrap" data-reader-toolbar-wrap>
 <div class="reader-toolbar" data-reader-toolbar>
   <button type="button" class="reader-tool" data-toggle-info aria-expanded="false">

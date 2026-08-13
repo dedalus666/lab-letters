@@ -11,7 +11,7 @@ layout: base.njk
   "box": { url: "/boxes/", label: "Boxes" }
 } %}
 {% set section = sectionMap[kind] %}
-{% set extra = tags | extraTags %}
+{% set extra = tags | extraTags(kind) %}
 {% if section %}
 <a class="breadcrumb" href="{{ section.url | url }}">&larr; back to {{ section.label }}</a>
 {% endif %}
