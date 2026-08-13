@@ -1,7 +1,7 @@
 ---
 title: Trailside Rangers — On the Road with a Promise and a Prayer, A Tour Diary
 kind: story
-tags: Trailside Rangers, tour diary, music, memoir
+tags: Trailside Rangers, tour diary, music, memoir, lyrics
 layout: post.njk
 date: 2001-02-18
 note: The full tour diary of the Trailside Rangers' 2001 East Coast run — the shows, the breakdowns, and the band's last stand. An 'entertainment.'  Unofficial, mostly fictional, retrospective falsifications, albeit lucid observations by joe Wilford. 
@@ -607,20 +607,7 @@ These personas can very easily mutate into and out of others listed here, which 
 
 *Editor's note: I have compiled a nifty table for quick overview of the above persona breakdown, sorted highest to lowest.*
 
-- Composer — 4.3
-- Conductor / Reconstructionist — 4.3
-- Comthusiast (Enthusiast + Composer) — 4.2
-- Enthusiast — 4
-- Unionist — 4
-- Recomposer (Composer + Conductor) — 4
-- Utility Player — 3.6
-- Charismaniac — 3.6
-- Hangers-On — 3.6
-- Classicist — 3.3
-- Designated Hitter — 3.3
-- Incessant Noodler / Jammer — 2.6
-- Mercenitter (Mercenary + Designated Hitter) — 2.5
-- Mercenary — 1.6
+![Persona breakdown table, sorted highest to lowest by overall rating](/images/trailside-rangers-persona-table.png)
 
 ### Disclaimer and a short summary.
 
