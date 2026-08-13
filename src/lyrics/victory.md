@@ -5,6 +5,7 @@ tags: lyrics
 layout: post.njk
 date: 2005-08-01
 featured: true
+note: A defiant, cathartic song about regret and cynicism, and choosing to celebrate anyway.
 ---
 <div class="lyric-block">
 there are pieces of me left

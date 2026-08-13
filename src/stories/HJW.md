@@ -5,6 +5,7 @@ tags: stories, Gramps, Teamsters,
 layout: post.njk
 date: 2026-07-24
 featured: true
+note: A tribute to my grandfather, Harry Wilford — Teamsters union man, WWII truck driver, and close associate of Jimmy Hoffa.
 gallery:
   - HJW-buttons.jpeg
   - HJW-Hoffa-CID1.jpeg

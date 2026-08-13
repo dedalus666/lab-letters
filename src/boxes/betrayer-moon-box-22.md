@@ -4,6 +4,7 @@ kind: box
 tags: boxes, guitar, lyrics, Piranesi, 
 layout: post.njk
 date: 2024-05-19
+note: A keepsake box built around the folklore of the Blue Moon, holding tarot cards, pipe tobacco, and guitar strings.
 gallery: 
  - betrayer-moon0.jpeg
  - betrayer-moon1.jpeg

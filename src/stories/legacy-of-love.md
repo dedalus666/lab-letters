@@ -4,6 +4,7 @@ kind: story
 tags: stories, letters, Aggie, Gähmpa,
 layout: post.njk
 date: 2023-12-30
+note: A letter from my grandmother Agnes, tracing a legacy of love across four generations of the family.
 ---
 A Legacy of Love
 

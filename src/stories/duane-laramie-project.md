@@ -4,6 +4,7 @@ kind: story
 tags: stories, review
 layout: post.njk
 date: 2026-06-06
+note: A review of my lifelong friend Duane's performance in The Laramie Project, based on the murder of Matthew Shepard.
 ---
 ![Duane performing on stage in The Laramie Project](/images/IMG_5195.jpeg)
 

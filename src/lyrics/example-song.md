@@ -4,6 +4,7 @@ kind: lyric
 tags: lyrics
 layout: post.njk
 date: 2026-05-14
+note: Lyrics for a song about building a room with no way out, and looking for a door where the ceiling should be.
 ---
 <div class="lyric-block">
 Verse 1

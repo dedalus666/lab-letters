@@ -5,6 +5,7 @@ tags: boxes
 layout: post.njk
 date: 2026-06-04
 featured: true
+note: A box named for Hecate, goddess of magic and crossroads, gifted to Molly.
 gallery:
 - hecate-box-41.jpg
 - hecate1.jpeg

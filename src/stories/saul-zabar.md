@@ -5,7 +5,7 @@ tags: stories, New York, Zabar's
 layout: post.njk
 date: 2025-10-11
 featured: true
-
+note: A tribute to Saul Zabar — the man who gave me a job, an apartment, and a shot at a music career.
 ---
 
 ![Saul and joe behind counter](/images/saul.jpeg)

@@ -4,6 +4,7 @@ kind: story
 tags: stories, review, music
 layout: post.njk
 date: 2012-12-12
+note: A concert review of Rush's 2007 Snakes and Arrows tour, and a look back at my very first show, thirty years earlier.
 ---
 Friday, October 19th, 2007
 

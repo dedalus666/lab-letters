@@ -5,7 +5,7 @@ tags: stories, music, review,
 layout: post.njk
 date: 2019-12-30
 spotlight: true
-
+note: A review of Nick Cave's Ghosteen — grief, love, and the best record of its year.
 ---
 
 ![ghosteen album cover](/images/ghosteen.jpg)

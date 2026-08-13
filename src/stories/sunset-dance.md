@@ -4,6 +4,7 @@ kind: story
 tags: stories, deep thoughts
 layout: post.njk
 date: 2026-03-20
+note: A brief meditation on gratitude, hardship, and dancing anyway.
 ---
 ![sunset1](/images/sunset-trees.jpeg)
 

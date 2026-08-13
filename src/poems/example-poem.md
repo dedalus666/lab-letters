@@ -4,6 +4,7 @@ kind: poem
 tags: poems
 layout: post.njk
 date: 2026-06-02
+note: A short poem about sawdust, grain, and the difference between finishing a thing and it finishing you.
 ---
 Sawdust settles slower than you'd think,
 a small snow that remembers being wood.

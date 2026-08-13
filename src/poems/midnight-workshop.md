@@ -5,6 +5,7 @@ tags: poems, deep thoughts,
 layout: post.njk
 date: 2026-07-19
 featured: true
+note: A favorite quote from Joseph Campbell on choosing inner rapture over outward achievement.
 ---
 We're so engaged in doing things to achieve purposes of outer value that we forget the inner value, the rapture that is associated with being alive, is what it is all about.
 

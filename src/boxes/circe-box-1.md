@@ -4,6 +4,7 @@ kind: box
 tags: boxes
 layout: post.njk
 date: 2021-01-03
+note: The very first box I ever built, made in honor of Circe.
 gallery: 
 - circe1.jpeg
 - circe2.jpeg

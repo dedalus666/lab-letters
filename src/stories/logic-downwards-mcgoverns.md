@@ -4,6 +4,7 @@ kind: story
 tags: stories, music, video, New York City, punk, post-punk
 layout: post.njk
 date: 2026-05-08
+note: A late-80s live set from my old punk band Logic Downwards at McGovern's on the Lower East Side, with full setlist and video.
 gallery: 
 - ld-mcgoverns1.jpg
 - ld-mcgoverns2.jpg

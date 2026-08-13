@@ -1,9 +1,10 @@
 ---
-title: Xanadu - Box VII
+title: Xanadu - Box 7
 kind: box
 tags: boxes, lyrics, Rush, Zabars
 layout: post.njk
 date: 2021-07-24
+note: A box built around Rush's Xanadu, gifted to Emilia in memory of her father, Steve.
 gallery: 
 - xanadu1.jpeg
 - xanadu2.jpeg
@@ -60,4 +61,4 @@ Oh, paradise
 
 <p><strong>Box gifted to Emilia</strong></p>
 
-<p>I've known Emilia for a long time, as I worked with her father Steve, for many years at Zabar's. Steve was an old soul, an avid reader and we often talked of books. His vocabulary was astounding - he knew arcane words I had never heard of before. As I was reading, especially Faulkner in those days,  I'd write down words I'd never encountered: spavined, apotheosis, susturration, expiation - Steve knew them all and explained their meanings. Steve was a great man, the embodiment of a true New Yorker. Gone too soon.</p>
+<p>I've known Emilia for a long time, as I worked with her father, Steve, for many years at Zabar's. Steve was an old soul, an avid reader and we often talked of books. His vocabulary was astounding - he knew arcane words I had never heard of before. As I was reading, especially Faulkner in those days,  I'd write down words I'd never encountered: spavined, apotheosis, susturration, expiation - Steve knew them all and explained their meanings. Steve was a great man, the embodiment of a true New Yorker. Gone too soon.</p>

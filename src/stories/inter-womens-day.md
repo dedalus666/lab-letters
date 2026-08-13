@@ -4,6 +4,7 @@ kind: story
 tags: stories
 layout: post.njk
 date: 2026-03-09
+note: A tribute to my mother, Mary Jo Wilford, who reinvented her life at thirty and became the family's great pioneer.
 ---
 ![mom and joe halloween cake](/images/mary-joe-birthday.jpeg)
 
