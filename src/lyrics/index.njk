@@ -34,7 +34,7 @@ pageKind: lyric
 {% endif %}
 
 <ul class="entry-list">
-{% for item in collections.lyrics | reverse %}
+{% for item in collections.lyrics | sortByTitle %}
   {% if not featured or item.url != featured.url %}
   <li>
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>

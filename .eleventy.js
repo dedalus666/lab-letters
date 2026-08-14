@@ -128,6 +128,18 @@ module.exports = function (eleventyConfig) {
     return items.find((item) => item.data.spotlight) || items[0];
   });
 
+  // Sorts a list of entries alphabetically by title (case-insensitive).
+  // Used on the Invocations (lyrics) index — with 150+ songs, alphabetical
+  // is easier to scan for a specific title than newest-first.
+  eleventyConfig.addFilter("sortByTitle", (items) => {
+    return [...(items || [])].sort((a, b) =>
+      String(a.data.title || "").localeCompare(String(b.data.title || ""), undefined, {
+        sensitivity: "base",
+        numeric: true,
+      })
+    );
+  });
+
   // Nice readable date filter, e.g. "July 19, 2026"
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
