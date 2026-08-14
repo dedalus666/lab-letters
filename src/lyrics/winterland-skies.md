@@ -8,9 +8,9 @@ note: Single (Dedalus), released March 10, 2017.
 ---
 tribute to a fallen star.
 
-“Oh, but when love is reached through suffering, it has a power it can never gain through innocence.”
+*“Oh, but when love is reached through suffering, it has a power it can never gain through innocence.”*
 
---Memnoch the Devil - Ann Rice
+*--Memnoch the Devil - Ann Rice*
 
 You were a fist of clay
 Struck by a falling star
