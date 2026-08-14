@@ -1,9 +1,10 @@
 ---
 title: Tragedy
 kind: lyric
-tags: lyrics
+tags: lyrics, Joe Wilford, A Portrait of the Artist, music
 layout: post.njk
 date: 2001-12-31
+note: Track 5 on "A Portrait of the Artist" (Joe Wilford), released February 12, 2004.
 ---
 
 <div class="lyric-block">

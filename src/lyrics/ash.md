@@ -1,9 +1,10 @@
 ---
 title: Ash
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2006-08-22
+note: Track 7 on "Wild Angels" (Dedalus), released December 7, 2010. An acoustic remix appears as a bonus track on the Bandcamp edition.
 ---
 
 <div class="lyric-block">

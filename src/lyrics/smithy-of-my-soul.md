@@ -1,9 +1,10 @@
 ---
 title: Smithy of My Soul
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2004-07-01
+note: Released as "Soulsmith," track 3 on "Wild Angels" (Dedalus), December 7, 2010.
 ---
 
 <div class="lyric-block">

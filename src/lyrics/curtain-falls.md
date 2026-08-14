@@ -1,9 +1,10 @@
 ---
 title: Curtain Falls
 kind: lyric
-tags: lyrics
+tags: lyrics, Joe Wilford, A Portrait of the Artist, music
 layout: post.njk
 date: 2001-02-01
+note: Track 2 on "A Portrait of the Artist" (Joe Wilford), released February 12, 2004. A reprise (A.M. dub remix) closes the album as track 9.
 ---
 
 <div class="lyric-block">

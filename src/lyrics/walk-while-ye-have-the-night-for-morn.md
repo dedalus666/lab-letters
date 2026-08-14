@@ -1,9 +1,10 @@
 ---
 title: Walk While Ye Have the Night for Morn
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2004-07-01
+note: Track 8 on "Wild Angels" (Dedalus), released December 7, 2010.
 ---
 
 <div class="lyric-block">

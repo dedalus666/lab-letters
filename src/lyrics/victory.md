@@ -1,11 +1,11 @@
 ---
 title: Victory
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2005-08-01
 featured: true
-note: A defiant, cathartic song about regret and cynicism, and choosing to celebrate anyway.
+note: A defiant, cathartic song about regret and cynicism, and choosing to celebrate anyway. 9th track on "Wild Angels" (Dedalus), released December 7, 2010.
 ---
 <div class="lyric-block">
 there are pieces of me left

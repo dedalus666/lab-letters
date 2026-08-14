@@ -1,9 +1,10 @@
 ---
 title: How to Tell a True War Story
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2005-09-01
+note: Track 5 on "Wild Angels" (Dedalus), released December 7, 2010.
 ---
 
 <div class="lyric-block">

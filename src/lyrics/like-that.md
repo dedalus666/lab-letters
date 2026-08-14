@@ -1,9 +1,10 @@
 ---
 title: Like That
 kind: lyric
-tags: lyrics
+tags: lyrics, Joe Wilford, A Portrait of the Artist, music
 layout: post.njk
 date: 2002-02-01
+note: Released as "You were like that," track 3 on "A Portrait of the Artist" (Joe Wilford), February 12, 2004.
 ---
 
 <div class="lyric-block">

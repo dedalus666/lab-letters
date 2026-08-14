@@ -1,9 +1,10 @@
 ---
 title: So It Goes
 kind: lyric
-tags: lyrics
+tags: lyrics, Dedalus, Wild Angels, music
 layout: post.njk
 date: 2016-06-30
+note: Track 4 on "Wild Angels" (Dedalus), released December 7, 2010.
 ---
 
 <div class="lyric-block">
