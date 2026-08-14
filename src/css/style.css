@@ -787,6 +787,21 @@ body.lightbox-open {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
+/* Same treatment, applied automatically to any lyric/poem post body —
+   even one written as plain markdown paragraphs with no <div
+   class="lyric-block"> wrapper at all. Markdown already keeps a single
+   line break inside a paragraph as a literal newline in the HTML (it
+   just doesn't LOOK like one without this), so as long as lyrics/poems
+   are pasted in as normal text — a blank line between stanzas, same as
+   any other writing — the line breaks show up correctly with zero
+   manual HTML required. This is what makes it safe to just paste lyrics
+   straight into a post without remembering the lyric-block/<br> trick. */
+.post-body-lyric p,
+.post-body-poem p {
+  white-space: pre-wrap;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
 .post-tags {
   margin: 2rem 0 0;
 }

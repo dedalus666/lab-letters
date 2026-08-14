@@ -1,3 +1,5 @@
+const path = require("path");
+
 // Tags can be written as "one-tag" or "tag one, tag two" (comma-separated).
 // This always returns a clean array either way.
 function normalizeTags(tagsData) {
@@ -251,6 +253,23 @@ module.exports = function (eleventyConfig) {
     const generateReaderFiles = require("./scripts/generate-reader-files.js");
     const count = await generateReaderFiles(dir.output);
     console.log(`[reader-files] generated PDF + EPUB for ${count} posts`);
+  });
+
+  // Also after every build, scan the source markdown for the
+  // lyric-block/poem-block blank-line bug (see scripts/check-lyric-blocks.js)
+  // and fail the build if it's back, instead of letting broken formatting
+  // reach GitHub Pages unnoticed.
+  eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    const checkLyricBlocks = require("./scripts/check-lyric-blocks.js");
+    const problems = checkLyricBlocks(path.join(__dirname, dir.input));
+    if (problems.length) {
+      console.error(`\n[check-lyric-blocks] ${problems.length} broken lyric-block/poem-block div(s) found:`);
+      problems.forEach((p) => console.error(`  - ${p.file}`));
+      console.error(`Run "node scripts/check-lyric-blocks.js" for details on each one.\n`);
+      process.exitCode = 1;
+    } else {
+      console.log("[check-lyric-blocks] all lyric-block/poem-block divs OK");
+    }
   });
 
   return {

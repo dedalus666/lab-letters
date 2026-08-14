@@ -26,7 +26,7 @@ layout: base.njk
   {{ galleryMacro.renderGallery(gallery, title) }}
   {{ videoMacro.renderVideo(youtube, title) }}
 
-  <div class="post-body">
+  <div class="post-body post-body-{{ kind }}">
     {{ content | safe }}
   </div>
   {% if extra.length %}

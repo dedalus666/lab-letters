@@ -26,7 +26,7 @@ pageKind: poem
   {{ galleryMacro.renderGallery(featured.data.gallery, featured.data.title) }}
   {{ videoMacro.renderVideo(featured.data.youtube, featured.data.title) }}
   {{ toolbarMacro.renderToolbar(featured.data.title, featured.data.kind, featured.date, featured.data.tags, featured.url, featured.data.note) }}
-  <div class="post-body">
+  <div class="post-body post-body-{{ featured.data.kind }}">
     {{ featured.templateContent | safe }}
   </div>
   <a class="read-more" href="{{ featured.url | url }}">permalink for this entry &rarr;</a>
