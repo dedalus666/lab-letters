@@ -339,6 +339,36 @@ a:hover { text-decoration: underline; }
   margin-top: 0.2rem;
 }
 
+.stat-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem 2.25rem;
+}
+
+.stat-grid li {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-count {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-family: "Space Mono", monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
 .search-input {
   width: 100%;
   font-family: "Cormorant Garamond", Georgia, serif;

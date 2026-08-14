@@ -146,6 +146,19 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // Live per-kind counts for the About page's tally section. Keyed off
+  // `kind` (poem/lyric/story/box) rather than tags, so it can't drift out
+  // of sync with what's actually on the site even if a post's tags don't
+  // happen to include its own section word.
+  eleventyConfig.addCollection("kindCounts", (collectionApi) => {
+    const counts = { poem: 0, lyric: 0, story: 0, box: 0 };
+    collectionApi.getAll().forEach((item) => {
+      if (item.data.kind in counts) counts[item.data.kind]++;
+    });
+    counts.total = counts.poem + counts.lyric + counts.story + counts.box;
+    return counts;
+  });
+
   // Whichever post(s) have `featured: true` in their front matter, newest
   // (by its own date) first. The homepage shows whichever one wins via the
   // homeSpotlight filter (newest, unless one is marked `spotlight: true`).

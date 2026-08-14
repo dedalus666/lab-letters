@@ -16,6 +16,17 @@ layout: base.njk
 <p class="home-intro">Dedalus is the artistic persona of Joe Wilford — a storyteller, songwriter, musician, magician, and worker of wood.</p>
 
 <div class="link-section">
+  <h2>{{ icons.icon("everything", "section-h2-icon") }}The Archive, By the Numbers</h2>
+  <ul class="stat-grid">
+    <li><span class="stat-count">{{ collections.kindCounts.poem }}</span><span class="stat-label">poems</span></li>
+    <li><span class="stat-count">{{ collections.kindCounts.lyric }}</span><span class="stat-label">lyrics (songs)</span></li>
+    <li><span class="stat-count">{{ collections.kindCounts.story }}</span><span class="stat-label">stories</span></li>
+    <li><span class="stat-count">{{ collections.kindCounts.box }}</span><span class="stat-label">boxes</span></li>
+    <li><span class="stat-count">{{ collections.kindCounts.total }}</span><span class="stat-label">total entries</span></li>
+  </ul>
+</div>
+
+<div class="link-section">
   <h2>{{ icons.icon("sun", "section-h2-icon") }}Upcoming Releases</h2>
   <ul class="link-list">
     <li><a class="link-icon" href="https://dedalus666.github.io/index.html" target="_blank" rel="noopener" aria-label="Piranesi">{{ icons.icon("piranesi", "link-icon-svg") }}</a><a href="https://dedalus666.github.io/index.html" target="_blank" rel="noopener">Piranesi</a> <span class="link-tagline">Five songs. Five labyrinths. No escape.</span></li>
