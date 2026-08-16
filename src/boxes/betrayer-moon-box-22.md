@@ -1,5 +1,5 @@
 ---
-title: Betrayer Moon Keepsake Box, No. 22
+title: Betrayer Moon - Box 22
 kind: box
 tags: boxes, guitar, lyrics, Piranesi, 
 layout: post.njk

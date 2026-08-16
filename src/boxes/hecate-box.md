@@ -1,9 +1,9 @@
 ---
-title: Hecate keepsake box 41
+title: Hecate - Box 41
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-06-04
+date: 2025-12-26
 featured: true
 note: A box named for Hecate, goddess of magic and crossroads, gifted to Molly.
 gallery:
