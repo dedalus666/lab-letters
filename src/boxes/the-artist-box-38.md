@@ -5,6 +5,8 @@ tags: boxes, Prince, music, tribute
 layout: post.njk
 date: 2025-09-23
 note: Keepsake box in tribute to The Artist formerly known as Prince
+featured: true
+spotlight: true
 gallery: 
 - the-artist-box1.jpeg
 - the-artist-box2.jpeg
