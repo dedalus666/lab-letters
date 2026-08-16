@@ -1,0 +1,9 @@
+---
+title: A game of quests and dreams
+kind: story
+tags: stories, dreams, dream archive, 
+layout: post.njk
+date: 2006-07-04
+note: "Dream Archive # 33 - also titled: A game of dice and dreams"
+---
+ I dreamed I learned an intricate card game from my cousin Kenneth, but I can only remember vague details. The game involves an extremely complex and detailed point system, as it revolves around conceptual theories of human existences”pitting biblical against scientific explanations of how life began. The Old Testament's Adam, for instance could represent the Jack of Hearts, the heart symbolizing the apple as one example, but the characters represented on each card are capable of changing at any given point in the game depending on the numerical circumstances set into play. So while the Jack of Hearts could be Adam, it could also represent Adonis, Greek God of Love, or the popular chivalrous character Don Quixote or perhaps even a more contemporary figure such as Albert Einstein, who was renown for having numerous women admirers. Numbers and the order of the numbers as the cards are played is key, because there is no such thing as a good hand. It simply depends on the cards laid down prior to by you and your opponent who, may not be your opponent at all, but your ally, depending on the string of cards played, the sum of the numbers and the equations and / or icons they represent. Certain sets of numbers laid out in a row denote laws of physics, others evolution, still others mythological and finally biblical. There are also multi-sided dice involved that serve to calculate equations in concordance with the cards. Some dice represent science, while other dice are rolled to determine the outcome of spiritual quests. There is more, so much more, I can't remember. But I'll sit here with a deck of cards, some dice and a bottle of wine, and by god, I'll figure it out.  
