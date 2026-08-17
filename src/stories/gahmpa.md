@@ -4,7 +4,7 @@ kind: story
 tags: stories, family, Aggie, Gähmpa
 layout: post.njk
 date: 1999-12-01
-note: Story submission for Gotham Writer's Workshop - 12.99
+note: "Story submission for Gotham Writer's Workshop - 12.99. A small farm town tells the story of the man who arrived with nothing and built himself into its unofficial center of gravity — a farmer, a card player, a musician who could talk his way into any band on a Saturday night. Told collectively, in the voice of the town itself, it follows his rise, the daughter who never left his side, and a run of good fortune that draws equal parts admiration and quiet resentment from the neighbors watching it happen. When one man's envy boils over at a card table, and later when the town faces the kind of loss no one can out-charm, it becomes less a story about what he built than about what he was made of underneath it."
 ---
 *You could not step twice into the same rivers; for other waters are ever flowing on to you.*
 
