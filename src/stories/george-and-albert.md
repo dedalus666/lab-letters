@@ -4,7 +4,7 @@ kind: story
 tags: stories, fiction, short story
 layout: post.njk
 date: 1994-02-12
-note: Story submission for Gotham Writer's Workshop - 2.12.94
+note: "Story submission for Gotham Writer's Workshop - 2.12.94. In a quiet farm town, a sheriff gets pulled into an escalating feud between a weary father and the two ne'er-do-well brothers renting the wreck of a house across the road — half-comic, half-menacing, and always drunk. A small boy with a pocketful of quartz wanders into their orbit chasing a strange kind of friendship, unaware of what's waiting behind their locked shed doors. What starts as neighborly aggravation curdles into something darker, and by the end, the sheriff's own sense of justice is put through the wringer."
 ---
 ### I
 
