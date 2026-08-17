@@ -4,7 +4,7 @@ kind: story
 tags: stories, fiction, short story, letters
 layout: post.njk
 date: 1997-01-14
-note: "Story submission for Gotham Writer's Workshop: F1002m Fiction Writing I, taught by Thomas Talbot - Week I, 1.14.97"
+note: "Story submission for Gotham Writer's Workshop: F1002m Fiction Writing I, taught by Thomas Talbot - Week I, 1.14.97. A young guitarist, freshly 'saved' and none too happy about it, fires off an increasingly unhinged letter to the man responsible for his conversion — and for confiscating his prized guitar. What starts as a polite request for its return spirals into a full accounting of everything that hasn't quite taken since he found religion."
 ---
 Dear Gary,
 

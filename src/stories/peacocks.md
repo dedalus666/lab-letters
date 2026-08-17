@@ -4,7 +4,7 @@ kind: story
 tags: stories, fiction, short story
 layout: post.njk
 date: 1997-06-01
-note: Written June 1997.
+note: "Written June 1997. Three high school seniors pick apart the sudden suicide of a classmate nobody really knew, trading theories at their usual library table. When one of them finally admits to a stranger, sadder history with the dead boy — one that starts with a pair of stolen birds — the story reshapes itself around a family secret none of them saw coming."
 ---
 ## One
 
