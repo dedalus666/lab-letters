@@ -1,7 +1,7 @@
 ---
 title: Chaos and Consequences
 kind: poem
-tags: poems
+tags: poems, Zabars, NYC, 
 layout: post.njk
 date: 2005-05-16
 ---
@@ -101,4 +101,13 @@ Head down
 Ashamed and foiled
 “It feels good when you get them doesn’t it?” He said. 
 “You know what? It’s even more fun when they’ve shot at you.” 
+
+10:30 am, back at the store
+The holiday rush was on and there was much to do
+I decided to take a break anyway
+I sat in the basement on a cardboard box of lima beans in oil
+I flipped through the pages of a book, trying to escape into it
+but I could not stop the cinema of scenes in my head
+No matter
+It was going to be the best Christmas ever
 </div>
