@@ -70,7 +70,7 @@ A passing taxi’s tires as they jarred a manhole cover
 Pigeons fluttered down to bread crumbs
 The squeal of breaks as a bus slowed
 Car horns in the key of F
-# 2 trains rocketing through the station below
+\# 2 trains rocketing through the station below
 Bernardo knelt to collect the bundles
 As Scott beckoned me to follow him.
 Jesus. I thought.
