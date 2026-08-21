@@ -1,0 +1,13 @@
+{# Shared "text card" used by the Runes, Invocations, and Lore index pages:
+   a bordered tile with the title, a fading preview snippet, and the date.
+   Falls back to the post's `note` field when the body itself is empty
+   (instrumentals in Invocations have no lyrics to preview). #}
+{% macro renderTextCard(item, previewChars) %}
+{% set chars = previewChars or 170 %}
+{% set preview = (item.templateContent | cardPreview(chars)) or (item.data.note | cardPreview(chars)) %}
+<a class="text-card" href="{{ item.url | url }}">
+  <span class="text-card-title">{{ item.data.title }}</span>
+  <span class="text-card-preview">{{ preview }}</span>
+  <span class="text-card-date">{{ item.date | readableDate }}</span>
+</a>
+{% endmacro %}

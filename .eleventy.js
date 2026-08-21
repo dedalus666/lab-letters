@@ -62,14 +62,35 @@ function youtubeId(url) {
   return String(url).trim(); // assume it's already a bare video ID
 }
 
+// Rendered HTML (from markdown-it) escapes text nodes as it goes, so a
+// straight quote in the source becomes the literal string "&quot;" in
+// templateContent — perfectly normal, since it's inserted back into a page
+// via the `safe` filter and the browser decodes it. But once we strip tags
+// out of that HTML to get plain text (searchExcerpt/cardPreview below), that
+// leftover entity is no longer inside a `safe` context — outputting it
+// through a normal {{ }} would double-escape the "&" into "&amp;quot;".
+// Decoding entities back to real characters here keeps the text genuinely
+// plain, so it re-escapes correctly (once) wherever it's used.
+function decodeEntities(text) {
+  return text
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&amp;/g, "&"); // must run last so it doesn't re-unescape the above
+}
+
 // Plain-text version of a post's full rendered content, used for the search
 // index. No truncation — search needs to match words anywhere in a post,
 // not just its opening lines, no matter how long the post is.
 function searchExcerpt(content) {
-  return String(content || "")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  return decodeEntities(
+    String(content || "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 }
 
 // Short, truncated plain-text preview of a post's rendered content — used on

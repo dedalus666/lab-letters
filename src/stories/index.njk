@@ -7,6 +7,7 @@ pageKind: story
 {% import "video-macro.njk" as videoMacro %}
 {% import "reader-toolbar-macro.njk" as toolbarMacro %}
 {% import "icons-macro.njk" as icons %}
+{% import "card-macro.njk" as cardMacro %}
 <div class="section-header">
   <div class="section-header-text">
     <h1>Lore</h1>
@@ -33,13 +34,10 @@ pageKind: story
 </article>
 {% endif %}
 
-<ul class="entry-list">
+<div class="card-grid">
 {% for item in collections.stories | reverse %}
   {% if not featured or item.url != featured.url %}
-  <li>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="entry-date">{{ item.date | readableDate }}</span>
-  </li>
+  {{ cardMacro.renderTextCard(item) }}
   {% endif %}
 {% endfor %}
-</ul>
+</div>

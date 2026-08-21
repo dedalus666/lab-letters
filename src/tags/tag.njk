@@ -6,7 +6,11 @@ pagination:
 permalink: "/tags/{{ tag | tagSlug }}/"
 layout: base.njk
 eleventyComputed:
-  title: "Tag: {{ tag }}"
+  # This string gets rendered once here (resolving {{ tag }}) and again when
+  # base.njk outputs {{ title }} in <title>. Without `| safe` on this first
+  # pass, an apostrophe in the tag name (e.g. "Zabar's") gets HTML-escaped
+  # twice, showing up as the literal text "&amp;#39;" in the browser tab.
+  title: "Tag: {{ tag | safe }}"
 ---
 <p class="home-intro">tagged &ldquo;{{ tag }}&rdquo;</p>
 

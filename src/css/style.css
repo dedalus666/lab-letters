@@ -476,13 +476,13 @@ main {
   letter-spacing: 0.02em;
 }
 
-.poem-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 1.1rem;
 }
 
-.poem-card {
+.text-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -496,13 +496,13 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.poem-card:hover {
+.text-card:hover {
   transform: translateY(-3px);
   border-color: var(--accent);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-.poem-card-title {
+.text-card-title {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -510,7 +510,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.poem-card-preview {
+.text-card-preview {
   flex: 1;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-style: italic;
@@ -520,7 +520,12 @@ main {
   overflow: hidden;
 }
 
-.poem-card::after {
+.text-card-preview:empty::before {
+  content: "instrumental";
+  opacity: 0.6;
+}
+
+.text-card::after {
   content: "";
   position: absolute;
   left: 0;
@@ -531,7 +536,7 @@ main {
   pointer-events: none;
 }
 
-.poem-card-date {
+.text-card-date {
   font-family: "Space Mono", monospace;
   font-size: 0.7rem;
   color: var(--muted);
