@@ -72,6 +72,20 @@ function searchExcerpt(content) {
     .trim();
 }
 
+// Short, truncated plain-text preview of a post's rendered content — used on
+// card-style index pages (Runes) where there's no cover photo, so a snippet
+// of the poem itself stands in for one. Unlike searchExcerpt this cuts the
+// text down to roughly `chars` characters, breaking on a whole word and
+// appending an ellipsis, so the card doesn't overflow.
+function cardPreview(content, chars) {
+  const limit = chars || 160;
+  const text = searchExcerpt(content);
+  if (text.length <= limit) return text;
+  const truncated = text.slice(0, limit);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated).trim() + "…";
+}
+
 module.exports = function (eleventyConfig) {
   // Copy static assets straight through to the output folder
   eleventyConfig.addPassthroughCopy("src/css");
@@ -84,6 +98,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("tagSlug", slugifyTag);
   eleventyConfig.addFilter("searchExcerpt", searchExcerpt);
+  eleventyConfig.addFilter("cardPreview", cardPreview);
   eleventyConfig.addFilter("youtubeId", youtubeId);
 
   // Displays a post's kind as a label. Every kind but "lyric" reads fine

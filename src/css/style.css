@@ -476,6 +476,68 @@ main {
   letter-spacing: 0.02em;
 }
 
+.poem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.1rem;
+}
+
+.poem-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  color: var(--ink);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.poem-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.poem-card-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.poem-card-preview {
+  flex: 1;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--muted);
+  overflow: hidden;
+}
+
+.poem-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  height: 2.4rem;
+  background: linear-gradient(to top, var(--paper), transparent);
+  pointer-events: none;
+}
+
+.poem-card-date {
+  font-family: "Space Mono", monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
 .breadcrumb {
   display: inline-block;
   font-family: "Space Mono", monospace;

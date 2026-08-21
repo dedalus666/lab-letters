@@ -33,13 +33,14 @@ pageKind: poem
 </article>
 {% endif %}
 
-<ul class="entry-list">
+<div class="poem-grid">
 {% for item in collections.poems | reverse %}
   {% if not featured or item.url != featured.url %}
-  <li>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="entry-date">{{ item.date | readableDate }}</span>
-  </li>
+  <a class="poem-card" href="{{ item.url | url }}">
+    <span class="poem-card-title">{{ item.data.title }}</span>
+    <span class="poem-card-preview">{{ item.templateContent | cardPreview(170) }}</span>
+    <span class="poem-card-date">{{ item.date | readableDate }}</span>
+  </a>
   {% endif %}
 {% endfor %}
-</ul>
+</div>
