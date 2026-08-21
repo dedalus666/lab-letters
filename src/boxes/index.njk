@@ -32,13 +32,15 @@ pageKind: box
 </article>
 {% endif %}
 
-<ul class="entry-list">
+<div class="box-grid">
 {% for item in collections.boxes | reverse %}
   {% if not featured or item.url != featured.url %}
-  <li>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="entry-date">{{ item.date | readableDate }}</span>
-  </li>
+  <a class="box-card" href="{{ item.url | url }}">
+    {% if item.data.gallery and item.data.gallery.length %}
+    <img src="/images/{{ item.data.gallery[0] }}" alt="{{ item.data.title }}" loading="lazy">
+    {% endif %}
+    <span class="box-card-title">{{ item.data.title }}</span>
+  </a>
   {% endif %}
 {% endfor %}
-</ul>
+</div>
