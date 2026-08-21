@@ -453,6 +453,7 @@ main {
 .box-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 
 .box-card img {
@@ -500,6 +501,7 @@ main {
   transform: translateY(-3px);
   border-color: var(--accent);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
 }
 
 .text-card-title {
