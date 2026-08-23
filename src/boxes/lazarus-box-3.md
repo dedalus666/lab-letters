@@ -3,7 +3,7 @@ title: Lazarus - Box 3
 kind: box
 tags: boxes, lyrics, Steven Wilson, Porcupine Tree, music
 layout: post.njk
-date: 2021-05-09
+date: 2021-05-01
 note: Lazarus is when I began numbering boxes. I started out by carving 'dice' into each box that would total the box number. This was also the first box I built with a false bottom / secret compartment and the first one on which I added rope handles. 
 gallery: 
 - lazarus-1.jpeg
