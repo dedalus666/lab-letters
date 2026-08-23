@@ -17,7 +17,7 @@ Kanaloa is one of the four major deities in traditional Hawaiian mythology, ruli
 
 A defining aspect of Kanaloa is his ability to manifest physically through kinolau, or multiple earthly forms. His most sacred and primary animal form is the *heʻe* (octopus or squid), which represents the deep, dark mysteries of the ocean and the power of transformation. He is also embodied by large marine mammals like whales and dolphins, powerful predators like sharks and stingrays, and long-distance seabirds that navigators used to find land.
 
-This box was made especially for my aunt Angela, with whom I embarked on an adventure to Hawaii. You can read more about Angie at this post: http://localhost:8080/stories/aunt-angie/
+This box was made especially for my aunt Angela, with whom I embarked on an adventure to Hawaii. You can read more about Angie at [this post](/stories/aunt-angie/).
 
 As Angie is now adventuring in the otherworld, her daughter, my beloved cousin, Sarah, is now taking care of the box. 
 
