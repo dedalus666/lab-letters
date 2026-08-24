@@ -10,6 +10,7 @@ gallery:
 - grace-2.jpeg
 - grace-3.jpeg
 - grace-4.jpeg
+- grace-5.jpeg
 ---
 
 Grace - Box 9
