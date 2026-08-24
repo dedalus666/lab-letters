@@ -7,7 +7,6 @@ date: 2026-08-24
 note: 
 gallery: 
 - ramble-on-rose-1.jpeg
-- ramble-on-rose-2.jpeg
 - ramble-on-rose-3.jpeg
 - ramble-on-rose-4.jpeg
 - ramble-on-rose-5.jpeg
