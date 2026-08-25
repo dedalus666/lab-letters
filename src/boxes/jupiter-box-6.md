@@ -3,8 +3,8 @@ title: Jupiter - Box 6
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-24
-note: 
+date: 2021-07-24
+note: This box was the first I made in an extra large size. 15x8x8. 
 gallery: 
 - jupiter-1.jpeg
 - jupiter-2.jpeg
@@ -16,3 +16,7 @@ gallery:
 ---
 
 Jupiter - Box 6
+
+I named this box Jupiter because it's big. That is all. 
+
+Box not gifted at this time. It has held other boxes, cards, magic tricks, ammunition, guitar pedals, and external hard drives. I believe it is empty at the moment. 

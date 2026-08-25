@@ -3,7 +3,7 @@ title: Millicent - Box 8
 kind: box
 tags: boxes, Zabar's, 
 layout: post.njk
-date: 2026-08-24
+date: 2021-10-10
 note: This is the first box I made without black cherry stain. I used cranberry stain instead. 
 gallery: 
 - millicent-1.jpeg
