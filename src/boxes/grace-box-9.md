@@ -11,10 +11,11 @@ gallery:
 - grace-3.jpeg
 - grace-4.jpeg
 - grace-5.jpeg
+- grace-music.jpg
 ---
 
 Grace - Box 9
 
 Box made for my most beloved niece, who once told me: "When I hear music, I think of you." 
 
-One of the best compliments I've ever received. Thank you, my princess. 
+One of the best compliments I've ever received. I hope this is still true.  

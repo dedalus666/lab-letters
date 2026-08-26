@@ -4,11 +4,11 @@ kind: box
 tags: boxes
 layout: post.njk
 date: 2026-08-24
-note: 
+note: Box stained with Canadian whiskey. 
 gallery: 
-- the-seeker-1.jpeg
-- the-seeker-2.jpeg
 - the-seeker-3.jpeg
+- the-seeker-2.jpeg
+- the-seeker-1.jpeg
 - the-seeker-4.jpeg
 - the-seeker-5.jpeg
 - the-seeker-6.jpeg
@@ -17,3 +17,4 @@ gallery:
 ---
 
 The Seeker - Box 15
+
