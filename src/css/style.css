@@ -913,6 +913,22 @@ body.lightbox-open {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
+/* For a one-off quoted verse/lyric/soliloquy dropped into an otherwise
+   prose post (kind: story or kind: box) — the pre-wrap rule above only
+   applies to whole lyric/poem posts, not this one. Normal prose
+   paragraphs in stories/boxes still need markdown's default behavior
+   of collapsing soft-wrapped source lines back into flowing sentences,
+   so this can't be a blanket rule for the whole post body. Wrap just
+   the quoted lines: <div class="verse-quote">...</div> — and, same as
+   lyric-block/poem-block, keep it free of any blank line inside, or
+   CommonMark will end the div early at that blank line (checked by
+   scripts/check-lyric-blocks.js after every build). */
+.verse-quote {
+  white-space: pre-wrap;
+  font-style: italic;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
 .post-tags {
   margin: 2rem 0 0;
 }

@@ -1,9 +1,11 @@
 // Safety net for a bug that's bitten this site before: a blank line
 // written *inside* a `<div class="lyric-block">...</div>` (or
-// `poem-block`) makes markdown-it treat the div as a raw HTML block that
-// terminates at that blank line — CommonMark's rule, not a bug in this
-// site's code. Everything after the blank line then falls OUTSIDE the
-// div as an auto-wrapped sibling <p>, losing the pre-wrap/serif styling,
+// `poem-block`, or `verse-quote` — the wrapper used to quote a verse/
+// lyric/soliloquy inside an otherwise prose story or box post) makes
+// markdown-it treat the div as a raw HTML block that terminates at that
+// blank line — CommonMark's rule, not a bug in this site's code.
+// Everything after the blank line then falls OUTSIDE the div as an
+// auto-wrapped sibling <p>, losing the pre-wrap/serif/italic styling,
 // with its quote marks HTML-escaped.
 //
 // The site no longer needs the lyric-block/poem-block wrapper at all —
@@ -41,8 +43,11 @@ function checkLyricBlocks(srcDir) {
 
   const problems = [];
   for (const file of files) {
-    const text = fs.readFileSync(file, "utf8");
-    const blockPattern = /<div class="(lyric-block|poem-block)">([\s\S]*?)<\/div>/g;
+    // Strip HTML comments first — a comment showing someone the
+    // verse-quote/lyric-block syntax as documentation (see
+    // example-story.md) isn't a real div and shouldn't be checked as one.
+    const text = fs.readFileSync(file, "utf8").replace(/<!--[\s\S]*?-->/g, "");
+    const blockPattern = /<div class="(lyric-block|poem-block|verse-quote)">([\s\S]*?)<\/div>/g;
     let match;
     while ((match = blockPattern.exec(text))) {
       const [, className, inner] = match;
@@ -75,7 +80,7 @@ if (require.main === module) {
   const srcDir = process.argv[2] || path.join(__dirname, "..", "src");
   const problems = checkLyricBlocks(srcDir);
   if (problems.length) {
-    console.error(`\n[check-lyric-blocks] found a blank line inside ${problems.length} .lyric-block/.poem-block div(s):\n`);
+    console.error(`\n[check-lyric-blocks] found a blank line inside ${problems.length} .lyric-block/.poem-block/.verse-quote div(s):\n`);
     problems.forEach((p) => {
       console.error(`  ${path.relative(process.cwd(), p.file)}`);
       console.error(`    ${p.snippet}`);
@@ -83,6 +88,6 @@ if (require.main === module) {
     });
     process.exitCode = 1;
   } else {
-    console.log("[check-lyric-blocks] all lyric-block/poem-block divs OK");
+    console.log("[check-lyric-blocks] all lyric-block/poem-block/verse-quote divs OK");
   }
 }

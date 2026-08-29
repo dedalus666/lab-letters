@@ -292,19 +292,19 @@ module.exports = function (eleventyConfig) {
   });
 
   // Also after every build, scan the source markdown for the
-  // lyric-block/poem-block blank-line bug (see scripts/check-lyric-blocks.js)
-  // and fail the build if it's back, instead of letting broken formatting
-  // reach GitHub Pages unnoticed.
+  // lyric-block/poem-block/verse-quote blank-line bug (see
+  // scripts/check-lyric-blocks.js) and fail the build if it's back,
+  // instead of letting broken formatting reach GitHub Pages unnoticed.
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
     const checkLyricBlocks = require("./scripts/check-lyric-blocks.js");
     const problems = checkLyricBlocks(path.join(__dirname, dir.input));
     if (problems.length) {
-      console.error(`\n[check-lyric-blocks] ${problems.length} broken lyric-block/poem-block div(s) found:`);
+      console.error(`\n[check-lyric-blocks] ${problems.length} broken lyric-block/poem-block/verse-quote div(s) found:`);
       problems.forEach((p) => console.error(`  - ${p.file}`));
       console.error(`Run "node scripts/check-lyric-blocks.js" for details on each one.\n`);
       process.exitCode = 1;
     } else {
-      console.log("[check-lyric-blocks] all lyric-block/poem-block divs OK");
+      console.log("[check-lyric-blocks] all lyric-block/poem-block/verse-quote divs OK");
     }
   });
 
