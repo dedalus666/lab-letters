@@ -1,7 +1,7 @@
 ---
 title: Hamlet - Box 14
 kind: box
-tags: boxes, Shakespeare, 
+tags: boxes, Shakespeare, mom, Mary Jo, 
 layout: post.njk
 date: 2022-08-17
 note: Barnwood harvested from an old corn-crib on our property. 
