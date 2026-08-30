@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Zabar's, 
 layout: post.njk
 date: 2022-12-21
-note: Raw wood stained with coffee. 
+note: Raw wood stained with coffee grounds. 
 gallery: 
 - java-bean-1.jpeg
 - java-bean-2.jpeg
