@@ -22,4 +22,4 @@ gallery:
 
 Navi - Box 29
 
-Box gifted to my Russian friend Yuri. Yuri is one of the kindest people I've ever met. He has a wonderful, warm soul. 
+Box gifted to my Russian friend Yuri. Yuri is one of the kindest people I've ever met. He has a wonderful, warm soul. In the 80's, Yuri emigrated from Russia to Brooklyn, New York with his whole family, where he lives today - living the American dream. The compass is symbolic of his amazing journey. 
