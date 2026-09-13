@@ -3,7 +3,7 @@ title: Samsara - Box 19
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2023-08-09
 note: 
 gallery: 
 - samsara-1.jpeg
@@ -17,3 +17,8 @@ gallery:
 ---
 
 Samsara - Box 19
+
+Samsara most commonly refers to the Buddhist and Hindu concept of the repeating cycle of birth, life, death, and rebirth. 
+
+
+Gifted to the most wonderful Mrs. Jackie G. 

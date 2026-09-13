@@ -3,7 +3,7 @@ title: Jewel of the Sun - Box 27
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2024-06-30
 note: 
 gallery: 
 - jewel-of-the-sun-1.jpeg
@@ -19,3 +19,5 @@ gallery:
 ---
 
 Jewel of the Sun - Box 27
+
+Box gifted to my friend Patricia. 

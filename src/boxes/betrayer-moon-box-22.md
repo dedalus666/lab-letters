@@ -3,7 +3,7 @@ title: Betrayer Moon - Box 22
 kind: box
 tags: boxes, guitar, lyrics, Piranesi, 
 layout: post.njk
-date: 2024-05-19
+date: 2024-01-08
 note: A keepsake box built around the folklore of the Blue Moon, holding tarot cards, pipe tobacco, and guitar strings.
 gallery: 
  - betrayer-moon0.jpeg

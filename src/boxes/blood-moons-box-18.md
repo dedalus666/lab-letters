@@ -3,7 +3,7 @@ title: Blood Moons - Box 18
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2023-08-08
 note: 
 gallery: 
 - blood-moons-1.jpeg
@@ -17,3 +17,5 @@ gallery:
 ---
 
 Blood Moons - Box 18
+
+Gifted to my friends Carla and Tomas and my Dominican family that I love beyond measure. I included a bottle of Hennessey. 

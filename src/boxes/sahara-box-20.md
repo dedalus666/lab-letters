@@ -3,7 +3,7 @@ title: Sahara - Box 20
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2023-08-10
 note: 
 gallery: 
 - sahara-1.jpeg
@@ -17,3 +17,5 @@ gallery:
 ---
 
 Sahara - Box 20
+
+Gifted to the most wonderful Mrs. Jackie G.

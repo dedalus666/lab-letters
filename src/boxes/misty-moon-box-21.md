@@ -3,7 +3,7 @@ title: Misty Moon - Box 21
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2024-01-07
 note: 
 gallery: 
 - misty-moon-1.jpeg
@@ -15,3 +15,5 @@ gallery:
 ---
 
 Misty Moon - Box 21
+
+Box gifted to Scott who planned to gift it to a friend of his. 

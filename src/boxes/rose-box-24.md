@@ -3,7 +3,7 @@ title: Rose - Box 24
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
+date: 2024-06-19
 note: 
 gallery: 
 - rose-1.jpeg
@@ -17,3 +17,5 @@ gallery:
 ---
 
 Rose - Box 24
+
+Gifted to my friend Rose. 

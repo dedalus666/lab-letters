@@ -3,8 +3,8 @@ title: Eclipse - Box 26
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
-note: 
+date: 2024-06-26
+note: First box I made with a sliding lid instead of hinges. 
 gallery: 
 - eclipse-1.jpeg
 - eclipse-2.jpeg
@@ -20,3 +20,5 @@ gallery:
 ---
 
 Eclipse - Box 26
+
+Box gifted to Larry Z. 

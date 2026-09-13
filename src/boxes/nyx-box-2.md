@@ -22,4 +22,4 @@ In ancient Greek stories, Nyx is the physical personification and goddess of the
 
 I collect playing cards, this box held quite a few. Made with scrap plywood and cherry stain. I built this one with a 'lip' on the inside so that it would close tightly. 
 
-Box gifted to Jose, manager of Zabar's coffee shop. 
+Box gifted to Jose, manager of Zabar's coffee shop - who always provided me a cup just how I like it - black as night.

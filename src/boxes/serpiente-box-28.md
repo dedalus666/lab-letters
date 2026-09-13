@@ -3,8 +3,8 @@ title: Serpiente de Santo Domingo - Box 28
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-08-30
-note: 
+date: 2024-09-17
+note: Use of a wood burning tool to create the dragon artwork. There were many iterations of this experiment as evidenced in the photos. 
 gallery: 
 - serpiente-1.jpeg
 - serpiente-2.jpeg
@@ -22,3 +22,5 @@ gallery:
 ---
 
 Serpiente de Santo Domingo - Box 28
+
+Box gifted to Ramon. 
