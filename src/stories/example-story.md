@@ -28,9 +28,12 @@ the difference between finishing a thing and it finishing you.
   rule: don't leave a blank line inside the block (between the opening
   and closing <div>), or it'll cut the quote short — same rule as the
   lyric-block/poem-block wrapper on older lyric/poem posts. If the quote
-  has a stanza break, end that line with a <br> instead of leaving the
-  line blank. This whole comment is invisible on the published page —
-  copy the block above out of it when you need it, and leave the rest
-  here for next time.
+  has a stanza break, glue a <br> onto the END of the last word of that
+  line — "...The afterworld<br>" — then start the next line immediately
+  below it, with no blank line and no <br> sitting on a line by itself.
+  A <br> on its own line (with real newlines on both sides) doubles up
+  and leaves too much of a gap. This whole comment is invisible on the
+  published page — copy the block above out of it when you need it, and
+  leave the rest here for next time.
 -->
 
