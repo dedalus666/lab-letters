@@ -1,10 +1,10 @@
 ---
 title: Damaged - Box 32
 kind: box
-tags: boxes
+tags: boxes, Black Flag, 
 layout: post.njk
-date: 2026-09-19
-note: 
+date: 2024-11-01
+note: Black Flag logo. 
 gallery: 
 - damaged-1.jpeg
 - damaged-2.jpeg

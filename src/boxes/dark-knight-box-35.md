@@ -1,10 +1,10 @@
 ---
 title: Dark Knight - Box 35
 kind: box
-tags: boxes
+tags: boxes, Batman
 layout: post.njk
-date: 2026-09-19
-note: 
+date: 2025-02-11
+note: Batman logo. 
 gallery: 
 - dark-knight-1.jpeg
 - dark-knight-2.jpeg

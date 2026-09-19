@@ -3,8 +3,8 @@ title: Zen - Box 31
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-09-19
-note: 
+date: 2024-09-25
+note: Husker Dü logo. 
 gallery: 
 - zen-1.jpeg
 - zen-2.jpeg

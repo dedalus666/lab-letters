@@ -3,7 +3,7 @@ title: Punisher - Box 37
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-09-19
+date: 2025-09-01
 note: 
 gallery: 
 - punisher-1.jpeg

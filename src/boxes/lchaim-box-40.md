@@ -3,7 +3,7 @@ title: L'Chaim - Box 40
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-09-19
+date: 2025-10-10
 note: 
 gallery: 
 - lchaim-1.jpeg

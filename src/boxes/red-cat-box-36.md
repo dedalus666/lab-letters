@@ -3,8 +3,8 @@ title: Red Cat - Box 36
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-09-19
-note: 
+date: 2025-08-25
+note: Red Cat Publicity logo. 
 gallery: 
 - red-cat-1.jpeg
 - red-cat-2.jpeg

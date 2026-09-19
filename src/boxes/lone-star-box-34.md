@@ -3,10 +3,10 @@ title: Lone Star - Box 34
 kind: box
 tags: boxes
 layout: post.njk
-date: 2026-09-19
+date: 2025-02-01
 note: 
 gallery: 
-- lone-star-1.jpeg
+- lone-star-12.jpeg
 - lone-star-2.jpeg
 - lone-star-3.jpeg
 - lone-star-4.jpeg
@@ -17,7 +17,7 @@ gallery:
 - lone-star-9.jpeg
 - lone-star-10.jpeg
 - lone-star-11.jpeg
-- lone-star-12.jpeg
+- lone-star-1.jpeg
 ---
 
 Lone Star - Box 34

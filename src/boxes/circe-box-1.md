@@ -1,5 +1,5 @@
 ---
-title: Circe - Box I 
+title: Circe - Box 1
 kind: box
 tags: boxes
 layout: post.njk
@@ -18,6 +18,6 @@ gallery:
 
 Circe is a powerful minor goddess, sorceress, and nymph who lives on the secluded island of Aeaea. Daughter of the sun god Helios and the Oceanid Perse, she is famed for her vast knowledge of potent herbs, drugs, and magical incantations that could transform humans into animals. 
 
-This box was the first box I ever built. I created it in Circe's honor - in the hope that she would change all humans into animals. The world then might know true peace. 
+This box was the first box I ever built. I created it in Circe's honor - in the hope that she would change all humans into animals. The world then might know true peace, as animals do not go to war with one another. 
 
 Not gifted at this time. This box contains supplies I use to finish other boxes: hinges, clasps, rope for handles, footpads, felt, locks & keys, etc. 
