@@ -4,6 +4,23 @@ layout: base.njk
 ---
 {% import "icons-macro.njk" as icons %}
 <img class="about-photo" src="/images/bosami-avatar.jpeg" alt="Dedalus portrait">
+<script>
+  (function () {
+    var photo = document.querySelector('.about-photo');
+    if (!photo) return;
+    photo.tabIndex = 0;
+    photo.setAttribute('role', 'button');
+    photo.setAttribute('aria-label', 'Enlarge portrait');
+    function toggle() { photo.classList.toggle('is-enlarged'); }
+    photo.addEventListener('click', toggle);
+    photo.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  })();
+</script>
 
 <div class="section-header">
   <div class="section-header-text">
