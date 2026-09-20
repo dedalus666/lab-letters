@@ -16,7 +16,6 @@ gallery:
 - dark-knight-8.jpeg
 - dark-knight-9.jpeg
 - dark-knight-10.jpeg
-- dark-knight-11.jpeg
 - dark-knight-12.jpeg
 - dark-knight-13.jpeg
 ---
