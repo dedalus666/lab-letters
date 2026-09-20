@@ -3,21 +3,38 @@ title: Profile
 layout: base.njk
 ---
 {% import "icons-macro.njk" as icons %}
-<img class="about-photo" src="/images/bosami-avatar.jpeg" alt="Dedalus portrait">
+<button type="button" class="about-photo-btn" data-lightbox-open aria-label="Open portrait">
+  <img class="about-photo" src="/images/bosami-avatar.jpeg" alt="Dedalus portrait">
+</button>
+
+<div class="lightbox" data-lightbox hidden>
+  <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">&times;</button>
+  <img class="lightbox-image" src="/images/bosami-avatar.jpeg" alt="Dedalus portrait">
+</div>
+
 <script>
   (function () {
-    var photo = document.querySelector('.about-photo');
-    if (!photo) return;
-    photo.tabIndex = 0;
-    photo.setAttribute('role', 'button');
-    photo.setAttribute('aria-label', 'Enlarge portrait');
-    function toggle() { photo.classList.toggle('is-enlarged'); }
-    photo.addEventListener('click', toggle);
-    photo.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggle();
-      }
+    var openBtn = document.querySelector('[data-lightbox-open]');
+    var lightbox = document.querySelector('[data-lightbox]');
+    if (!openBtn || !lightbox) return;
+
+    function open() {
+      lightbox.removeAttribute('hidden');
+      document.body.classList.add('lightbox-open');
+    }
+    function close() {
+      lightbox.setAttribute('hidden', '');
+      document.body.classList.remove('lightbox-open');
+    }
+
+    openBtn.addEventListener('click', open);
+    lightbox.querySelector('[data-lightbox-close]').addEventListener('click', close);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (lightbox.hasAttribute('hidden')) return;
+      if (e.key === 'Escape') close();
     });
   })();
 </script>

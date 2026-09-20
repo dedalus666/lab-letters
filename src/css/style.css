@@ -207,32 +207,29 @@ a:hover { text-decoration: underline; }
   border-color: var(--accent);
 }
 
+.about-photo-btn {
+  display: block;
+  width: 180px;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
 .about-photo {
   display: block;
   width: 180px;
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
-  margin-bottom: 1.5rem;
   border: 2px solid transparent;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, width 0.25s ease, height 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.about-photo:hover {
+.about-photo-btn:hover .about-photo {
   border-color: var(--accent);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  transform: translateY(-3px);
-}
-
-.about-photo.is-enlarged {
-  width: 340px;
-  height: 340px;
-  max-width: 90vw;
-  max-height: 90vw;
-}
-
-.about-photo.is-enlarged:hover {
   transform: translateY(-3px);
 }
 
