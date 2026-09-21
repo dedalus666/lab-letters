@@ -4,7 +4,7 @@ kind: story
 tags: stories
 layout: post.njk
 date: 2024-10-31
-note: Writing challenge: 2 sentence horror story. 
+note: "Writing challenge - 2 sentence horror story."
 ---
 
 The Drop
