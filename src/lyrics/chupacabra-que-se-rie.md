@@ -6,3 +6,4 @@ layout: post.njk
 date: 2007-10-28
 note: Track 4 on "Santiago" (se unio~), released October 28, 2007. "An experiment in gypsy flamenco with a twist of Americana."
 ---
+*"Chupacabra" is a legendary cryptid from the Americas known for attacking livestock and draining them of blood.* 

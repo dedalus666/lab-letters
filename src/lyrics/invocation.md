@@ -6,6 +6,7 @@ layout: post.njk
 date: 2012-10-23
 note: Track 2 of the album "Invocation", released October 23, 2012.
 ---
+*"We do what we must . . . Sometimes we can choose the path we follow. Sometimes our choices are made for us. And sometimes we have no choice at all." ~ Dream in Sandman, Season of Mists by Neil Gaiman*
 
 Time
 I absolve myself from your vow to vanquish me

@@ -6,3 +6,4 @@ layout: post.njk
 date: 2021-12-21
 note: Track 2 on "A Thread in the Labyrinth" (Dedalus), released December 21, 2021. Rolled out as one of 13 sequential singles before landing on the full album.
 ---
+*Like a fistful of pebbles, the first few heavy drops of rain from the storm clouds ticked the autumn leaves on the ground with a series of faint, wispy snaps staggered to the rhythm of the sky, hurried on by the wind.*

@@ -6,3 +6,4 @@ layout: post.njk
 date: 2012-10-23
 note: Track 11 of the album "Invocation", released October 23, 2012.
 ---
+*You...you are my favourite made up thing. --Bellis Shaman* 

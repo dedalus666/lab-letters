@@ -6,3 +6,10 @@ layout: post.njk
 date: 2021-12-21
 note: Track 6 on "A Thread in the Labyrinth" (Dedalus), released December 21, 2021. Rolled out as one of 13 sequential singles before landing on the full album.
 ---
+*"Dreams don't mean anything, Dolores.* 
+
+*That answer doesn't seem to satisfy you."*
+
+*"Because it's not completely honest."*
+
+*--Scene from Westworld*

@@ -6,3 +6,4 @@ layout: post.njk
 date: 2016-04-30
 note: Single (Dedalus), released April 30, 2016.
 ---
+*...for Robert. A wise and wonderful character whom has enriched my life.*
