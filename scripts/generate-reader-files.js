@@ -15,7 +15,12 @@ const MarkdownIt = require("markdown-it");
 const PDFDocument = require("pdfkit");
 const genEpub = require("epub-gen-memory").default;
 
-const md = new MarkdownIt({ html: false, breaks: false });
+// html:true so the raw HTML a lot of posts already use inline — <p>, <em>,
+// <strong>, <a href="…"> for attributions and "listen on…" links — renders
+// correctly instead of showing up as literal, escaped tags in the EPUB.
+// (Verse blocks are handled separately below, bypassing this renderer
+// entirely, since they need explicit line breaks this alone won't add.)
+const md = new MarkdownIt({ html: true, breaks: false });
 // markdown-it blocks file:// links/images by default as an untrusted-input
 // safeguard. We generate this content ourselves from our own local photos,
 // so it's safe to allow here — without this, embedded images silently
@@ -48,15 +53,101 @@ function imageFileUrl(filenameOrPath) {
   return pathToFileURL(path.join(IMAGES_DIR, filename)).href;
 }
 
-// Strips image markdown and simplifies links down to their visible text.
-// Used for the PDF, which stays text-only — laying out photos well on a
-// generated PDF page is a fair bit more work than an EPUB, which is just
-// a package of HTML.
+// Strips image markdown, simplifies links down to their visible text, and
+// unwraps the handful of raw HTML tags posts use inline (<p>, <em>,
+// <strong>, <a href="…">, e.g. for attributions or "listen on…" links).
+// Used for the PDF, which stays plain text — laying out photos and rich
+// text well on a generated PDF page is a fair bit more work than an EPUB,
+// which is just a package of HTML.
 function toPlainMarkdown(content) {
   return content
     .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/<a\s+href="([^"]+)"[^>]*>([^<]*)<\/a>/gi, "$2 ($1)")
+    .replace(/<\/p>\s*<p[^>]*>/gi, "\n\n")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/?(p|em|strong|i|b)(\s+[^>]*)?>/gi, "")
     .trim();
+}
+
+// Author-facing documentation notes (e.g. explaining the verse-quote
+// convention in example-story.md) are invisible HTML comments on the
+// website, but this script's markdown-it instance below is deliberately
+// configured with html:false, so left alone a comment shows up as literal
+// text in the PDF/EPUB. Drop them before anything else.
+function stripComments(content) {
+  return content.replace(/<!--[\s\S]*?-->/g, "");
+}
+
+// Matches the site's raw-HTML verse wrappers: <div class="lyric-block">,
+// poem-block, and verse-quote. These (and the <br> stanza-break markers
+// inside them) rely on the site's own CSS + Eleventy's HTML-aware markdown
+// renderer to display correctly — this script's plain-text PDF and its
+// html:false EPUB renderer don't understand them, so left alone they show
+// up as literal, unrendered HTML ("snippets of code") in the downloads.
+const VERSE_BLOCK_RE = /<div class="(?:lyric-block|poem-block|verse-quote)">([\s\S]*?)<\/div>/g;
+
+// Splits a verse block's inner text into lines, noting where a trailing
+// "<br>" marks a stanza break (the site's convention for a blank-line gap).
+function parseVerseLines(inner) {
+  return inner
+    .replace(/^\n+|\n+$/g, "")
+    .split("\n")
+    .map((line) => ({
+      text: line.replace(/<br\s*\/?>\s*$/i, ""),
+      stanzaBreak: /<br\s*\/?>\s*$/i.test(line),
+    }));
+}
+
+// Turns a verse block into plain, blank-line-separated stanzas — exactly
+// the shape toPlainMarkdown/generatePdf already know how to lay out.
+function verseBlockToPlainText(inner) {
+  const stanzas = [];
+  let current = [];
+  parseVerseLines(inner).forEach(({ text, stanzaBreak }) => {
+    current.push(text);
+    if (stanzaBreak) {
+      stanzas.push(current.join("\n"));
+      current = [];
+    }
+  });
+  if (current.length) stanzas.push(current.join("\n"));
+  return stanzas.join("\n\n");
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// Turns a verse block into real HTML with an explicit <br/> after every
+// line (doubled at stanza breaks) so it displays correctly in an EPUB
+// reader without needing the site's own pre-wrap CSS carried over.
+function verseBlockToHtml(inner) {
+  const lines = parseVerseLines(inner);
+  const htmlLines = lines.map(({ text, stanzaBreak }, i) => {
+    const isLast = i === lines.length - 1;
+    const br = isLast ? "" : stanzaBreak ? "<br/><br/>" : "<br/>";
+    return escapeHtml(text) + br;
+  });
+  return `<div style="font-style:italic;">${htmlLines.join("\n")}</div>`;
+}
+
+// Renders a post body to plain text for the PDF, handling verse blocks
+// (see above) separately from the surrounding ordinary markdown.
+function renderPlainText(content) {
+  return content
+    .split(VERSE_BLOCK_RE)
+    .map((segment, i) => (i % 2 === 1 ? verseBlockToPlainText(segment) : toPlainMarkdown(segment)))
+    .join("\n\n");
+}
+
+// Renders a post body to HTML for the EPUB, handling verse blocks (see
+// above) separately from the surrounding ordinary markdown.
+function renderBodyHtml(content) {
+  return content
+    .split(VERSE_BLOCK_RE)
+    .map((segment, i) => (i % 2 === 1 ? verseBlockToHtml(segment) : md.render(embedInlineImages(segment))))
+    .join("\n");
 }
 
 // Rewrites any inline `/images/...` references in the post's own Markdown
@@ -104,7 +195,7 @@ async function generateEpub(outputPath, { title, kind, date, gallery }, content)
     gallery && gallery.length
       ? gallery.map((filename) => `<img src="${imageFileUrl(filename)}" alt="" />`).join("\n") + "\n"
       : "";
-  const bodyHtml = md.render(embedInlineImages(content));
+  const bodyHtml = renderBodyHtml(content);
 
   const buffer = await genEpub(
     {
@@ -137,14 +228,15 @@ module.exports = async function generateReaderFiles(outputDir) {
 
     for (const file of files) {
       const raw = fs.readFileSync(path.join(dirPath, file), "utf8");
-      const { data, content } = matter(raw);
+      const { data, content: rawContent } = matter(raw);
       if (!data.title || !data.date) continue;
+      const content = stripComments(rawContent);
 
       const slug = path.basename(file, path.extname(file));
       const pageDir = path.join(outputDir, section.url, slug);
       if (!fs.existsSync(pageDir)) continue; // page wasn't built (e.g. draft), skip
 
-      await generatePdf(path.join(pageDir, "story.pdf"), data, toPlainMarkdown(content));
+      await generatePdf(path.join(pageDir, "story.pdf"), data, renderPlainText(content));
       await generateEpub(path.join(pageDir, "story.epub"), data, content);
       count += 1;
     }
