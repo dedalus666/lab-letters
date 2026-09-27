@@ -21,3 +21,5 @@ gallery:
 ---
 
 Dark Knight - Box 35
+
+Box gifted to Duane, who introduced me to comics, including, but not limited to Batman. The history of our friendship is as long and storied as the Dark Knight's. 

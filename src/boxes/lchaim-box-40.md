@@ -1,7 +1,7 @@
 ---
 title: L'Chaim - Box 40
 kind: box
-tags: boxes
+tags: boxes, Zabar's, 
 layout: post.njk
 date: 2025-10-10
 note: 
@@ -16,3 +16,5 @@ gallery:
 ---
 
 L'Chaim - Box 40
+
+L'chaim translates to "to life" in Hebrew. Box gifted to Saul Zabar's daughter, Annie. 

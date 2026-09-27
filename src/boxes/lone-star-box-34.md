@@ -21,3 +21,5 @@ gallery:
 ---
 
 Lone Star - Box 34
+
+Box gifted to Scott M.'s daughter Maddie. 

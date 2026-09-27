@@ -22,3 +22,7 @@ gallery:
 ---
 
 Big Takeover - Box 33
+
+Bad Brains is a legendary American rock band that came out of Washington, D.C.. Pioneers of hardcore punk, they famously mixed lightning-fast punk rock with deep reggae grooves, heavy metal, and funk. 
+
+Box gifted to Rich. 

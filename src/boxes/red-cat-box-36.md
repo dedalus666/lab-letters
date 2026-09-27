@@ -23,3 +23,5 @@ gallery:
 ---
 
 Red Cat - Box 36
+
+Box gifted to Jason 'McGillicuddy' Byrne, a magnificent drummer, friend and an all around amazing human being. 
