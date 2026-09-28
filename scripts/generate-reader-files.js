@@ -15,11 +15,11 @@ const MarkdownIt = require("markdown-it");
 const PDFDocument = require("pdfkit");
 const genEpub = require("epub-gen-memory").default;
 
-// html:true so the raw HTML a lot of posts already use inline — <p>, <em>,
-// <strong>, <a href="…"> for attributions and "listen on…" links — renders
-// correctly instead of showing up as literal, escaped tags in the EPUB.
-// (Verse blocks are handled separately below, bypassing this renderer
-// entirely, since they need explicit line breaks this alone won't add.)
+// html:true so the raw HTML posts already use inline — a lyric-block/
+// poem-block/verse-quote <div>, <p>/<em>/<strong>/<a href="…"> for
+// attributions and "listen on…" links — passes straight through to the
+// EPUB instead of showing up as literal, escaped tags, exactly like on
+// the website (Eleventy's own markdown-it is html:true too).
 const md = new MarkdownIt({ html: true, breaks: false });
 // markdown-it blocks file:// links/images by default as an untrusted-input
 // safeguard. We generate this content ourselves from our own local photos,
@@ -82,9 +82,10 @@ function stripComments(content) {
 // Matches the site's raw-HTML verse wrappers: <div class="lyric-block">,
 // poem-block, and verse-quote. These (and the <br> stanza-break markers
 // inside them) rely on the site's own CSS + Eleventy's HTML-aware markdown
-// renderer to display correctly — this script's plain-text PDF and its
-// html:false EPUB renderer don't understand them, so left alone they show
-// up as literal, unrendered HTML ("snippets of code") in the downloads.
+// renderer to display correctly — pdfkit's plain-text PDF has no CSS to
+// lean on, so left alone they'd show up as literal, unrendered HTML
+// ("snippets of code") there. Only needed for the PDF path below; the
+// EPUB (further down) carries the real CSS over instead.
 const VERSE_BLOCK_RE = /<div class="(?:lyric-block|poem-block|verse-quote)">([\s\S]*?)<\/div>/g;
 
 // Splits a verse block's inner text into lines, noting where a trailing
@@ -115,25 +116,10 @@ function verseBlockToPlainText(inner) {
   return stanzas.join("\n\n");
 }
 
-function escapeHtml(str) {
-  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-// Turns a verse block into real HTML with an explicit <br/> after every
-// line (doubled at stanza breaks) so it displays correctly in an EPUB
-// reader without needing the site's own pre-wrap CSS carried over.
-function verseBlockToHtml(inner) {
-  const lines = parseVerseLines(inner);
-  const htmlLines = lines.map(({ text, stanzaBreak }, i) => {
-    const isLast = i === lines.length - 1;
-    const br = isLast ? "" : stanzaBreak ? "<br/><br/>" : "<br/>";
-    return escapeHtml(text) + br;
-  });
-  return `<div style="font-style:italic;">${htmlLines.join("\n")}</div>`;
-}
-
 // Renders a post body to plain text for the PDF, handling verse blocks
-// (see above) separately from the surrounding ordinary markdown.
+// (see above) separately from the surrounding ordinary markdown — pdfkit
+// is plain text, so there's no CSS to lean on the way the EPUB (below)
+// and the website itself both do.
 function renderPlainText(content) {
   return content
     .split(VERSE_BLOCK_RE)
@@ -141,13 +127,19 @@ function renderPlainText(content) {
     .join("\n\n");
 }
 
-// Renders a post body to HTML for the EPUB, handling verse blocks (see
-// above) separately from the surrounding ordinary markdown.
-function renderBodyHtml(content) {
-  return content
-    .split(VERSE_BLOCK_RE)
-    .map((segment, i) => (i % 2 === 1 ? verseBlockToHtml(segment) : md.render(embedInlineImages(segment))))
-    .join("\n");
+// The site's own CSS (see style.css) gives .lyric-block/.poem-block/
+// .verse-quote, and every <p> inside a kind:lyric/kind:poem post body,
+// `white-space: pre-wrap` — Eleventy's markdown-it already keeps a soft
+// line break as a literal newline character in its HTML output, so that
+// CSS alone is what turns it back into a visible line break. Reproducing
+// that here (wrap in the same post-body-<kind> class the site uses, feed
+// the matching CSS to epub-gen-memory below) means the EPUB needs no
+// special-cased HTML reconstruction: raw HTML the post already contains
+// (a lyric-block/poem-block/verse-quote div, or <p>/<em>/<a> tags for an
+// attribution line) just passes through, exactly like on the website.
+function renderBodyHtml(content, kind) {
+  const inner = md.render(embedInlineImages(content));
+  return `<div class="post-body post-body-${kind}">${inner}</div>`;
 }
 
 // Rewrites any inline `/images/...` references in the post's own Markdown
@@ -190,12 +182,36 @@ async function generatePdf(outputPath, { title, kind, date }, plainMarkdown) {
   });
 }
 
+// epub-gen-memory's own default CSS (see template.css in that package) —
+// carried forward below since setting `css` replaces it rather than
+// adding to it, plus the site's own pre-wrap rules (see style.css) that
+// make lyric-block/poem-block/verse-quote — and a plain, unwrapped
+// lyric/poem post's ordinary paragraphs — keep their source line breaks.
+const EPUB_CSS = `
+.epub-author { color: #555; }
+.epub-link { margin-bottom: 30px; }
+.epub-link a { color: #666; font-size: 90%; }
+.toc-author { font-size: 90%; color: #555; }
+.toc-link { color: #999; font-size: 85%; display: block; }
+hr { border: 0; border-bottom: 1px solid #dedede; margin: 60px 10%; }
+
+.lyric-block, .poem-block,
+.post-body-lyric p, .post-body-poem p {
+  white-space: pre-wrap;
+}
+
+.verse-quote {
+  white-space: pre-wrap;
+  font-style: italic;
+}
+`;
+
 async function generateEpub(outputPath, { title, kind, date, gallery }, content) {
   const galleryHtml =
     gallery && gallery.length
       ? gallery.map((filename) => `<img src="${imageFileUrl(filename)}" alt="" />`).join("\n") + "\n"
       : "";
-  const bodyHtml = renderBodyHtml(content);
+  const bodyHtml = renderBodyHtml(content, kind);
 
   const buffer = await genEpub(
     {
@@ -203,6 +219,7 @@ async function generateEpub(outputPath, { title, kind, date, gallery }, content)
       author: "Dedalus",
       description: [kind, readableDate(date)].filter(Boolean).join(" · "),
       tocTitle: "Contents",
+      css: EPUB_CSS,
       // Missing/unreachable images shouldn't ever fail the whole build —
       // better to ship the EPUB without one photo than not ship it at all.
       ignoreFailedDownloads: true,
