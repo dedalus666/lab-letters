@@ -3,6 +3,7 @@ title: Arcana
 layout: base.njk
 ---
 {% import "icons-macro.njk" as icons %}
+{% import "video-macro.njk" as videoMacro %}
 <div class="section-header">
   <div class="section-header-text">
     <h1>Arcana</h1>
@@ -15,7 +16,8 @@ layout: base.njk
 
 <div class="link-section">
   <h2>Video</h2>
-  <p>Full magic videos are coming soon. In the meantime, find Dedalus (Dark Arts Music) on YouTube:</p>
+  {{ videoMacro.renderVideo("https://youtu.be/TqjhF9m1pd8", "Dedalus magic video") }}
+  <p>More videos are on the way. In the meantime, find Dedalus (Dark Arts Music) on YouTube:</p>
   <ul class="link-list">
     <li><a href="https://www.youtube.com/@darkartsmusic" target="_blank" rel="noopener">Dedalus (Dark Arts Music) on YouTube</a> <span class="link-tagline">Videos, visuals, and more from the Dedalus world.</span></li>
   </ul>
