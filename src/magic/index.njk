@@ -1,6 +1,11 @@
 ---
 title: Arcana
 layout: base.njk
+# To add a video, copy two lines (a title and a YouTube link) to the end of
+# this list. They appear on the page in the order listed.
+videos:
+  - title: Dedalus magic video
+    url: https://youtu.be/TqjhF9m1pd8
 ---
 {% import "icons-macro.njk" as icons %}
 {% import "video-macro.njk" as videoMacro %}
@@ -16,7 +21,12 @@ layout: base.njk
 
 <div class="link-section">
   <h2>Video</h2>
-  {{ videoMacro.renderVideo("https://youtu.be/TqjhF9m1pd8", "Dedalus magic video") }}
+  {% for video in videos %}
+  <div class="magic-video">
+    <h3 class="magic-video-title">{{ video.title }}</h3>
+    {{ videoMacro.renderVideo(video.url, video.title) }}
+  </div>
+  {% endfor %}
   <p>More videos are on the way. In the meantime, find Dedalus (Dark Arts Music) on YouTube:</p>
   <ul class="link-list">
     <li><a href="https://www.youtube.com/@darkartsmusic" target="_blank" rel="noopener">Dedalus (Dark Arts Music) on YouTube</a> <span class="link-tagline">Videos, visuals, and more from the Dedalus world.</span></li>

@@ -1107,3 +1107,12 @@ body.is-home .site-footer {
     margin-top: 1rem;
   }
 }
+
+/* Stacked list of videos on the Arcana page. */
+.magic-video { margin-bottom: 2rem; }
+.magic-video-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
