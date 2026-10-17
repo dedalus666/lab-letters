@@ -1,7 +1,7 @@
 ---
 title: Trailside Rangers — On the Road with a Promise and a Prayer, A Tour Diary
 kind: story
-tags: Trailside Rangers, tour diary, music, memoir, lyrics
+tags: stories, Trailside Rangers, tour diary, music, memoir, lyrics
 layout: post.njk
 date: 2001-02-18
 note: The full tour diary of the Trailside Rangers' 2001 East Coast run — the shows, the breakdowns, and the band's last stand. An 'entertainment.'  Unofficial, mostly fictional, retrospective falsifications, albeit lucid observations by joe Wilford. 
