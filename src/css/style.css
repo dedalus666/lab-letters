@@ -1120,14 +1120,14 @@ body.is-home .site-footer {
 /* Guitar-pick bullet in front of each paragraph of a post that sets
    `bodyClass: pick-bullets` in its front matter (used by the guitar tips
    post). Skips a paragraph that is entirely italic (the subtitle lines at
-   the top) and the closing line. The pick is a mask, so it takes the
+   the top). The pick is a mask, so it takes the
    accent color and follows the light/dark theme. */
 .pick-bullets > p {
   position: relative;
   padding-left: 1.7rem;
 }
 
-.pick-bullets > p:not(:has(> em:only-child)):not(:last-child)::before {
+.pick-bullets > p:not(:has(> em:only-child))::before {
   content: "";
   position: absolute;
   left: 0;

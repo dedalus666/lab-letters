@@ -121,7 +121,7 @@ function verseBlockToPlainText(inner) {
 // nor pdfkit text can do that, so the PDF draws the pick as a vector shape
 // and the EPUB embeds it as a small PNG (scripts/assets/pick.png). Same
 // rule as the CSS: skip a paragraph that is entirely italic (the subtitle
-// lines) and the closing paragraph.
+// lines).
 const PICK_PATH =
   "M12 22c-.7 0-1.3-.4-1.8-1.1C7 16.8 3.5 12.4 3.5 8.5 3.5 4.9 6.5 3 12 3s8.5 1.9 8.5 5.5c0 3.9-3.5 8.3-6.7 12.4-.5.7-1.1 1.1-1.8 1.1z";
 const PICK_COLOR = "#a8542e";
@@ -161,12 +161,9 @@ function renderBodyHtml(content, kind, bodyClass) {
   let inner = md.render(embedInlineImages(content));
   if (hasPickBullets(bodyClass)) {
     const pick = `<img class="pick" src="${pathToFileURL(PICK_PNG).href}" alt="•" />`;
-    const paragraphs = inner.match(/<p>[\s\S]*?<\/p>/g) || [];
-    let seen = 0;
     inner = inner.replace(/<p>([\s\S]*?)<\/p>/g, (match, body) => {
-      seen += 1;
       const wholeEm = /^<em>[\s\S]*<\/em>$/.test(body.trim());
-      if (wholeEm || seen === paragraphs.length) return match;
+      if (wholeEm) return match;
       return `<p>${pick}${body}</p>`;
     });
   }
@@ -215,7 +212,7 @@ async function generatePdf(outputPath, { title, kind, date, bodyClass }, plainMa
       const text = italic ? paragraph.trim().slice(1, -1) : paragraph;
       doc.font(italic ? "Times-Italic" : "Times-Roman");
 
-      const withPick = bullets && !italic && i !== paragraphs.length - 1;
+      const withPick = bullets && !italic;
       if (!withPick) {
         doc.text(text, { align: "left", lineGap: 4 });
         return;
