@@ -116,6 +116,26 @@ function verseBlockToPlainText(inner) {
   return stanzas.join("\n\n");
 }
 
+// Posts that set `bodyClass: pick-bullets` get a guitar-pick bullet in front
+// of each tip on the website (CSS mask, see style.css). Neither a CSS mask
+// nor pdfkit text can do that, so the PDF draws the pick as a vector shape
+// and the EPUB embeds it as a small PNG (scripts/assets/pick.png). Same
+// rule as the CSS: skip a paragraph that is entirely italic (the subtitle
+// lines) and the closing paragraph.
+const PICK_PATH =
+  "M12 22c-.7 0-1.3-.4-1.8-1.1C7 16.8 3.5 12.4 3.5 8.5 3.5 4.9 6.5 3 12 3s8.5 1.9 8.5 5.5c0 3.9-3.5 8.3-6.7 12.4-.5.7-1.1 1.1-1.8 1.1z";
+const PICK_COLOR = "#a8542e";
+const PICK_PNG = path.resolve("scripts/assets/pick.png");
+
+function hasPickBullets(bodyClass) {
+  return typeof bodyClass === "string" && bodyClass.split(/\s+/).includes("pick-bullets");
+}
+
+// A paragraph written as one italic span: *text* (markdown) or <em>…</em> (HTML).
+function isWhollyItalic(text) {
+  return /^\*[^*]+\*$/.test(text.trim());
+}
+
 // Renders a post body to plain text for the PDF, handling verse blocks
 // (see above) separately from the surrounding ordinary markdown — pdfkit
 // is plain text, so there's no CSS to lean on the way the EPUB (below)
@@ -137,9 +157,21 @@ function renderPlainText(content) {
 // special-cased HTML reconstruction: raw HTML the post already contains
 // (a lyric-block/poem-block/verse-quote div, or <p>/<em>/<a> tags for an
 // attribution line) just passes through, exactly like on the website.
-function renderBodyHtml(content, kind) {
-  const inner = md.render(embedInlineImages(content));
-  return `<div class="post-body post-body-${kind}">${inner}</div>`;
+function renderBodyHtml(content, kind, bodyClass) {
+  let inner = md.render(embedInlineImages(content));
+  if (hasPickBullets(bodyClass)) {
+    const pick = `<img class="pick" src="${pathToFileURL(PICK_PNG).href}" alt="•" />`;
+    const paragraphs = inner.match(/<p>[\s\S]*?<\/p>/g) || [];
+    let seen = 0;
+    inner = inner.replace(/<p>([\s\S]*?)<\/p>/g, (match, body) => {
+      seen += 1;
+      const wholeEm = /^<em>[\s\S]*<\/em>$/.test(body.trim());
+      if (wholeEm || seen === paragraphs.length) return match;
+      return `<p>${pick}${body}</p>`;
+    });
+  }
+  const extra = hasPickBullets(bodyClass) ? " pick-bullets" : "";
+  return `<div class="post-body post-body-${kind}${extra}">${inner}</div>`;
 }
 
 // Rewrites any inline `/images/...` references in the post's own Markdown
@@ -151,7 +183,7 @@ function embedInlineImages(content) {
   });
 }
 
-async function generatePdf(outputPath, { title, kind, date }, plainMarkdown) {
+async function generatePdf(outputPath, { title, kind, date, bodyClass }, plainMarkdown) {
   await new Promise((resolve, reject) => {
     const doc = new PDFDocument({ margin: 64, size: "LETTER" });
     const stream = fs.createWriteStream(outputPath);
@@ -167,14 +199,45 @@ async function generatePdf(outputPath, { title, kind, date }, plainMarkdown) {
     doc.moveDown(1.25);
     doc.fillColor("#000000").font("Times-Roman").fontSize(13);
 
-    plainMarkdown
+    const bullets = hasPickBullets(bodyClass);
+    const paragraphs = plainMarkdown
       .split(/\n\s*\n/)
       .map((p) => p.trim())
-      .filter(Boolean)
-      .forEach((paragraph, i) => {
-        if (i > 0) doc.moveDown(0.75);
-        doc.text(paragraph, { align: "left", lineGap: 4 });
-      });
+      .filter(Boolean);
+    const contentWidth = doc.page.width - doc.page.margins.left - doc.page.margins.right;
+    const indent = 20;
+
+    paragraphs.forEach((paragraph, i) => {
+      if (i > 0) doc.moveDown(0.75);
+      // A paragraph that is one italic span (*text*) is set in italics,
+      // with the asterisks dropped.
+      const italic = isWhollyItalic(paragraph);
+      const text = italic ? paragraph.trim().slice(1, -1) : paragraph;
+      doc.font(italic ? "Times-Italic" : "Times-Roman");
+
+      const withPick = bullets && !italic && i !== paragraphs.length - 1;
+      if (!withPick) {
+        doc.text(text, { align: "left", lineGap: 4 });
+        return;
+      }
+
+      const width = contentWidth - indent;
+      const height = doc.heightOfString(text, { width, lineGap: 4 });
+      if (doc.y + height > doc.page.height - doc.page.margins.bottom) doc.addPage();
+      const x = doc.page.margins.left;
+      const y = doc.y;
+      doc
+        .save()
+        .translate(x, y + 1)
+        .scale(0.5)
+        .rotate(-12, { origin: [12, 12] })
+        .path(PICK_PATH)
+        .fill(PICK_COLOR)
+        .restore();
+      doc.fillColor("#000000");
+      doc.text(text, x + indent, y, { align: "left", lineGap: 4, width });
+      doc.x = x;
+    });
 
     doc.end();
     stream.on("finish", resolve);
@@ -204,14 +267,21 @@ hr { border: 0; border-bottom: 1px solid #dedede; margin: 60px 10%; }
   white-space: pre-wrap;
   font-style: italic;
 }
+
+.pick {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.5em;
+  vertical-align: baseline;
+}
 `;
 
-async function generateEpub(outputPath, { title, kind, date, gallery }, content) {
+async function generateEpub(outputPath, { title, kind, date, gallery, bodyClass }, content) {
   const galleryHtml =
     gallery && gallery.length
       ? gallery.map((filename) => `<img src="${imageFileUrl(filename)}" alt="" />`).join("\n") + "\n"
       : "";
-  const bodyHtml = renderBodyHtml(content, kind);
+  const bodyHtml = renderBodyHtml(content, kind, bodyClass);
 
   const buffer = await genEpub(
     {
