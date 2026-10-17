@@ -13,9 +13,9 @@ note: Things I wish someone had told me when I began learning to play the guitar
 
 Unless they are visibly corroded, or break, you don’t need to change your strings. Acoustic guitars may sound warmer with new strings - electric guitars need no such pampering. 
 
-Great tone is not something you find in an amp, guitar or expensive strings. It’s in your fingers. And you will thumb your nose at this comment until one day when you finally hear it for yourself. Great guitar players can play shitty guitars through crappy amps and make them sound amazing. Every note is like a gymnast sticking a landing - how you arrive at that note is important. Did you almost slip? Did you fall? Was it clumsy, or did you have hesitation? Did you waver? Was your finger not in just the right spot? Did you bend the string and not mean to? Did you not bend to the right pitch? When you are sticking the landing on every note, you will hear that your fingers have an auditory personality that is unique - the sound is pure, original and warm. That is where the great tone is coming from. Your execution of the notes. 
+Great tone is not something you find in an amp, guitar or expensive strings. It’s in your fingers. And you will thumb your nose at this comment until one day when you finally hear it for yourself. Great guitar players can play sh*tty guitars through crappy amps and make them sound amazing. Every note is like a gymnast sticking a landing - how you arrive at that note is important. Did you almost slip? Did you fall? Was it clumsy, or did you have hesitation? Did you waver? Was your finger not in just the right spot? Did you bend the string and not mean to? Did you not bend to the right pitch? When you are sticking the landing on every note, you will hear that your fingers have an auditory personality that is unique - the sound is pure, original and warm. That is where the great tone is coming from. Your execution of the notes. 
 
-Fuck music theory. Your ears and your creativity are the only theory you need. Punk rock utilizes zero music theory. Its strength is in the passion of the music itself and a determination to color outside the lines, and this can be applied to any genre. Live dangerously. Explore your instrument. No seatbelt, no rules, no boundaries. The amount of time you invest in learning music theory is time you could be crafting your songwriting skills. All you need are three chords and a dream to set the world on fire. 
+F*ck music theory. Your ears and your creativity are the only theory you need. Punk rock utilizes zero music theory. Its strength is in the passion of the music itself and a determination to color outside the lines, and this can be applied to any genre. Live dangerously. Explore your instrument. No seatbelt, no rules, no boundaries. The amount of time you invest in learning music theory is time you could be crafting your songwriting skills. All you need are three chords and a dream to set the world on fire. 
 
 Your fingertips are going to hurt when you first start playing. Deal with it. 
 
@@ -87,7 +87,7 @@ Silence where there could be a flurry of notes is powerful.
 
 Never mind verse, chorus, verse, chorus, bridge. Not every song needs a bridge. Or a chorus. 
 
-Bridges have been abused by the songwriting industry - they believe every song needs one. This has resulted in millions of otherwise great songs with shitty bridges that are there because someone had to crowbar them in. A change in key or mood within a song is terrific, as long as it actually works. It should feel euphoric, not like a change for the sake of a change. When you come back to the verse it should feel like a satisfying resolution. If it doesn’t evoke these feelings, you are just writing a bridge to fill space - leave it out. 
+Bridges have been abused by the songwriting industry - they believe every song needs one. This has resulted in millions of otherwise great songs with sh*tty bridges that are there because someone had to crowbar them in. A change in key or mood within a song is terrific, as long as it actually works. It should feel euphoric, not like a change for the sake of a change. When you come back to the verse it should feel like a satisfying resolution. If it doesn’t evoke these feelings, you are just writing a bridge to fill space - leave it out. 
 
 Never mind what everyone else is doing. Trust your musical instincts. Write as if you are the only one who will ever hear the song, because that may very well be the reality. 
 
@@ -95,7 +95,7 @@ Write songs for yourself. There is no one else more worth writing for.
 
 Learn to play cover songs. Even ones you don’t like. It will improve your perspective and introduce you to new styles and ultimately, make you a better player. You don’t need to learn them note for note - just pay attention to the structure and what works well within it. The chord changes, the tempo, the melodies. You’ll never be able to emulate the songs like the original artist so don’t waste hours trying. Just get close. But most importantly, don’t settle for being a cover band. 
 
-The song is the star. If it is good, no matter how shitty the recording, it will still be recognized as a good song. 
+The song is the star. If it is good, no matter how sh*tty the recording, it will still be recognized as a good song. 
 
 Learn your favorite songs. Play cover songs. But always write your own songs. No one can tell you you’re not playing them right. 
 
