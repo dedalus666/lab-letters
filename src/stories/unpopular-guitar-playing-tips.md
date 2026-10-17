@@ -3,6 +3,7 @@ title: Unpopular guitar playing tips
 kind: story
 tags: stories, music, guitar
 layout: post.njk
+bodyClass: pick-bullets
 date: 2026-10-17
 note: Things I wish someone had told me when I began learning to play the guitar.
 ---
