@@ -65,6 +65,7 @@ function toPlainMarkdown(content) {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/<a\s+href="([^"]+)"[^>]*>([^<]*)<\/a>/gi, "$2 ($1)")
     .replace(/<\/p>\s*<p[^>]*>/gi, "\n\n")
+    .replace(/^>[ \t]?/gm, "")
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<\/?(p|em|strong|i|b)(\s+[^>]*)?>/gi, "")
     .trim();
@@ -262,6 +263,13 @@ hr { border: 0; border-bottom: 1px solid #dedede; margin: 60px 10%; }
 
 .verse-quote {
   white-space: pre-wrap;
+  font-style: italic;
+}
+
+blockquote {
+  margin: 1.2em 0;
+  padding-left: 1em;
+  border-left: 3px solid #a8542e;
   font-style: italic;
 }
 
