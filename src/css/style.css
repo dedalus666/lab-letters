@@ -1150,3 +1150,71 @@ body.is-home .site-footer {
 }
 
 .post-body blockquote p:last-child { margin-bottom: 0; }
+
+/* Zoomable inline images: a post that sets `bodyClass: zoom-images` in its
+   front matter. Click an image to open it full-screen; click again (or
+   use + / - / the mouse wheel with Ctrl or a trackpad pinch) to zoom, and
+   drag to pan. */
+.zoom-images img {
+  cursor: zoom-in;
+}
+
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10, 8, 5, 0.94);
+}
+
+.zoom-overlay[hidden] {
+  display: none;
+}
+
+.zoom-stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: auto;
+  overscroll-behavior: contain;
+  cursor: zoom-in;
+  touch-action: pan-x pan-y;
+}
+
+.zoom-stage.is-zoomed { cursor: grab; }
+.zoom-stage.is-dragging { cursor: grabbing; }
+
+.zoom-stage img {
+  display: block;
+  flex: none;
+  margin: auto;
+  max-width: none;
+  border-radius: 2px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.zoom-controls {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 2;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.zoom-controls button {
+  background: rgba(10, 8, 5, 0.6);
+  border: none;
+  border-radius: 2px;
+  color: #f4ede0;
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  line-height: 1;
+  min-width: 2.4rem;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+
+.zoom-controls button:hover {
+  color: var(--accent);
+}

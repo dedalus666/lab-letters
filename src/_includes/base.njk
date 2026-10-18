@@ -153,5 +153,133 @@
       });
     })();
   </script>
+  <script>
+    // Click-to-zoom for inline images in posts that set `bodyClass: zoom-images`.
+    (function () {
+      var images = document.querySelectorAll('.zoom-images img');
+      if (!images.length) return;
+
+      var MAX_ZOOM = 6, CLICK_ZOOM = 2.5;
+      var overlay = document.createElement('div');
+      overlay.className = 'zoom-overlay';
+      overlay.hidden = true;
+      overlay.innerHTML =
+        '<div class="zoom-controls">' +
+        '<button type="button" data-zoom-out aria-label="Zoom out">&minus;</button>' +
+        '<button type="button" data-zoom-in aria-label="Zoom in">+</button>' +
+        '<button type="button" data-zoom-close aria-label="Close">&times;</button>' +
+        '</div>' +
+        '<div class="zoom-stage"><img alt=""></div>';
+      document.body.appendChild(overlay);
+
+      var stage = overlay.querySelector('.zoom-stage');
+      var img = stage.querySelector('img');
+      var zoom = 1, baseW = 0, baseH = 0;
+
+      function fit() {
+        var ar = (img.naturalWidth || 1) / (img.naturalHeight || 1);
+        baseW = Math.min(window.innerWidth * 0.92, window.innerHeight * 0.9 * ar);
+        baseH = baseW / ar;
+      }
+
+      // Resize to a new zoom level, keeping the point (fx, fy) — in viewport
+      // coordinates — under the same spot of the image.
+      function setZoom(next, fx, fy) {
+        next = Math.max(1, Math.min(MAX_ZOOM, next));
+        var rect = img.getBoundingClientRect();
+        if (fx === undefined) { fx = window.innerWidth / 2; fy = window.innerHeight / 2; }
+        var rx = rect.width ? Math.max(0, Math.min(1, (fx - rect.left) / rect.width)) : 0.5;
+        var ry = rect.height ? Math.max(0, Math.min(1, (fy - rect.top) / rect.height)) : 0.5;
+        zoom = next;
+        var w = baseW * zoom, h = baseH * zoom;
+        img.style.width = w + 'px';
+        img.style.height = h + 'px';
+        stage.classList.toggle('is-zoomed', zoom > 1);
+        var left = Math.max(0, (stage.clientWidth - w) / 2);
+        var top = Math.max(0, (stage.clientHeight - h) / 2);
+        stage.scrollLeft = left + rx * w - fx;
+        stage.scrollTop = top + ry * h - fy;
+      }
+
+      function open(source) {
+        img.alt = source.alt || '';
+        var show = function () {
+          fit();
+          zoom = 1;
+          setZoom(1);
+          overlay.hidden = false;
+          document.body.classList.add('lightbox-open');
+          stage.scrollLeft = 0;
+          stage.scrollTop = 0;
+        };
+        img.onload = show;
+        img.src = source.currentSrc || source.src;
+        if (img.complete && img.naturalWidth) show();
+      }
+
+      function close() {
+        overlay.hidden = true;
+        document.body.classList.remove('lightbox-open');
+      }
+
+      images.forEach(function (source) {
+        source.tabIndex = 0;
+        source.setAttribute('role', 'button');
+        source.addEventListener('click', function () { open(source); });
+        source.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(source); }
+        });
+      });
+
+      // Click toggles between fit-to-screen and zoomed in; a drag pans.
+      var drag = null;
+      stage.addEventListener('pointerdown', function (e) {
+        drag = { x: e.clientX, y: e.clientY, left: stage.scrollLeft, top: stage.scrollTop, moved: false };
+        stage.setPointerCapture(e.pointerId);
+      });
+      stage.addEventListener('pointermove', function (e) {
+        if (!drag) return;
+        var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+        if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
+        if (drag.moved && zoom > 1) {
+          stage.classList.add('is-dragging');
+          stage.scrollLeft = drag.left - dx;
+          stage.scrollTop = drag.top - dy;
+        }
+      });
+      stage.addEventListener('pointerup', function (e) {
+        var wasDrag = drag && drag.moved;
+        drag = null;
+        stage.classList.remove('is-dragging');
+        if (wasDrag) return;
+        if (e.target !== img) { close(); return; } // click on the dark backdrop
+        if (zoom > 1) setZoom(1); else setZoom(CLICK_ZOOM, e.clientX, e.clientY);
+      });
+
+      stage.addEventListener('wheel', function (e) {
+        if (!e.ctrlKey && !e.metaKey) return; // plain scroll pans a zoomed image
+        e.preventDefault();
+        setZoom(zoom * Math.exp(-e.deltaY * 0.01), e.clientX, e.clientY);
+      }, { passive: false });
+
+      overlay.querySelector('[data-zoom-in]').addEventListener('click', function () { setZoom(zoom * 1.5); });
+      overlay.querySelector('[data-zoom-out]').addEventListener('click', function () { setZoom(zoom / 1.5); });
+      overlay.querySelector('[data-zoom-close]').addEventListener('click', close);
+
+      document.addEventListener('keydown', function (e) {
+        if (overlay.hidden) return;
+        if (e.key === 'Escape') close();
+        if (e.key === '+' || e.key === '=') setZoom(zoom * 1.5);
+        if (e.key === '-' || e.key === '_') setZoom(zoom / 1.5);
+        if (e.key === '0') setZoom(1);
+      });
+
+      window.addEventListener('resize', function () {
+        if (overlay.hidden) return;
+        fit();
+        setZoom(zoom);
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -3,6 +3,7 @@ title: "The Equation That Holds the Secret to the Universe"
 kind: story
 tags: stories, memoir, New York City
 layout: post.njk
+bodyClass: zoom-images
 date: 2008-04-11
 note: "A $1 sidewalk find on Manhattan's Upper West Side, 1992."
 ---
