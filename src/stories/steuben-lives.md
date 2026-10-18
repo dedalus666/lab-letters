@@ -3,7 +3,7 @@ title: "Steuben Lives! Rest in Divine Creativity, Tom Gallison"
 kind: story
 tags: stories, memoir, Tom Gallison, Art Never Dies, music
 layout: post.njk
-date: 2026-10-18
+date: 2006-02-07
 note: "The story behind artneverdies.com and a memorial to Tom Gallison."
 ---
 
@@ -21,7 +21,7 @@ My cats found the site very much to their liking—they were always prowling abo
 
 It was a very long time after Tom died before I could write any songs. I didn’t even try—didn’t have the desire—didn’t want to. I knew better than to force something as delicate as that. I sat on the bench of my little Gallison memorial and strummed my guitar all summer long—playing nothing in particular—except maybe a short chord progression that seemed to keep rising to the surface.
 
-At last the words came, slowly and shyly, like children emerging from behind furniture when they’ve broken something valuable. I wrote ‘Curtain Falls’ and put it to the chords I’d been playing since the previous summer. It was April 2001. Afterward there were many versions of this song both lyrically and musically—it was an incredible struggle. I had never written anything quite so personal before. My songs at the time were mainly story-based songs revolving around fictional characters, though their experiences were reflections of my observations of life. ‘Curtain Falls’ was the beginning of a project that would span well over 3 years and over a dozen songs—dedicated to or written specifically about Tom.
+At last the words came, slowly and shyly, like children emerging from behind furniture when they’ve broken something valuable. I wrote ‘[Curtain Falls]({{ "/lyrics/curtain-falls/" | url }})’ and put it to the chords I’d been playing since the previous summer. It was April 2001. Afterward there were many versions of this song both lyrically and musically—it was an incredible struggle. I had never written anything quite so personal before. My songs at the time were mainly story-based songs revolving around fictional characters, though their experiences were reflections of my observations of life. ‘[Curtain Falls]({{ "/lyrics/curtain-falls/" | url }})’ was the beginning of a project that would span well over 3 years and over a dozen songs—dedicated to or written specifically about Tom.
 
 In December 2004 I completed a full-length CD of original songs titled “A Portrait of the Artist.” I made numerous copies for both the family and friends of Tom as well as others whom I knew could appreciate the tribute.
 

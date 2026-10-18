@@ -80,6 +80,15 @@ function stripComments(content) {
   return content.replace(/<!--[\s\S]*?-->/g, "");
 }
 
+// Posts link to other pages on the site with Eleventy's url filter —
+// [text]({{ "/stories/x/" | url }}) — which only exists while the site
+// itself is building. In a downloaded PDF/EPUB there's no template step, so
+// swap it for the page's full public address (the EPUB link then works).
+const SITE_URL = "https://dedalus666.github.io/lab-letters";
+function resolveSiteLinks(content) {
+  return content.replace(/\{\{\s*["']([^"']+)["']\s*\|\s*url\s*\}\}/g, (match, sitePath) => SITE_URL + sitePath);
+}
+
 // Matches the site's raw-HTML verse wrappers: <div class="lyric-block">,
 // poem-block, and verse-quote. These (and the <br> stanza-break markers
 // inside them) rely on the site's own CSS + Eleventy's HTML-aware markdown
@@ -322,7 +331,7 @@ module.exports = async function generateReaderFiles(outputDir) {
       const raw = fs.readFileSync(path.join(dirPath, file), "utf8");
       const { data, content: rawContent } = matter(raw);
       if (!data.title || !data.date) continue;
-      const content = stripComments(rawContent);
+      const content = resolveSiteLinks(stripComments(rawContent));
 
       const slug = path.basename(file, path.extname(file));
       const pageDir = path.join(outputDir, section.url, slug);
