@@ -1,5 +1,5 @@
 ---
-title: Dream Archive # 333
+title: "Dream Archive # 333"
 kind: story
 tags: stories, dreams, dream archive
 layout: post.njk
