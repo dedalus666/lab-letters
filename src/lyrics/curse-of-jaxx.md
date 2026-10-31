@@ -4,6 +4,7 @@ kind: lyric
 tags: lyrics, music, Dedalus, Piranesi, Labyrinth, myth, witchcraft, tarot, vengeance
 layout: post.njk
 date: 2026-10-30
+featured: true
 note: "Track 1 off of Piranesi, released October 30, 2026."
 ---
 
