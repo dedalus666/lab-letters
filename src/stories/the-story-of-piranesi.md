@@ -13,10 +13,10 @@ Admittedly, I had no idea who ‘Piranesi’ was. The novel gets its name as an 
 
 All of this information was, to say the least, inspiring. I set about writing a collection of songs utilizing the imaginary prisons as a metaphor. The characters within find themselves trapped, navigating complex emotional labyrinths in a variety of scenarios and themes involving myth, magic, love, betrayal, and loss. The result is this collection of 5 songs:
 
-* Curse of Jaxx! – A witch’s murder and her lover’s vengeance
-* Rosabelle Believe – A love song and a code word whispered from beyond the grave
-* Sky Woman – A woman of the skies, who created the earth on the shell of a tortoise
-* Betrayer Moon – Tears of deceit and betrayal under a blue moon
-* Curse of Pasiphae – The curse of a god and the wrath of a sorceress queen
+* [Curse of Jaxx!]({{ "/lyrics/curse-of-jaxx/" | url }}) – A witch’s murder and her lover’s vengeance
+* [Rosabelle Believe]({{ "/lyrics/rosabelle-believe/" | url }}) – A love song and a code word whispered from beyond the grave
+* [Sky Woman]({{ "/lyrics/sky-woman/" | url }}) – A woman of the skies, who created the earth on the shell of a tortoise
+* [Betrayer Moon]({{ "/lyrics/betrayer-moon/" | url }}) – Tears of deceit and betrayal under a blue moon
+* [Curse of Pasiphae]({{ "/lyrics/curse-of-pasiphae/" | url }}) – The curse of a god and the wrath of a sorceress queen
 
 ‘Piranesi’ will be available on all streaming platforms on October 30. I invite you to listen. In the meantime, you can visit the [website I created for this release](https://dedalus666.github.io/index.html).
