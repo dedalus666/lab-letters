@@ -10,7 +10,6 @@ gallery:
 - skyward-1.jpeg
 - skyward-2.jpeg
 - skyward-3.jpeg
-- skyward-4.jpeg
 - skyward-5.jpeg
 - skyward-6.jpeg
 - skyward-7.jpeg
