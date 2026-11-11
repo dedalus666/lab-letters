@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-05
-note: "Born underwater, transformed into flight: the whole series in one insect. Built: Hinged lid · brass latch."
+note: "Born underwater, transformed into flight: the whole series in one insect. Build: Hinged lid · brass latch."
 gallery:
 - dragonfly-9.jpeg
 - dragonfly-1.jpeg

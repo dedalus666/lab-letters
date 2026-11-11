@@ -27,15 +27,15 @@ I gave them all away. This is where they came from. If one of them found its way
 
 The twelve boxes:
 
-* [Polaris – Box 42]({{ "/boxes/polaris-box-42/" | url }})<br>A compass rose with the red diamond as true north. It points home. *Built: Finger joints · nesting lid.*
-* [Skyward – Box 43]({{ "/boxes/skyward-box-43/" | url }})<br>A fair-weather chest: a cloud-streaked sky, a red diamond floating above. *Built: Hinged lid · rope handles · diamond slot grooved fitting.*
-* [Octave – Box 44]({{ "/boxes/octave-box-44/" | url }})<br>The eighth note lands back on the first, one level higher. Return, and rebirth. *Built: Slip-lid · diamond latch.*
-* [Pentacle – Box 45]({{ "/boxes/pentacle-box-45/" | url }})<br>Fire left visible on purpose. The pentacle is the tarot’s diamond: craft and the made world. *Built: Nesting lid · finger joints.*
-* [Icarus – Box 46]({{ "/boxes/icarus-box-46/" | url }})<br>Dedalus built the wings. His son burned them. Here the fire is the point. *Built: Brass latch · hinged lid.*
-* [Black Sun – Box 47]({{ "/boxes/black-sun-box-47/" | url }})<br>The Sol niger: the black sun of the blackening stage, given wings. *Built: Hinged lid · brass latch.*
-* [Dragonfly – Box 48]({{ "/boxes/dragonfly-box-48/" | url }})<br>Born underwater, transformed into flight: the whole series in one insect. *Built: Hinged lid · brass latch.*
-* [The Watcher – Box 49]({{ "/boxes/the-watcher-box-49/" | url }})<br>The diamond is an open eye, and the scorch made the stripes. It watches over what’s inside. *Built: Hinged lid · brass latch · wood handles.*
-* [Horizon – Box 50]({{ "/boxes/horizon-box-50/" | url }})<br>A sun about to set, and a small lock for something private. *Built: Hinged lid · butterfly latch with padlock and key · wood handles.*
-* [Aurora – Box 51]({{ "/boxes/aurora-box-51/" | url }})<br>Light radiating outward from a single red center. *Built: Hinged lid · rope handles · butterfly latch.*
-* [Moonlit Sky – Box 52]({{ "/boxes/moonlit-sky-box-52/" | url }})<br>Night flight beneath a golden moon. *Built: Lift-off lid · finger joints.*
-* [Foxfire – Box 53]({{ "/boxes/foxfire-box-53/" | url }})<br>Foxfire is the pale glow of rotting wood: scrap that lights up. *Built: Nesting lid · finger joints.*
+* [Polaris – Box 42]({{ "/boxes/polaris-box-42/" | url }})<br>A compass rose with the red diamond as true north. It points home. *Build: Finger joints · nesting lid.*
+* [Skyward – Box 43]({{ "/boxes/skyward-box-43/" | url }})<br>A fair-weather chest: a cloud-streaked sky, a red diamond floating above. *Build: Hinged lid · rope handles · diamond slot grooved fitting.*
+* [Octave – Box 44]({{ "/boxes/octave-box-44/" | url }})<br>The eighth note lands back on the first, one level higher. Return, and rebirth. *Build: Slip-lid · diamond latch.*
+* [Pentacle – Box 45]({{ "/boxes/pentacle-box-45/" | url }})<br>Fire left visible on purpose. The pentacle is the tarot’s diamond: craft and the made world. *Build: Nesting lid · finger joints.*
+* [Icarus – Box 46]({{ "/boxes/icarus-box-46/" | url }})<br>Dedalus built the wings. His son burned them. Here the fire is the point. *Build: Brass latch · hinged lid.*
+* [Black Sun – Box 47]({{ "/boxes/black-sun-box-47/" | url }})<br>The Sol niger: the black sun of the blackening stage, given wings. *Build: Hinged lid · brass latch.*
+* [Dragonfly – Box 48]({{ "/boxes/dragonfly-box-48/" | url }})<br>Born underwater, transformed into flight: the whole series in one insect. *Build: Hinged lid · brass latch.*
+* [The Watcher – Box 49]({{ "/boxes/the-watcher-box-49/" | url }})<br>The diamond is an open eye, and the scorch made the stripes. It watches over what’s inside. *Build: Hinged lid · brass latch · wood handles.*
+* [Horizon – Box 50]({{ "/boxes/horizon-box-50/" | url }})<br>A sun about to set, and a small lock for something private. *Build: Hinged lid · butterfly latch with padlock and key · wood handles.*
+* [Aurora – Box 51]({{ "/boxes/aurora-box-51/" | url }})<br>Light radiating outward from a single red center. *Build: Hinged lid · rope handles · butterfly latch.*
+* [Moonlit Sky – Box 52]({{ "/boxes/moonlit-sky-box-52/" | url }})<br>Night flight beneath a golden moon. *Build: Lift-off lid · finger joints.*
+* [Foxfire – Box 53]({{ "/boxes/foxfire-box-53/" | url }})<br>Foxfire is the pale glow of rotting wood: scrap that lights up. *Build: Nesting lid · finger joints.*

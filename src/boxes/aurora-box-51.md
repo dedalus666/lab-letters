@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-08
-note: "Light radiating outward from a single red center. Built: Hinged lid · rope handles · butterfly latch."
+note: "Light radiating outward from a single red center. Build: Hinged lid · rope handles · butterfly latch."
 gallery:
 - aurora-1.jpeg
 - aurora-2.jpeg

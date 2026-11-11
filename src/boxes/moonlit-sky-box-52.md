@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-09
-note: "Night flight beneath a golden moon. Built: Lift-off lid · finger joints."
+note: "Night flight beneath a golden moon. Build: Lift-off lid · finger joints."
 gallery:
 - moonlit-sky-1.jpeg
 - moonlit-sky-2.jpeg

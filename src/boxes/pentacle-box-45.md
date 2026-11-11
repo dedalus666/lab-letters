@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-02
-note: "Fire left visible on purpose. The pentacle is the tarot’s diamond: craft and the made world. Built: Nesting lid · finger joints."
+note: "Fire left visible on purpose. The pentacle is the tarot’s diamond: craft and the made world. Build: Nesting lid · finger joints."
 gallery:
 - pentacle-4.jpeg
 - pentacle-1.jpeg

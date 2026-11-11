@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-04
-note: "The Sol niger: the black sun of the blackening stage, given wings. Built: Hinged lid · brass latch."
+note: "The Sol niger: the black sun of the blackening stage, given wings. Build: Hinged lid · brass latch."
 gallery:
 - black-sun-3.jpeg
 - black-sun-1.jpeg
