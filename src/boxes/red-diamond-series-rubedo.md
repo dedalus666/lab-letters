@@ -4,6 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-11
+featured: true
 note: "Twelve boxes, Nos. 42–53, each carrying a red diamond: the final reddening."
 gallery:
 - red-diamond-group-1.jpeg
