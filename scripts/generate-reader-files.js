@@ -190,7 +190,7 @@ function embedInlineImages(content) {
   });
 }
 
-async function generatePdf(outputPath, { title, kind, date, bodyClass }, plainMarkdown) {
+async function generatePdf(outputPath, { title, kind, date, bodyClass, gallery }, plainMarkdown) {
   await new Promise((resolve, reject) => {
     const doc = new PDFDocument({ margin: 64, size: "LETTER" });
     const stream = fs.createWriteStream(outputPath);
@@ -204,6 +204,24 @@ async function generatePdf(outputPath, { title, kind, date, bodyClass }, plainMa
       .fillColor("#666666")
       .text([kind, readableDate(date)].filter(Boolean).join("  ·  "));
     doc.moveDown(1.25);
+
+    // Box posts are mostly about the object, so the PDF carries the main
+    // photo — the first image in the post's gallery, the same one that
+    // leads the site's photo gallery and card. Scaled to fit the text
+    // width and a modest height, so it never pushes the text off the page.
+    // (Other kinds stay plain text; the EPUB already embeds every photo.)
+    if (kind === "box" && gallery && gallery.length) {
+      const photo = path.join(IMAGES_DIR, gallery[0].replace(/^\/images\//, ""));
+      if (fs.existsSync(photo)) {
+        const maxWidth = doc.page.width - doc.page.margins.left - doc.page.margins.right;
+        doc.image(photo, doc.page.margins.left, doc.y, { fit: [maxWidth, 330], align: "center" });
+        // image() leaves the cursor at the top of the picture; step below it.
+        const imgH = doc.openImage(photo);
+        const scale = Math.min(maxWidth / imgH.width, 330 / imgH.height, 1e9);
+        doc.y += imgH.height * scale + 16;
+        doc.x = doc.page.margins.left;
+      }
+    }
     doc.fillColor("#000000").font("Times-Roman").fontSize(13);
 
     const bullets = hasPickBullets(bodyClass);
