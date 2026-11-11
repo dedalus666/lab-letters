@@ -6,10 +6,10 @@ layout: post.njk
 date: 2026-11-02
 note: "Fire left visible on purpose. The pentacle is the tarot’s diamond: craft and the made world. Built: Nesting lid · finger joints."
 gallery:
+- pentacle-4.jpeg
 - pentacle-1.jpeg
 - pentacle-2.jpeg
 - pentacle-3.jpeg
-- pentacle-4.jpeg
 - pentacle-5.jpeg
 - pentacle-6.jpeg
 - pentacle-7.jpeg

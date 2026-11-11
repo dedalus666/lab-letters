@@ -6,11 +6,11 @@ layout: post.njk
 date: 2026-11-03
 note: "Dedalus built the wings. His son burned them. Here the fire is the point. Built: Brass latch · hinged lid."
 gallery:
+- icarus-5.jpeg
 - icarus-1.jpeg
 - icarus-2.jpeg
 - icarus-3.jpeg
 - icarus-4.jpeg
-- icarus-5.jpeg
 - icarus-6.jpeg
 - icarus-7.jpeg
 - icarus-8.jpeg

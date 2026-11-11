@@ -6,6 +6,7 @@ layout: post.njk
 date: 2026-10-31
 note: "A fair-weather chest: a cloud-streaked sky, a red diamond floating above. Built: Hinged lid · rope handles · diamond slot grooved fitting."
 gallery:
+- skyward-12.jpeg
 - skyward-1.jpeg
 - skyward-2.jpeg
 - skyward-3.jpeg
@@ -17,7 +18,6 @@ gallery:
 - skyward-9.jpeg
 - skyward-10.jpeg
 - skyward-11.jpeg
-- skyward-12.jpeg
 ---
 
 Skyward - Box 43

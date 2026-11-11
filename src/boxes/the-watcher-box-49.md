@@ -6,8 +6,8 @@ layout: post.njk
 date: 2026-11-06
 note: "The diamond is an open eye, and the scorch made the stripes. It watches over what’s inside. Built: Hinged lid · brass latch · wood handles."
 gallery:
-- the-watcher-1.jpeg
 - the-watcher-2.jpeg
+- the-watcher-1.jpeg
 - the-watcher-3.jpeg
 - the-watcher-4.jpeg
 - the-watcher-5.jpeg

@@ -6,6 +6,7 @@ layout: post.njk
 date: 2026-11-05
 note: "Born underwater, transformed into flight: the whole series in one insect. Built: Hinged lid · brass latch."
 gallery:
+- dragonfly-9.jpeg
 - dragonfly-1.jpeg
 - dragonfly-2.jpeg
 - dragonfly-3.jpeg
@@ -14,7 +15,6 @@ gallery:
 - dragonfly-6.jpeg
 - dragonfly-7.jpeg
 - dragonfly-8.jpeg
-- dragonfly-9.jpeg
 - dragonfly-10.jpeg
 - dragonfly-11.jpeg
 - dragonfly-12.jpeg
