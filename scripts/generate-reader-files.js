@@ -53,7 +53,7 @@ function imageFileUrl(filenameOrPath) {
   return pathToFileURL(path.join(IMAGES_DIR, filename)).href;
 }
 
-// Strips image markdown, simplifies links down to their visible text, and
+// Strips image markdown, turns markdown links into "text (address)", and
 // unwraps the handful of raw HTML tags posts use inline (<p>, <em>,
 // <strong>, <a href="…">, e.g. for attributions or "listen on…" links).
 // Used for the PDF, which stays plain text — laying out photos and rich
@@ -62,7 +62,11 @@ function imageFileUrl(filenameOrPath) {
 function toPlainMarkdown(content) {
   return content
     .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // A PDF can't be clicked through like the site, so a link keeps its
+    // visible text and gains its web address in parentheses (matching the
+    // raw <a href> handling below). If the text already is the address,
+    // it's shown once.
+    .replace(/\[([^\]]+)\]\(([^)\s]+)[^)]*\)/g, (m, text, url) => (text.trim() === url ? url : `${text} (${url})`))
     .replace(/<a\s+href="([^"]+)"[^>]*>([^<]*)<\/a>/gi, "$2 ($1)")
     .replace(/<\/p>\s*<p[^>]*>/gi, "\n\n")
     .replace(/^>[ \t]?/gm, "")
