@@ -39,3 +39,5 @@ The twelve boxes:
 * [Aurora – Box 51]({{ "/boxes/aurora-box-51/" | url }})<br>Light radiating outward from a single red center, like the flight of a bird, born of the sun. *Build: Hinged lid · rope handles · butterfly latch.*
 * [Moonlit Sky – Box 52]({{ "/boxes/moonlit-sky-box-52/" | url }})<br>Night flight beneath a golden moon. *Build: Lift-off lid · finger joints.*
 * [Foxfire – Box 53]({{ "/boxes/foxfire-box-53/" | url }})<br>Beyond the pale glow of moss on rotting wood, the fox alights. Among orange hue and violet sky, treasures lie. *Build: Nesting lid · finger joints.*
+
+Each of the twelve has its own story. Open any box to read it.
