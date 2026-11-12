@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-01
-note: "The eighth note lands back on the first, one level higher. Return, and rebirth. Build: Slip-lid · diamond latch."
+note: "The eighth note lands back on the first, one level higher. Return, and rebirth. The muse sings the sweetest songs. Build: Slip-lid · diamond latch."
 gallery:
 - octave-1.jpeg
 - octave-2.jpeg

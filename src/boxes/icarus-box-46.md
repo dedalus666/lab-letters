@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-03
-note: "Dedalus built the wings. His son burned them. Here the fire is the point. Build: Brass latch · hinged lid."
+note: "Daedalus, the architect, built the wings. His son burned them. Here the fire is the point. Build: Brass latch · hinged lid."
 gallery:
 - icarus-5.jpeg
 - icarus-1.jpeg

@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-07
-note: "A sun about to set, and a small lock for something private. Build: Hinged lid · butterfly latch with padlock and key · wood handles."
+note: "A sun about to set, and simultaneously rise on the other side of the world. Each new day is another chance. Build: Hinged lid · butterfly latch with padlock and key · wood handles."
 gallery:
 - horizon-2.jpeg
 - horizon-1.jpeg

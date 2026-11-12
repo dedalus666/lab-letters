@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-11-10
-note: "Foxfire is the pale glow of rotting wood: scrap that lights up. Build: Nesting lid · finger joints."
+note: "Beyond the pale glow of moss on rotting wood, the fox alights. Among orange hue and violet sky, treasures lie. Build: Nesting lid · finger joints."
 gallery:
 - foxfire-1.jpeg
 - foxfire-2.jpeg
