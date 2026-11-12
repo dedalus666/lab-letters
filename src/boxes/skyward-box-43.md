@@ -20,3 +20,5 @@ gallery:
 ---
 
 Skyward - Box 43
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

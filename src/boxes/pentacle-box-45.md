@@ -21,3 +21,5 @@ gallery:
 ---
 
 Pentacle - Box 45
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

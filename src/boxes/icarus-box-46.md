@@ -21,3 +21,5 @@ gallery:
 ---
 
 Icarus - Box 46
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

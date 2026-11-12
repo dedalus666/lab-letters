@@ -17,3 +17,5 @@ gallery:
 ---
 
 Horizon - Box 50
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

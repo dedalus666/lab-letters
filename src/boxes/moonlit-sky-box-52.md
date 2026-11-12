@@ -24,3 +24,5 @@ gallery:
 ---
 
 Moonlit Sky - Box 52
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

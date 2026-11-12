@@ -18,3 +18,5 @@ gallery:
 ---
 
 Black Sun - Box 47
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

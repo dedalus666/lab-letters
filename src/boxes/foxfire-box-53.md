@@ -20,3 +20,5 @@ gallery:
 ---
 
 Foxfire - Box 53
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

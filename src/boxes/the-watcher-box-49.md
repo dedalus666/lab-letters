@@ -17,3 +17,5 @@ gallery:
 ---
 
 The Watcher - Box 49
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

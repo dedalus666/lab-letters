@@ -19,3 +19,5 @@ gallery:
 ---
 
 Aurora - Box 51
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

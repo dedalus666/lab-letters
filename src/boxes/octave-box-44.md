@@ -21,3 +21,5 @@ gallery:
 ---
 
 Octave - Box 44
+
+Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).
