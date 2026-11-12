@@ -194,6 +194,33 @@ function embedInlineImages(content) {
   });
 }
 
+// Writes text to the PDF, turning any web address in it into a clickable
+// (underlined) link. Each line is handled on its own (a newline inside
+// "continued" text confuses pdfkit's layout), and within a line the text is
+// split around the address and "continued" so the line still flows as one
+// block. The link annotation keeps working if a long address wraps.
+function writeTextWithLinks(doc, text, options, pos) {
+  const isUrl = (part) => /^https?:\/\//.test(part);
+  text.split("\n").forEach((line, lineIndex) => {
+    const at = pos ? { x: pos.x, y: lineIndex === 0 ? pos.y : doc.y } : null;
+    const parts = line.split(/(https?:\/\/[^\s)]+)/).filter((part) => part !== "");
+    if (!parts.some(isUrl)) {
+      if (at) doc.text(line, at.x, at.y, options);
+      else doc.text(line, options);
+      return;
+    }
+    parts.forEach((part, i) => {
+      const opts = { ...options, continued: i < parts.length - 1 };
+      // continued text inherits the previous segment's options, so the
+      // underline/link must be switched off explicitly for plain text.
+      if (isUrl(part)) Object.assign(opts, { link: part, underline: true });
+      else Object.assign(opts, { link: null, underline: false });
+      if (i === 0 && at) doc.text(part, at.x, at.y, opts);
+      else doc.text(part, opts);
+    });
+  });
+}
+
 async function generatePdf(outputPath, { title, kind, date, bodyClass, gallery }, plainMarkdown) {
   await new Promise((resolve, reject) => {
     const doc = new PDFDocument({ margin: 64, size: "LETTER" });
@@ -241,12 +268,17 @@ async function generatePdf(outputPath, { title, kind, date, bodyClass, gallery }
       // A paragraph that is one italic span (*text*) is set in italics,
       // with the asterisks dropped.
       const italic = isWhollyItalic(paragraph);
-      const text = italic ? paragraph.trim().slice(1, -1) : paragraph;
+      // A fully italic paragraph is set in italics (asterisks dropped). Inline
+      // *emphasis* inside other paragraphs can't be styled in this plain-text
+      // PDF, so its asterisks are dropped rather than printed.
+      const text = italic
+        ? paragraph.trim().slice(1, -1)
+        : paragraph.replace(/(?<![\w*])\*(?=\S)([^*\n]*\S)\*(?![\w*])/g, "$1");
       doc.font(italic ? "Times-Italic" : "Times-Roman");
 
       const withPick = bullets && !italic;
       if (!withPick) {
-        doc.text(text, { align: "left", lineGap: 4 });
+        writeTextWithLinks(doc, text, { align: "left", lineGap: 4 });
         return;
       }
 
@@ -264,7 +296,7 @@ async function generatePdf(outputPath, { title, kind, date, bodyClass, gallery }
         .fill(PICK_COLOR)
         .restore();
       doc.fillColor("#000000");
-      doc.text(text, x + indent, y, { align: "left", lineGap: 4, width });
+      writeTextWithLinks(doc, text, { align: "left", lineGap: 4, width }, { x: x + indent, y });
       doc.x = x;
     });
 
