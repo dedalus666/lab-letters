@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-10-31
-note: "A fair-weather chest: a cloud-streaked sky, a bird in flight, a sun-red diamond in the sky above. Build: Hinged lid · rope handles · diamond slot grooved fitting."
+note: "A fair-weather chest: a cloud-streaked sky, a bird in flight, a sun-red diamond high above. Build: Hinged lid · rope handles · diamond slot grooved fitting."
 gallery:
 - skyward-12.jpeg
 - skyward-1.jpeg

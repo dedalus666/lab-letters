@@ -28,7 +28,7 @@ I gave them all away. This is where they came from. If one of them found its way
 The twelve boxes:
 
 * [Polaris – Box 42]({{ "/boxes/polaris-box-42/" | url }})<br>A compass rose with the red diamond as true north. No matter where you're going, it knows the way. *Build: Finger joints · nesting lid.*
-* [Skyward – Box 43]({{ "/boxes/skyward-box-43/" | url }})<br>A fair-weather chest: a cloud-streaked sky, a bird in flight, a sun-red diamond in the sky above. *Build: Hinged lid · rope handles · diamond slot grooved fitting.*
+* [Skyward – Box 43]({{ "/boxes/skyward-box-43/" | url }})<br>A fair-weather chest: a cloud-streaked sky, a bird in flight, a sun-red diamond high above. *Build: Hinged lid · rope handles · diamond slot grooved fitting.*
 * [Octave – Box 44]({{ "/boxes/octave-box-44/" | url }})<br>The eighth note lands back on the first, one level higher. Return, and rebirth. The muse sings the sweetest songs. *Build: Slip-lid · diamond latch.*
 * [Pentacle – Box 45]({{ "/boxes/pentacle-box-45/" | url }})<br>Flames of the star left visible scars but we call them art. The pentacle is the tarot’s diamond: craft and the made world. *Build: Nesting lid · finger joints.*
 * [Icarus – Box 46]({{ "/boxes/icarus-box-46/" | url }})<br>Daedalus, the architect, built the wings. His son burned them. Here the fire is the point. *Build: Brass latch · hinged lid.*
