@@ -25,4 +25,24 @@ gallery:
 
 Moonlit Sky - Box 52
 
+The ship was called Rocinante, after the horse of a man who charged at windmills. Cass chose the name on purpose. Everyone she’d ever told about her plan had said the same thing in different words: it was a dream, and a dream was a windmill. She decided to name her ship after the horse that carried the dreamer anyway.
+
+Rocinante wasn’t beautiful. She was built from scrap: a boat hull, two old fuel tanks, a hundred pieces of other machines, red paint over the rust. Her only fin was a small red diamond, bolted on at the end like a flag. She had one engine, and it burned with a small, stubborn orange flame that didn’t look like it could carry anything farther than a fence.
+
+The night of the launch, the neighbors came to watch, mostly to be polite. Cass climbed in, closed the hatch, and said to the empty cabin, “Don’t make a liar out of me.”
+
+The engine caught. The ground fell away. For a moment there was only noise, and then there was a silence so large it felt like a held breath, and she was above the clouds, and above the clouds the sky was black and the stars didn’t twinkle.
+
+Ahead of her hung the moon, huge and gold, looking close enough to touch. And behind her, when she finally dared to turn, was the earth.
+
+She hadn’t expected it. She’d spent so long looking up that she never imagined what it would be to look back. It was small, a blue and white marble, so delicate it seemed like something she could cup in her hands. All of it was in there: the kitchen where she’d been told no, the workshop, the neighbors, every windmill she’d ever been laughed at for charging.
+
+She wasn’t sorry. She wasn’t proud, either. She simply felt, for the first time, the full, quiet size of what she’d done.
+
+Rocinante’s little orange flame burned on against the dark, steady as a lamp. Somewhere below, a boy on a rooftop watched it climb until it was a point, and then a pinprick, and then a star among all the other stars.
+
+Years later, a carpenter in a small town made a box of that night. He gave it blue and teal for the sky, a gold moon in one corner, a small blue-green earth below, and a tiny red ship with an orange spark at its tail, rising. The lid lifted off like a launch.
+
+*Keep something in it you’d be sorry to lose. It will go with you, wherever you go.*
+
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).
