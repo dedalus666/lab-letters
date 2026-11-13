@@ -22,7 +22,7 @@ gallery:
 
 Octave - Box 44
 
-In the town of Lyra, northwest of Pegasus, there was a musician who only knew one scale, the plain seven-step climb everyone learns first. This was not a handicap. There are twelve pitches in the world, and she had simply never wandered past the seven of that one scale. The trouble was that her songs never finished. She would sing up the scale, reach the seventh note, and stop. Something was missing, a door that never opened onto the next room.
+In a town just east of Lyra, northwest of Pegasus, there was a musician who only knew one scale, the plain seven-step climb everyone learns first. You know the one; do-ra-me-fa-sol... This was not a handicap. There are twelve pitches in the world, and she had simply never wandered past the seven of that one scale. The trouble was that her songs never finished. She would sing up the scale, reach the seventh note, and stop. Something was missing, a door that never opened onto the next room.
 
 She tried to end songs on the first note instead, and that sounded like going nowhere. She tried ending on the seventh, and that sounded like falling. So she carried her unfinished songs around like letters she’d never sent.
 

@@ -23,9 +23,9 @@ The old alchemists said the Great Work has four stages, and every apprentice hop
 
 An alchemist named Isolde knew this in her head, as everyone does. She did not know it in her hands until the winter her workshop went dark.
 
-It began with the loss of her patron, then her funding, then her eyesight in one eye. One by one the flames in her laboratory went out. She sat in the cold with her flasks and her notebooks and watched the contents of her best experiment, three years of patient work, turn from gold to brown to black. A thick, silent black, like the inside of a held breath.
+It began with the loss of her patron, then her funding, then her eyesight in one eye. One by one the flames in her laboratory went out. She sat in the cold dark with her flasks and her notebooks and watched the contents of her best experiment, three years of patient work, turn from gold to brown to black. A heavy, silent black, like an onyx stone at the bottom of a deep well of murky water. 
 
-She wanted to pour it out. Instead, because she had nothing else left to do, she watched it.
+She wanted to pour it out. Instead, because she had nothing else left to do, she watched it stagnate.
 
 On the fortieth night, something in the flask moved. A small point of red opened in the center of the black, and then, slowly, two curved shapes spread away from it, edged in yellow and green, like wings catching fire. It wasn’t a sun that gave light. It was a sun that was waiting, an eye that watched everything and said nothing.
 
@@ -35,6 +35,6 @@ She built a chest to hold what she’d learned, with a lid like the flask: a bla
 
 “Don’t be afraid of the black,” she wrote on the first page of her notebook. “It is only where the rest of the work begins.”
 
-*Keep something in it you’d be sorry to lose. It will survive the dark, and come out the other side.*
+*Keep something in it you’d be sorry to lose. It will embrace the dark, and come out changed and stronger.*
 
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

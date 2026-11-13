@@ -44,13 +44,13 @@ Teo looked at the box for a long time.
 
 “Everything I’ve made is,” Orla said. “People ask what happened to me and I never have to tell them. They just have to turn the box over.”
 
-She pointed at the star. “Do you know what this is? Old card readers call it the Pentacle. The suit of the maker, the worker, the made world. It never shows a perfect thing. It shows someone *working*, still at the bench, still hurt and still making. A perfect thing hasn’t been through anything. It has nothing to tell you.”
+She pointed at the star. “Do you know what this is? Old card readers call it the Pentacle. The suit of the maker, the worker, the made world. It never shows a perfect thing. It shows someone *working*, still at the bench, still hurt and still creating. A perfect thing hasn’t been through anything. It has nothing to tell you.”
 
 The next summer Teo made his first box. It was crooked, and one of the joints gapped, and he’d scorched the lid by accident. He came to her door almost in tears.
 
 She looked at it for a long time and smiled.
 
-“Keep the burn,” she said.
+“Keep the burn, it highlights the grain. We'll fill the gaps with glue and sawdust. And then we'll cut the lid to fit,” she said. "It's not imperfect. It's one of a kind."
 
 *Keep something in it you’d be sorry to lose. It will carry your scars as well as it carries your treasures.*
 

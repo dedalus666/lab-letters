@@ -32,16 +32,16 @@ But she kept noticing the light. And the longer she watched it, the less the mud
 
 One evening, with no plan except an itch she couldn’t scratch, she climbed. Up a reed, past the weeds, through the silver ceiling, and into a thin cold air that tasted like nothing she had ever breathed. She clung to the stalk, shaking. Her back split open.
 
-It hurt. It took all night. She pulled herself out of her old skin inch by inch, soft and wet and strange, and unfolded something that had never existed in the water: wings. At first they were crumpled and pale, but as the sun rose they stretched and filled, and the light moved through them in stripes of teal and gold. By the time she’d dried, she was red at the center, like a small coal.
+It hurt. It took all night. She pulled herself out of her old skin inch by inch, soft and wet and strange, and unfolded something that had never existed in the water: wings. At first they were crumpled and pale, but as the sun rose they stretched and filled, and the light moved through them in stripes of teal and gold. They glistened like shiny, metallic armor. By the time she’d dried, she was red at the center, like a small coal.
 
 The old skin stayed behind on the reed. A hollow, perfect copy of everything she had been.
 
-She flew. She crossed the pond in a blink, then crossed it again, because she could. She flew over the heads of the older nymphs, though they couldn’t see her. Below her, the whole pond was a green coin the size of her wing.
+She flew. She crossed the pond in a blink, then crossed it again, because she could. She hovered, shot straight up and then down and cut lines like a knife through the air at impossibly sharp angles - even backwards. She flew over the heads of the older nymphs, though they could not see her. Below, the pond was a green eye the size of a pebble. She was a globe skimmer from that day forward. 
 
-Later, a girl found the empty skin still clinging to the reed. She picked it carefully off the stalk and brought it home, and she built a box for it: a red lid streaked with teal and gold, a hinge, a brass latch, a green and orange base like water and sunset. The skin went inside, and she closed the lid and kept it.
+Later, a girl found the empty hull of her skin still clinging to the reed. She picked it carefully off the stalk and brought it home, and she built a box for it: a red lid streaked with teal and gold, paint splatters on a winged membrane of glittering metallic sheen, hinged, a brass latch, a green and orange base like water and sunset. The skin went inside, and she closed the lid and kept it.
 
-“It’s strange,” she told her mother. “It’s empty, but it’s not empty.”
+“It’s curious,” she told her mother. “It’s just a shell. Empty. I wonder what became of the creature within.”
 
-*Keep something in it you’d be sorry to lose. It will remember what you used to be.*
+*Keep something in it you’d be sorry to lose. It will be a reminder of what you used to be, and the transformation of what you've become.*
 
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).
