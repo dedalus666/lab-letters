@@ -50,7 +50,7 @@ The next summer Teo made his first box. It was crooked, and one of the joints ga
 
 She looked at it for a long time and smiled.
 
-“Keep the burn, it highlights the grain. We’ll fill the gaps with glue and sawdust. And then we’ll cut the lid to fit,” she said. “It’s not imperfect. It’s one of a kind.”
+“We’ll fill the gaps with glue and sawdust, and then we’ll cut the lid to fit,” she said. “The scorch only highlights the grain. It’s not imperfect. It’s one of a kind. Keep the burn.”
 
 *Keep something in it you’d be sorry to lose. It will carry your scars as well as it carries your treasures.*
 
