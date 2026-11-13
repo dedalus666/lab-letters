@@ -35,7 +35,7 @@ So she went looking. She tied a rope handle to each end of the chest, hauled it 
 
 She held up the chest. The diamond in the slot caught that red like a coal catching a breath, and the groove closed around it. The lid shut with a sound like a door she’d never tried to open, but only stood outside of. 
 
-When she opened the chest at home that night, the room was full of morning. It stayed that way for exactly as long as she needed it to. It was warm and nourishing light, good for the soul. 
+When she opened the chest at home that night, the room was full of morning. It stayed that way for exactly as long as she needed it to.
 
 The town never did clear up. But now and then, on a bad day, someone would knock at her door, and she’d lift the lid, and they’d stand there for a while in the light, saying nothing, looking up.
 
