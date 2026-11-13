@@ -36,7 +36,7 @@ For a year, he made nothing. Then one night he took the scorched frame to his be
 
 A friend asked him what all of this meant.
 
-“It's a tribute to my son,” Daedalus said. “The fire is the whole point. Tragic, yes, but he did not fail. He went as high as any of us will ever go. That’s what the burn is and why the wings are there - singed. It’s the place where he touched the sun.”
+“It’s a tribute to my son,” Daedalus said. “The fire is the whole point. Tragic, yes, but he did not fail. He went as high as any of us will ever go. That’s what the burn is and why the wings are there - singed. It’s the place where he touched the sun.”
 
 He stopped building labyrinths after that. He built boxes, and he filled them with wonder, and he gave them to anyone who’d ever lost anything to a sky too big to be careful about.
 

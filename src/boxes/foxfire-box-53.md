@@ -33,7 +33,7 @@ One evening a girl followed her. She was lost, and very tired, and she saw somet
 
 The fox looked at her. The girl looked at the glowing log with its small hoard of ordinary treasures, each of them lit from within.
 
-“Those are wonderful trinkets,” the girl said. "Wherever did you get them all?" 
+“Those are wonderful trinkets,” the girl said. “Wherever did you get them all?” 
 
 The fox said nothing, only looking east, then west, up and down. And then she nudged a thimble on the pile with her nose, and the light on it brightened, and the girl understood. They were from everywhere the fox had been.
 
@@ -41,6 +41,6 @@ The log had once been a tree. The treasures had been things somebody threw away,
 
 The girl found her way home that night by the foxfire. Years later, she became a woodworker, and she made twelve boxes from scrap that others had left for the fire. She stained them in layers, until the color came up out of the grain like light. In memory of the fox, she gave each box a red diamond, and gave them away to people all over. 
 
-*Keep something in it you’d be sorry to lose. Even scrap can glow. There is art even in the discarded.*
+*Keep something in it you’d be sorry to lose. Even scrap can glow.*
 
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

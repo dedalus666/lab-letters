@@ -32,7 +32,7 @@ Her grandson Dario, who was seven and noticed everything, watched her do it for 
 
 The box was low and long, with wooden handles on its ends so it could be carried to the window, and its lid was painted with a sun just touching the horizon. The sun was teal, a reflection of the sea, with a small red diamond at its heart, and rays of pink and red spread out behind it across a sky of orange and green. It had a butterfly latch on the front, and a padlock that clicked shut with a small brass key.
 
-Marisol closed her eyes. She said, quietly, everything she wished she’d done differently: the sharp word to the baker, the letter she hadn’t written, the afternoon she’d spent worrying over what didn't really matter. She said it all aloud, not to anyone, just into the air of the box. Then she closed the lid, fastened the butterfly latch, and snapped the padlock shut.
+Marisol closed her eyes. She said, quietly, everything she wished she’d done differently: the sharp word to the baker, the letter she hadn’t written, the afternoon she’d spent worrying over what didn’t really matter. She said it all aloud, not to anyone, just into the air of the box. Then she closed the lid, fastened the butterfly latch, and snapped the padlock shut.
 
 “There,” she said. “It’s locked in. It’s done.”
 

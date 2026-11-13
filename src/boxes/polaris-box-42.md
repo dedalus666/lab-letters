@@ -4,7 +4,7 @@ kind: box
 tags: boxes, Red Diamond, Rubedo
 layout: post.njk
 date: 2026-10-30
-note: "A compass rose with the red diamond as true north. No matter where you're going, it knows the way. Build: Finger joints · nesting lid."
+note: "A compass rose with the red diamond as true north. No matter where you’re going, it knows the way. Build: Finger joints · nesting lid."
 gallery:
 - polaris-8.jpeg
 - polaris-1.jpeg

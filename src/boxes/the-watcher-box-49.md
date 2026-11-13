@@ -32,6 +32,6 @@ Inside she put the things he’d carried in his pockets all those years: a worn 
 
 On stormy nights she set the box on the sill of the lamp room, facing out. The red eye caught the light of the lamp and held it. Ships passed, and the sea still lashed at the rock, and she felt his calming presence even during the height of the most violent storms. 
 
-*Keep something in it you’d be sorry to lose. It will reside within and it will not sleep.*
+*Keep something in it you’d be sorry to lose. It will not sleep.*
 
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).

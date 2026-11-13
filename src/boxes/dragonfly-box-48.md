@@ -42,6 +42,6 @@ Later, a girl found the empty hull of her skin still clinging to the reed. She p
 
 “It’s curious,” she told her mother. “It’s just a shell. Empty. I wonder what became of the creature within.”
 
-*Keep something in it you’d be sorry to lose. It will be a reminder of what you used to be, and the transformation of what you've become.*
+*Keep something in it you’d be sorry to lose. It will be a reminder of what you used to be, and the transformation of what you’ve become.*
 
 Part of the [Red Diamond Series – Rubedo]({{ "/boxes/red-diamond-series-rubedo/" | url }}).
