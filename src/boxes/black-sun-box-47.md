@@ -23,7 +23,7 @@ The old alchemists said the Great Work has four stages, and every apprentice hop
 
 An alchemist named Isolde knew this in her head, as everyone does. She did not know it in her hands until the winter her workshop went dark.
 
-It began with the loss of her patron, then her funding, then her eyesight in one eye. One by one the flames in her laboratory went out. She sat in the cold dark with her flasks and her notebooks and watched the contents of her best experiment, three years of patient work, turn from gold to brown to black. A heavy, silent black, like an onyx stone at the bottom of a deep well of murky water. 
+It began with the loss of her patron, then her funding, then her eyesight in one eye. One by one the flames in her laboratory went out. She sat in the cold dark with her flasks and her notebooks and watched the contents of her great experiment, three years of patient work, turn from gold to brown to black. A heavy, silent black, like an onyx stone at the bottom of a deep well of murky water. 
 
 She wanted to pour it out. Instead, because she had nothing else left to do, she watched it stagnate.
 
@@ -31,9 +31,9 @@ On the fortieth night, something in the flask moved. A small point of red opened
 
 Isolde understood then what the blackening was. It wasn’t the end of the work. It was the work *beginning*, the part where everything false in you is broken down, so that what’s true can be seen. You can’t skip it. The gold only comes out of the black.
 
-She built a chest to hold what she’d learned, with a lid like the flask: a black square at the center, a red diamond above it like an open eye, and wings of teal and yellow flame on either side. She set a latch on the front, brass, so that whoever opened it would have to choose to. Inside she stained the wood a deep rose and set a single teal diamond in the lid, the first small clearing of the dark.
+She built a chest to hold what she’d learned, with a lid like the flask: a black square with a black sun at the center, a red diamond above it like an open eye, and wings of teal and yellow flame on either side. She set a latch on the front, brass, so that whoever opened it would have to choose to. Inside she stained the wood a deep rose and set a single teal diamond in the lid, the first small clearing of the dark.
 
-“Don’t be afraid of the black,” she wrote on the first page of her notebook. “It is only where the rest of the work begins.”
+“Do not fear the absence of light,” she wrote on the first page of her notebook. “It is where the rest of the work begins.”
 
 *Keep something in it you’d be sorry to lose. It will embrace the dark, and come out changed and stronger.*
 
