@@ -30,7 +30,7 @@ He took a scrap of the same wood the walls were made from, the offcuts everyone 
 
 “It won’t tell you where the exit is,” he said. “No such thing exists, not in here. But no matter how many turns you take, one tip of this star will always face the place you came from. And one will always point the place you are going. All you have to do is keep both in mind.”
 
-Thessaly went in. Hours passed, then days. The walls shifted; the light changed color; the corridors folded back on one another. She stopped trusting her eyes. But whenever she opened the box, the red diamond was there at the center, steady, like a flickering flame in the window of a house you can’t quite see.
+Thessaly went in. Hours passed, then days. The walls shifted; the light changed color; the corridors folded back on one another. She stopped trusting her eyes. But whenever she gazed upon the top of the box, the red diamond was there at the center, pointing to and fro, steady, like a warm, flickering flame in the window of a house far away on a hillside in the dark of night. 
 
 On the last day, so tired she had begun to think the maze was the whole world, she sat down against a wall and opened the lid. Inside she had kept only one thing: a ribbon from her sister’s hair. She held it up to the diamond, and for the first time in days she remembered why she had come.
 
