@@ -112,6 +112,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/files");
+  eleventyConfig.addPassthroughCopy("src/audio");
 
   // Files in src/files (like the Magician's Ledger) are plain downloadable
   // documents, not pages — don't let Eleventy try to template-process them.

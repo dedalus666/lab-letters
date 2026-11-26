@@ -3,6 +3,7 @@ layout: base.njk
 ---
 {% import "gallery-macro.njk" as galleryMacro %}
 {% import "video-macro.njk" as videoMacro %}
+{% import "narration-macro.njk" as narrationMacro %}
 {% import "reader-toolbar-macro.njk" as toolbarMacro %}
 {% set sectionMap = {
   "poem": { url: "/poems/", label: "Runes" },
@@ -25,6 +26,7 @@ layout: base.njk
 
   {{ galleryMacro.renderGallery(gallery, title) }}
   {{ videoMacro.renderVideo(youtube, title) }}
+  {{ narrationMacro.renderNarration(narration, narrationStyle, title) }}
 
   <div class="post-body post-body-{{ kind }}{% if bodyClass %} {{ bodyClass }}{% endif %}">
     {{ content | safe }}

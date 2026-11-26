@@ -1,0 +1,161 @@
+{# Custom narration player. A plain <audio> element with its native controls
+   hidden, driven by our own play button, thin progress line and time readout
+   (see the .narration rules in style.css).
+
+   Front matter on a post:
+     narration: polaris-narration.mp3     (file in src/audio/)
+     narrationStyle: reel | candle | compare
+
+   "reel" and "candle" are the two looks; "compare" shows both stacked so
+   they can be judged side by side. Once a look is chosen, set narrationStyle
+   to just that one. The audio is a front-matter field (not markup inside the
+   post's text) on purpose, so the PDF and EPUB downloads never see it. #}
+{% macro renderNarration(audio, style, title) %}
+{% if audio %}
+{% set looks = ['reel', 'candle'] if style == 'compare' else [style or 'reel'] %}
+{% for look in looks %}
+<figure class="narration narration--{{ look }}" data-narration>
+  <figcaption class="narration-label">{% if style == 'compare' %}option {{ 'A' if look == 'reel' else 'B' }} &middot; {{ look }}{% else %}listen &middot; read aloud{% endif %}</figcaption>
+  <audio preload="metadata" src="{{ ('/audio/' + audio) | url }}"></audio>
+  <div class="narration-stage">
+    {% if look == 'candle' %}
+    <div class="candle" aria-hidden="true">
+      <div class="candle-glow"></div>
+      <svg class="candle-flame" viewBox="0 0 14 24"><path class="flame-outer" d="M7 1C9.5 7 13 10.5 13 16A6 6 0 0 1 1 16C1 10.5 4.5 7 7 1Z"/><path class="flame-inner" d="M7 11C8.6 14 10 15.5 10 18A3 3 0 0 1 4 18C4 15.5 5.4 14 7 11Z"/></svg>
+      <div class="candle-wick"></div>
+      <div class="candle-body"></div>
+      <div class="candle-dish"></div>
+    </div>
+    {% endif %}
+    <button class="narration-play" type="button" aria-label="Play narration of {{ title }}">
+      <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5.5h3.4v13H7zM13.6 5.5H17v13h-3.4z"/></svg>
+    </button>
+    {% if look == 'reel' %}
+    <svg class="reel reel--supply" viewBox="0 0 64 64" aria-hidden="true"><circle class="reel-tape" cx="32" cy="32" r="28"/><circle class="reel-flange" cx="32" cy="32" r="30"/><g class="reel-spokes"><circle class="reel-hub" cx="32" cy="32" r="8"/><path d="M32 24V9M38.9 36L51.9 43.5M25.1 36L12.1 43.5"/><circle class="reel-hole" cx="32" cy="32" r="2"/></g></svg>
+    {% endif %}
+    <div class="narration-track" role="slider" tabindex="0" aria-label="Narration progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="narration-fill"></div>
+    </div>
+    {% if look == 'reel' %}
+    <svg class="reel reel--takeup" viewBox="0 0 64 64" aria-hidden="true"><circle class="reel-tape" cx="32" cy="32" r="28"/><circle class="reel-flange" cx="32" cy="32" r="30"/><g class="reel-spokes"><circle class="reel-hub" cx="32" cy="32" r="8"/><path d="M32 24V9M38.9 36L51.9 43.5M25.1 36L12.1 43.5"/><circle class="reel-hole" cx="32" cy="32" r="2"/></g></svg>
+    {% endif %}
+    <span class="narration-time"><span data-current>0:00</span> / <span data-total>--:--</span></span>
+  </div>
+</figure>
+{% endfor %}
+<script>
+(function () {
+  function fmt(s) {
+    s = Math.max(0, Math.floor(s || 0));
+    var r = s % 60;
+    return Math.floor(s / 60) + ':' + (r < 10 ? '0' : '') + r;
+  }
+
+  var players = document.querySelectorAll('[data-narration]:not([data-bound])');
+  Array.prototype.forEach.call(players, function (root) {
+    root.setAttribute('data-bound', '1');
+    var audio = root.querySelector('audio');
+    var button = root.querySelector('.narration-play');
+    var track = root.querySelector('.narration-track');
+    var current = root.querySelector('[data-current]');
+    var total = root.querySelector('[data-total]');
+    var frame = null;
+
+    function progress() {
+      var d = audio.duration;
+      return d && isFinite(d) ? Math.min(1, audio.currentTime / d) : 0;
+    }
+
+    function render() {
+      var p = progress();
+      root.style.setProperty('--p', p);
+      current.textContent = fmt(audio.currentTime);
+      track.setAttribute('aria-valuenow', Math.round(p * 100));
+      track.setAttribute('aria-valuetext', fmt(audio.currentTime) + ' of ' + fmt(audio.duration));
+    }
+
+    // timeupdate only fires a few times a second; while playing, redraw every
+    // frame so the progress line and the reel/candle move smoothly.
+    function loop() {
+      render();
+      if (!audio.paused) frame = requestAnimationFrame(loop);
+    }
+
+    audio.addEventListener('loadedmetadata', function () {
+      total.textContent = fmt(audio.duration);
+      render();
+    });
+    audio.addEventListener('timeupdate', function () { if (audio.paused) render(); });
+    audio.addEventListener('play', function () {
+      // one narration at a time
+      Array.prototype.forEach.call(document.querySelectorAll('[data-narration] audio'), function (other) {
+        if (other !== audio) other.pause();
+      });
+      root.classList.add('is-playing');
+      root.classList.remove('is-ended');
+      button.setAttribute('aria-label', 'Pause narration');
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(loop);
+    });
+    audio.addEventListener('pause', function () {
+      root.classList.remove('is-playing');
+      button.setAttribute('aria-label', 'Play narration');
+      render();
+    });
+    audio.addEventListener('ended', function () {
+      root.classList.remove('is-playing');
+      root.classList.add('is-ended');
+      button.setAttribute('aria-label', 'Play narration again');
+      render();
+    });
+    audio.addEventListener('error', function () {
+      root.classList.add('is-error');
+      total.textContent = 'unavailable';
+    });
+
+    button.addEventListener('click', function () {
+      if (audio.paused) {
+        if (root.classList.contains('is-ended')) audio.currentTime = 0;
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+
+    // Seeking: click or drag along the line; arrow keys / Home / End too.
+    function seekTo(p) {
+      if (!audio.duration || !isFinite(audio.duration)) return;
+      audio.currentTime = Math.min(1, Math.max(0, p)) * audio.duration;
+      root.classList.remove('is-ended');
+      render();
+    }
+    function fromPointer(e) {
+      var box = track.getBoundingClientRect();
+      seekTo((e.clientX - box.left) / box.width);
+    }
+    var dragging = false;
+    track.addEventListener('pointerdown', function (e) {
+      dragging = true;
+      track.setPointerCapture(e.pointerId);
+      fromPointer(e);
+    });
+    track.addEventListener('pointermove', function (e) { if (dragging) fromPointer(e); });
+    track.addEventListener('pointerup', function () { dragging = false; });
+    track.addEventListener('pointercancel', function () { dragging = false; });
+    track.addEventListener('keydown', function (e) {
+      var step = { ArrowRight: 5, ArrowUp: 5, ArrowLeft: -5, ArrowDown: -5 }[e.key];
+      if (step !== undefined) {
+        audio.currentTime = Math.max(0, Math.min(audio.duration || 0, audio.currentTime + step));
+        render();
+        e.preventDefault();
+      } else if (e.key === 'Home') { seekTo(0); e.preventDefault(); }
+      else if (e.key === 'End') { seekTo(1); e.preventDefault(); }
+    });
+
+    render();
+  });
+})();
+</script>
+{% endif %}
+{% endmacro %}
