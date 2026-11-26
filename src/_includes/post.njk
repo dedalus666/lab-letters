@@ -26,7 +26,7 @@ layout: base.njk
 
   {{ galleryMacro.renderGallery(gallery, title) }}
   {{ videoMacro.renderVideo(youtube, title) }}
-  {{ narrationMacro.renderNarration(narration, narrationStyle, title) }}
+  {{ narrationMacro.renderNarration(narration or (page.fileSlug | narrationFile), narrationStyle, title) }}
 
   <div class="post-body post-body-{{ kind }}{% if bodyClass %} {{ bodyClass }}{% endif %}">
     {{ content | safe }}

@@ -33,6 +33,7 @@ function slugifyTag(tag) {
 // "Activity" can reflect when something was actually added/edited in the
 // archive rather than the narrative date written in its front matter.
 const { execSync } = require("child_process");
+const fs = require("fs");
 function getLastCommitDate(inputPath) {
   try {
     const out = execSync(`git log -1 --format=%aI -- "${inputPath}"`, {
@@ -149,6 +150,15 @@ module.exports = function (eleventyConfig) {
   // index can match on tags too, not just title/body text.
   eleventyConfig.addFilter("tagsSearchString", (tagsData) => {
     return normalizeTags(tagsData).join(" ");
+  });
+
+  // Narration audio is attached by file name: drop src/audio/<post-slug>.mp3
+  // (e.g. polaris-box-42.mp3) and that post gets a player — nothing to edit
+  // in the post itself. No file, no player. A post can still name a
+  // different file with `narration:` in its front matter.
+  eleventyConfig.addFilter("narrationFile", (slug) => {
+    const file = `${slug}.mp3`;
+    return fs.existsSync(path.join(__dirname, "src", "audio", file)) ? file : null;
   });
 
   // Picks the most-recently-dated featured entry of one specific kind

@@ -1,18 +1,22 @@
-{# Custom narration player. A plain <audio> element with its native controls
-   hidden, driven by our own play button, thin progress line and time readout
-   (see the .narration rules in style.css).
+{# Custom narration player: a plain <audio> element with its native controls
+   hidden, driven by our own play button, thin progress line and time
+   readout (see the .narration rules in style.css).
 
-   Front matter on a post:
-     narration: polaris-narration.mp3     (file in src/audio/)
-     narrationStyle: reel | candle | compare
+   To add a narration to a post, just save the recording as
+   src/audio/<post-slug>.mp3 (e.g. polaris-box-42.mp3). The narrationFile
+   filter in .eleventy.js finds it by name — no front matter needed. No
+   file, no player. (A post can still point at a differently named file with
+   `narration: other-name.mp3`.)
 
-   "reel" and "candle" are the two looks; "compare" shows both stacked so
-   they can be judged side by side. Once a look is chosen, set narrationStyle
-   to just that one. The audio is a front-matter field (not markup inside the
+   The default look is the candle that burns down as the story plays.
+   `narrationStyle: reel` in a post's front matter gives the reel instead,
+   and `narrationStyle: compare` shows both stacked for judging side by side.
+
+   The audio is looked up in the layout (not written as markup inside the
    post's text) on purpose, so the PDF and EPUB downloads never see it. #}
 {% macro renderNarration(audio, style, title) %}
 {% if audio %}
-{% set looks = ['reel', 'candle'] if style == 'compare' else [style or 'reel'] %}
+{% set looks = ['reel', 'candle'] if style == 'compare' else [style or 'candle'] %}
 {% for look in looks %}
 <figure class="narration narration--{{ look }}" data-narration>
   <figcaption class="narration-label">{% if style == 'compare' %}option {{ 'A' if look == 'reel' else 'B' }} &middot; {{ look }}{% else %}listen &middot; read aloud{% endif %}</figcaption>
