@@ -8,15 +8,16 @@
    file, no player. (A post can still point at a differently named file with
    `narration: other-name.mp3`.)
 
-   The default look is the candle that burns down as the story plays.
-   `narrationStyle: reel` in a post's front matter gives the reel instead,
-   and `narrationStyle: compare` shows both stacked for judging side by side.
+   The default look is the reel, with the progress line as the tape between
+   two reels. `narrationStyle: candle` in a post's front matter gives the
+   candle that burns down as the story plays instead, and
+   `narrationStyle: compare` shows both stacked for judging side by side.
 
    The audio is looked up in the layout (not written as markup inside the
    post's text) on purpose, so the PDF and EPUB downloads never see it. #}
 {% macro renderNarration(audio, style, title) %}
 {% if audio %}
-{% set looks = ['reel', 'candle'] if style == 'compare' else [style or 'candle'] %}
+{% set looks = ['reel', 'candle'] if style == 'compare' else [style or 'reel'] %}
 {% for look in looks %}
 <figure class="narration narration--{{ look }}" data-narration>
   <figcaption class="narration-label">{% if style == 'compare' %}option {{ 'A' if look == 'reel' else 'B' }} &middot; {{ look }}{% else %}listen &middot; read aloud{% endif %}</figcaption>
